@@ -1,0 +1,67 @@
+# Course materials, including duplicated shared copies
+/理论课/
+/实验课/
+/Shares/
+
+# Downloaded environments and third-party repositories
+/envs/
+/miniconda3/
+**/.venv/
+**/venv/
+**/envs/
+**/node_modules/
+**/third_party/
+
+# Datasets, model weights, downloaded papers and experiment artifacts
+**/data/
+**/datasets/
+**/checkpoints/
+**/runs/
+**/audit/
+**/papers/
+
+# Caches, build outputs and binary archives
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+**/build/
+**/dist/
+*.py[cod]
+*.log
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.npz
+*.npy
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+*.whl
+*.exe
+*.dll
+*.so
+
+# Credentials and editor-specific local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+**/.aws/
+**/.ssh/
+**/.codex/
+**/.agents/
+**/.idea/
+**/.vscode/
+.DS_Store
+Thumbs.db
+
+# Local upload verification records
+/.github-upload-local/
