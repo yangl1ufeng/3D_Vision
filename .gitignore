@@ -65,3 +65,6 @@ Thumbs.db
 
 # Local upload verification records
 /.github-upload-local/
+
+# Retired experiment retained locally
+/projects/goldilocs_reproduction/
