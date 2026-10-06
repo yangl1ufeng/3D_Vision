@@ -1,0 +1,548 @@
+[
+  {
+    "type": "directory",
+    "oid": "fba13db641348ee144171d2999d01905fd48f031",
+    "size": 0,
+    "path": "checkpoints"
+  },
+  {
+    "type": "directory",
+    "oid": "08fd620a5130475f249029434824194d953a8b4f",
+    "size": 0,
+    "path": "sample_data"
+  },
+  {
+    "type": "directory",
+    "oid": "c44099dcea7ee68147d8042b0f2af31b98697da5",
+    "size": 0,
+    "path": "sample_data/meshes"
+  },
+  {
+    "type": "directory",
+    "oid": "fa1b4436cba54d46c0392151aef34b1191f27c89",
+    "size": 0,
+    "path": "sample_data/real_object_pc"
+  },
+  {
+    "type": "directory",
+    "oid": "e4faf24ca6d497d7caa5167408c249f9f8c3ca6d",
+    "size": 0,
+    "path": "sample_data/real_scene_pc"
+  },
+  {
+    "type": "file",
+    "oid": "f413f860b93a75ee716d21dff624b581f1bd800b",
+    "size": 85,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "ed01ea1d434b09728eba0a3b41b945d738d03e52",
+    "size": 4043,
+    "path": "LICENSE"
+  },
+  {
+    "type": "file",
+    "oid": "6428d53c3b0fa05e3de3b46671b07cec8bf32151",
+    "size": 1992,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "f7f4ab43922b5d597c7d3ac73b4c24d56caefd00",
+    "size": 4868,
+    "path": "checkpoints/graspgen_franka_panda.yml"
+  },
+  {
+    "type": "file",
+    "oid": "41c34e9603628362093ad3308ecf9d47ccfc3a84",
+    "size": 165853892,
+    "lfs": {
+      "oid": "e47d703c63b54c2d11fbc1effd43898f251b4147250888541e3b16e9c0d19e1c",
+      "size": 165853892,
+      "pointerSize": 134
+    },
+    "xetHash": "a27bda228149835c3693a0a196adafa04aaea7546e8ed073d75235bed7f655df",
+    "path": "checkpoints/graspgen_franka_panda_dis.pth"
+  },
+  {
+    "type": "file",
+    "oid": "8a398a866db6cf4fd7394b1e8c816910037ee702",
+    "size": 907408223,
+    "lfs": {
+      "oid": "0597583b89b322d42ceb4e596967d6ed68d1b56cba4039895909ccd5bdc66eff",
+      "size": 907408223,
+      "pointerSize": 134
+    },
+    "xetHash": "dde719f0b9356e752d99216c3a6fb56973da52264ccd70e8dd691c6654a54b23",
+    "path": "checkpoints/graspgen_franka_panda_gen.pth"
+  },
+  {
+    "type": "file",
+    "oid": "72acedd2588147e2b350ad4e817695bd8eed66ad",
+    "size": 4870,
+    "path": "checkpoints/graspgen_robotiq_2f_140.yml"
+  },
+  {
+    "type": "file",
+    "oid": "4246c7493cdc97cee8e57856fd29f12f2a1ef2e8",
+    "size": 39427928,
+    "lfs": {
+      "oid": "52f68d3cd3decb71499e084fdb88808d174419a72cd9ef38f821083a4409895d",
+      "size": 39427928,
+      "pointerSize": 133
+    },
+    "xetHash": "b419884d35875d64123922c8e5bfa897614f0aa94afe38c829b4e3db8f50a8ad",
+    "path": "checkpoints/graspgen_robotiq_2f_140_dis.pth"
+  },
+  {
+    "type": "file",
+    "oid": "f7fbec24e263f2e5067cd086626cb5233b3ec159",
+    "size": 471436414,
+    "lfs": {
+      "oid": "fe8497108e39d8fc50be06cd7df22a2f680e0495e713d24c3104616f291e00dd",
+      "size": 471436414,
+      "pointerSize": 134
+    },
+    "xetHash": "90a9d714d87abe2ba188d8afd00d38c07346c02f1d77b43cbd79d74b9581b66d",
+    "path": "checkpoints/graspgen_robotiq_2f_140_gen.pth"
+  },
+  {
+    "type": "file",
+    "oid": "96e85d6125648c56080e5dc0145fc0d6acc6cd16",
+    "size": 4921,
+    "path": "checkpoints/graspgen_single_suction_cup_30mm.yml"
+  },
+  {
+    "type": "file",
+    "oid": "4a19d04684668f1f0b141d696a513393a8a97bb3",
+    "size": 165854222,
+    "lfs": {
+      "oid": "552f270447ef50d964ae9315ab4da9f6342f0b9eef8f6c0a28e646ac5b1f0ba5",
+      "size": 165854222,
+      "pointerSize": 134
+    },
+    "xetHash": "eccb054c7281ed31275f740f9ad75296331d6a5e40a88642aea42156308fcb3d",
+    "path": "checkpoints/graspgen_single_suction_cup_30mm_dis.pth"
+  },
+  {
+    "type": "file",
+    "oid": "5e9674185f85102706cf2fbce7b625154f5a1845",
+    "size": 907408223,
+    "lfs": {
+      "oid": "e7ce37894bd4473545088bd1522a2b6917d220ebec45f47a156ffb38e3c4cade",
+      "size": 907408223,
+      "pointerSize": 134
+    },
+    "xetHash": "fdf2460044a81690bbcb91cf12e5457ec7a9d729fef9a04da8cde7a70bb6f0ab",
+    "path": "checkpoints/graspgen_single_suction_cup_30mm_gen.pth"
+  },
+  {
+    "type": "file",
+    "oid": "e471122bd654d21d9854ce976941f6db17a6fe0d",
+    "size": 28086,
+    "path": "sample_data/meshes/bowl.obj"
+  },
+  {
+    "type": "file",
+    "oid": "a536894b88916682022d13bfa4ede7fc58e2e730",
+    "size": 425,
+    "path": "sample_data/meshes/box.obj"
+  },
+  {
+    "type": "file",
+    "oid": "922c3b0a60c144eb5920018e8f8c576bfcd363d9",
+    "size": 3751,
+    "path": "sample_data/meshes/cylinder.obj"
+  },
+  {
+    "type": "file",
+    "oid": "19b9be2796f38d7568806a071eb00e082b6c3bc2",
+    "size": 5068,
+    "path": "sample_data/meshes/handle.obj"
+  },
+  {
+    "type": "file",
+    "oid": "c446ba2a89d9053d6913f962ae71180d8b1c44ef",
+    "size": 44423,
+    "path": "sample_data/meshes/handwheel.obj"
+  },
+  {
+    "type": "file",
+    "oid": "bfd3950b853cc6aa1a20046923f8474a335ecf66",
+    "size": 11690,
+    "path": "sample_data/meshes/plate.obj"
+  },
+  {
+    "type": "file",
+    "oid": "1ad728c8148cb1f99163dfefafd9583870a5c8d2",
+    "size": 645583,
+    "lfs": {
+      "oid": "e812cef94653098fb744d9b4ea443a4e75047f803699c0ab8bf19fd5e606e032",
+      "size": 645583,
+      "pointerSize": 131
+    },
+    "xetHash": "18f1df5ccfdebc05c39ea8b7a42ad262e20f1d9a25d3630d749e8391f020c17a",
+    "path": "sample_data/real_object_pc/1740787710_319213.json"
+  },
+  {
+    "type": "file",
+    "oid": "f428908f1fd786c94cfeca0ad85301b29f417ee7",
+    "size": 899973,
+    "lfs": {
+      "oid": "520c97d91c0516a2d9f5cb8599aa8f7e405233c0b1d19fc985917c608a4374ae",
+      "size": 899973,
+      "pointerSize": 131
+    },
+    "xetHash": "0287ee6579a05188abd3acf44f58e68bb05c703d127140ba3f1d12811ee60248",
+    "path": "sample_data/real_object_pc/1740787815_545011.json"
+  },
+  {
+    "type": "file",
+    "oid": "ed10241a2278cfa3048f2ea4ac6d5e23994def55",
+    "size": 353226,
+    "lfs": {
+      "oid": "d1ec844c49d02b9719b144fbc4be0dabb8d2916bf72f0634b41b451339a61e82",
+      "size": 353226,
+      "pointerSize": 131
+    },
+    "xetHash": "b7cf72f977ae9f790781c410782ea7abef3fd3ec3f75361938371822f9e72f0c",
+    "path": "sample_data/real_object_pc/1740787897_012511.json"
+  },
+  {
+    "type": "file",
+    "oid": "7f41389beabd112a4831265d6a09714093a79716",
+    "size": 312359,
+    "lfs": {
+      "oid": "08b9cf4053b194a5b50b8aa725b0b05c232c6a4df82e07dee81344ee8d94bf9a",
+      "size": 312359,
+      "pointerSize": 131
+    },
+    "xetHash": "c5efbcb9a7a355fec02a6ba2d1cceb8a5596afdad82a0b02c3e854090ac97b8b",
+    "path": "sample_data/real_object_pc/1740788032_190651.json"
+  },
+  {
+    "type": "file",
+    "oid": "b03bf8410202cb690831ccd711dc5d5c7a7e0b00",
+    "size": 238743,
+    "lfs": {
+      "oid": "bd9d8f5d3134eb5e087a7cf2dcb51da644b7e5978b00f3087635cdc0090456fe",
+      "size": 238743,
+      "pointerSize": 131
+    },
+    "xetHash": "140315f68771e64ab8d4bbbb5df5924a3d1c38cf4c78b922f78a256c39bb095c",
+    "path": "sample_data/real_object_pc/1741385877_42353.json"
+  },
+  {
+    "type": "file",
+    "oid": "94139feeb1616b783a6b199d0a38f290dbf0d72b",
+    "size": 381016,
+    "lfs": {
+      "oid": "39b3235b96ab75aa8da7010f6d1df2cf7506f63e9954f0521648f52ce3c4f406",
+      "size": 381016,
+      "pointerSize": 131
+    },
+    "xetHash": "8d5bbee27bd14f5f9c8e9afb5a4f5d52ceec9beccdcbe440e4fbbd5f60dd9841",
+    "path": "sample_data/real_object_pc/1741544869_79815.json"
+  },
+  {
+    "type": "file",
+    "oid": "e0b9844465d09ef0413d86080ac221a2c32de109",
+    "size": 205539,
+    "lfs": {
+      "oid": "193f9ec9412e5332e36d9de8acec2e2a116f612a991ad4977b55f1225619c892",
+      "size": 205539,
+      "pointerSize": 131
+    },
+    "xetHash": "b25f4a17a5eeb4d5fba686f2d02a8c5d70dda30f2955197d88462e6d6cc98e68",
+    "path": "sample_data/real_object_pc/1741544976_63682.json"
+  },
+  {
+    "type": "file",
+    "oid": "6d779d19a022920f8429e5f6288f3576c41d7e24",
+    "size": 228931,
+    "lfs": {
+      "oid": "73dd1dceddfb6cc74bf3259ba12cadd6a310b977968985e227161b7828931775",
+      "size": 228931,
+      "pointerSize": 131
+    },
+    "xetHash": "67bf79fec8547a4839d8200823c43f0b75df08a6cd081c90f208f185f98a4595",
+    "path": "sample_data/real_object_pc/1741544996_713226.json"
+  },
+  {
+    "type": "file",
+    "oid": "30c13cb825b8b38690d8710daed1442ea76446c8",
+    "size": 248154,
+    "lfs": {
+      "oid": "12e8a73acafe90372e5cf5a582d9f7ae10bd89b64c7fedcdb849872904ccc09e",
+      "size": 248154,
+      "pointerSize": 131
+    },
+    "xetHash": "dbe87f7409111f62a052fffaead4f944f01ca42cd8358596b0205b35fa2b8a94",
+    "path": "sample_data/real_object_pc/1741545081_439523.json"
+  },
+  {
+    "type": "file",
+    "oid": "195ade3aa37eb58c1219f01aeb4ca1be162e8cde",
+    "size": 235941,
+    "lfs": {
+      "oid": "2e206cf41218813b700952121027d72aa8d86696c3a5aa03ff5ad9e6862423da",
+      "size": 235941,
+      "pointerSize": 131
+    },
+    "xetHash": "33fa2fd0c21859f4c12442a227e537d18dbb198818002b86debbe43217c24c3b",
+    "path": "sample_data/real_object_pc/1741545110_588433.json"
+  },
+  {
+    "type": "file",
+    "oid": "e54a0df36ad8dac4b6fdefeedd32d26d4864ead7",
+    "size": 576025,
+    "lfs": {
+      "oid": "c629338a45927c102905974e160b95cb26d118d5a3a9bcf6f10fb01f45a31a97",
+      "size": 576025,
+      "pointerSize": 131
+    },
+    "xetHash": "22fdc104c50779b8b937a4bafbf76fce02ab8516f82632749443aee4353bd004",
+    "path": "sample_data/real_object_pc/1741545266_901072.json"
+  },
+  {
+    "type": "file",
+    "oid": "a2d0448894ab1b229ccf9ab947f63fef6537639f",
+    "size": 414522,
+    "lfs": {
+      "oid": "d067854dab3f9c9b5e66a0349bd5b7b83234aad8f7ac47534c2f1ec7368118c1",
+      "size": 414522,
+      "pointerSize": 131
+    },
+    "xetHash": "ea331a58bf2fa233920a20af9895f62f6a746883c58f5c82f3d7d6dabab0d9c0",
+    "path": "sample_data/real_object_pc/1741545340_64922.json"
+  },
+  {
+    "type": "file",
+    "oid": "13e3df3f363d10a558538dd22bca34f95140f390",
+    "size": 216350,
+    "lfs": {
+      "oid": "56b472779f59ae9f73200a8f94a0193e78c7bd6eb3ad481d14cfb988a4139794",
+      "size": 216350,
+      "pointerSize": 131
+    },
+    "xetHash": "4fdf8cfe6da48039716a3c81b7fc5402e4091e1f977ddb4dbf8783680ddd79d2",
+    "path": "sample_data/real_object_pc/1741545441_924315.json"
+  },
+  {
+    "type": "file",
+    "oid": "02927d0235ee96139b8ddb9d22108a0287cd03a7",
+    "size": 77673191,
+    "lfs": {
+      "oid": "293deadde5030f727595249db8b55624938285dd28c33d0347ed67a29728f522",
+      "size": 77673191,
+      "pointerSize": 133
+    },
+    "xetHash": "9df8250b9d3bdcf243ed7959cc20f47fe7d838e166472a449e481ce6df81d4ab",
+    "path": "sample_data/real_scene_pc/1745619598_467125.json"
+  },
+  {
+    "type": "file",
+    "oid": "56ae206dbf33525f3cd79f40b7e93ca5604a849c",
+    "size": 84276012,
+    "lfs": {
+      "oid": "293962299baef2177b2f97df4fba3b163f31dc08a9bd34be0f078a78a55a56cf",
+      "size": 84276012,
+      "pointerSize": 133
+    },
+    "xetHash": "46136d10fc727f9706e1069a356b147c00d8ffd19648ffc515198a72161f9177",
+    "path": "sample_data/real_scene_pc/1745766797_642935.json"
+  },
+  {
+    "type": "file",
+    "oid": "9fedd94f474e5aeb422cae224947982e70772fff",
+    "size": 84045124,
+    "lfs": {
+      "oid": "15ff1d2a7970858a05ecc02759ee2353a6c80e34c6b710e22884a8452fd7d150",
+      "size": 84045124,
+      "pointerSize": 133
+    },
+    "xetHash": "1c0cf6f096ee8e7239a5f16d2606985afca36cd80d64f29bd281c26e611d9296",
+    "path": "sample_data/real_scene_pc/1745766888_217251.json"
+  },
+  {
+    "type": "file",
+    "oid": "a1ccb960cbdb03bb318087690def4120fe89db8a",
+    "size": 84312343,
+    "lfs": {
+      "oid": "a86c8e815ddbbf035e316aaacdf7365671ade96a6762c4b788a4ef27f9b5562d",
+      "size": 84312343,
+      "pointerSize": 133
+    },
+    "xetHash": "695641804f6cb6e3419cf79cac5d49ab44d21ab2c76b04e3b91e8d1332577abc",
+    "path": "sample_data/real_scene_pc/1745767013_484466.json"
+  },
+  {
+    "type": "file",
+    "oid": "e5ed91ed6edcd0ec035e2cfb7c90366942b66078",
+    "size": 84009058,
+    "lfs": {
+      "oid": "7bb0f21eb7fcb2a8d5569862ac512200ba6bbd67eb6508cac565c72263cd8b24",
+      "size": 84009058,
+      "pointerSize": 133
+    },
+    "xetHash": "a56ce8d387cf7d429b41db8f2eed32b3c62058a3451622db4d470c341867b017",
+    "path": "sample_data/real_scene_pc/1745767724_664606.json"
+  },
+  {
+    "type": "file",
+    "oid": "204bda23b3b3df064dd6e304817b0ca11421e5a1",
+    "size": 83702243,
+    "lfs": {
+      "oid": "69d28bdc4b4842f9fe1cd1d0481c459f81a553729f51255df0710fdccd463648",
+      "size": 83702243,
+      "pointerSize": 133
+    },
+    "xetHash": "864861dd9b404b399585f22de1fa33c3492f0649f62bf3bcbdd112426d3f4529",
+    "path": "sample_data/real_scene_pc/1745768130_827156.json"
+  },
+  {
+    "type": "file",
+    "oid": "1dcef01db850418c09c9d2ccad01e20b6cdeb4db",
+    "size": 83780483,
+    "lfs": {
+      "oid": "9c495112e90839c574ee5a5fe6ff709864b93ef5d4073674ffd3847e0ffb2e53",
+      "size": 83780483,
+      "pointerSize": 133
+    },
+    "xetHash": "b7772873eb175e8443adb271c30cdd9df3e85700ed02de259339b0fd11ebf04f",
+    "path": "sample_data/real_scene_pc/1745768193_131939.json"
+  },
+  {
+    "type": "file",
+    "oid": "4122335032a1eaf2de7c0ab4ba8683a122e0aff2",
+    "size": 83471715,
+    "lfs": {
+      "oid": "0786150e534e3cf8fa26362f4ae8c0857e50094785dc6549a21bf1dc35cabf9e",
+      "size": 83471715,
+      "pointerSize": 133
+    },
+    "xetHash": "3388dbb7362e918baf3ed2363bb7921288750d3088b4b78d21ab72b208a9e991",
+    "path": "sample_data/real_scene_pc/1745776491_772317.json"
+  },
+  {
+    "type": "file",
+    "oid": "f0bbc285b3f4ffba1e2feb9582496aef153a37a4",
+    "size": 83741036,
+    "lfs": {
+      "oid": "f7c0e218bda0f760982f8a871ab1c28b0376828cd649654b2ed00c759d31fba0",
+      "size": 83741036,
+      "pointerSize": 133
+    },
+    "xetHash": "19f696d83d4e63f330ad4cc0a77af334a570e8f4075ec04e97a21a9e6207687a",
+    "path": "sample_data/real_scene_pc/1745776522_308902.json"
+  },
+  {
+    "type": "file",
+    "oid": "4b84e10aa0587275d15a418b37c7e9c7da46c950",
+    "size": 83383446,
+    "lfs": {
+      "oid": "ce2fb5ec9914cd7ed6dce709970924c08008af6813371b29af7096590931b6e6",
+      "size": 83383446,
+      "pointerSize": 133
+    },
+    "xetHash": "c8234839e9f7379066b9c5f71834284662e096a71b5a23581319c313e5346fdb",
+    "path": "sample_data/real_scene_pc/1745878874_716174.json"
+  },
+  {
+    "type": "file",
+    "oid": "db4d80fb4660dee41464dd6f128bd5f55ed872e7",
+    "size": 83805549,
+    "lfs": {
+      "oid": "164f592b71a60e21ca97c5e04a8963f190539bd9234b8ec7727d3ffbb23baeb4",
+      "size": 83805549,
+      "pointerSize": 133
+    },
+    "xetHash": "36b7f80c22000cb0c589cf5d4cb2045c5ac23f4db516d553da3a5fe11cf0a58b",
+    "path": "sample_data/real_scene_pc/1745881159_652551.json"
+  },
+  {
+    "type": "file",
+    "oid": "0a9f5eebc4298c49eb063991ea79ef4c83b08a3e",
+    "size": 83584748,
+    "lfs": {
+      "oid": "0363b14e951b3396c8b0f691749ded5f6b72267e72737554370f7c55dc7235e3",
+      "size": 83584748,
+      "pointerSize": 133
+    },
+    "xetHash": "6fac98e038629180bf250b23c8edff9490b23cfc7d10c66c7d365ad76888e107",
+    "path": "sample_data/real_scene_pc/1745882081_305126.json"
+  },
+  {
+    "type": "file",
+    "oid": "53c778ccc31ef9b22cdbfe7deaab74f400927048",
+    "size": 83633897,
+    "lfs": {
+      "oid": "69113ae4f1d88293a81820d53dd9cdad75625b5dd3d88cf2098056e1240d45a4",
+      "size": 83633897,
+      "pointerSize": 133
+    },
+    "xetHash": "874504421129e808b6a990ba444b67423b8cb7bfaba4446a65679cd8271b7170",
+    "path": "sample_data/real_scene_pc/1745882816_098159.json"
+  },
+  {
+    "type": "file",
+    "oid": "d739914dd5d8b967bb44f789bca9263994ced965",
+    "size": 83377557,
+    "lfs": {
+      "oid": "f80db014407a7ef58daa5b4e3f73bda4e7df7a7aea8bdcc0bc8d8867b06d8f02",
+      "size": 83377557,
+      "pointerSize": 133
+    },
+    "xetHash": "b3e911975c3e508e2868e8ca11dc95408bc2664a090d96e54644ecedd4e1a19e",
+    "path": "sample_data/real_scene_pc/1745940549_776734.json"
+  },
+  {
+    "type": "file",
+    "oid": "1af1dc98f8aaf802728c05eb4b1e8fd4d85f96c2",
+    "size": 83353158,
+    "lfs": {
+      "oid": "8135880e4b6d0342ca8d58b8245b88e4c5ee3ae13b5229106af62f8f6a9ae130",
+      "size": 83353158,
+      "pointerSize": 133
+    },
+    "xetHash": "21b1fefaac161a11bc197f3995d52a7946cd4479de2d6ee178541e0b704fe604",
+    "path": "sample_data/real_scene_pc/1745941856_379688.json"
+  },
+  {
+    "type": "file",
+    "oid": "e8409fe517e1c431b5b47379064c7ffeae5ede99",
+    "size": 83523090,
+    "lfs": {
+      "oid": "a85523492db2da0c1db5e6bedd66ee02b902eb9c5bb0b3391f8a633f5916471f",
+      "size": 83523090,
+      "pointerSize": 133
+    },
+    "xetHash": "4b9957939a7a92b9b76d949366484e2c1628a2ccf4d92aee8ffb43aae0804a2c",
+    "path": "sample_data/real_scene_pc/1745942155_337007.json"
+  },
+  {
+    "type": "file",
+    "oid": "1b9e2bbb820cd45888250159d30db5ec0d867740",
+    "size": 83447634,
+    "lfs": {
+      "oid": "1072d7eb0d673c8adbb5df832ffa5151b23e86f830fdc46c51c8a77324b2ff32",
+      "size": 83447634,
+      "pointerSize": 133
+    },
+    "xetHash": "74c01d9511f35e242608e784683f6897beefcf0e0ae7b0433f8bbb6ea2f1d12b",
+    "path": "sample_data/real_scene_pc/1745942472_532388.json"
+  },
+  {
+    "type": "file",
+    "oid": "c0e93d71c2706e398e9873318e132a449a636a98",
+    "size": 83455114,
+    "lfs": {
+      "oid": "69f61b74f1bad66c538c15124eeda6d10a1b03b16627885709bd1d2287767113",
+      "size": 83455114,
+      "pointerSize": 133
+    },
+    "xetHash": "7a047da07c2335f662dbc092ab18f12d798dfa3e5508cbe26b863750859d0522",
+    "path": "sample_data/real_scene_pc/1745942615_105427.json"
+  }
+]

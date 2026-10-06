@@ -1,0 +1,321 @@
+diff --git a/grasp_gen/models/discriminator.py b/grasp_gen/models/discriminator.py
+index b2c12bc..12c3fce 100644
+--- a/grasp_gen/models/discriminator.py
++++ b/grasp_gen/models/discriminator.py
+@@ -25,7 +25,6 @@ from grasp_gen.models.model_utils import (
+     load_pretrained_checkpoint_to_dict,
+     offset2batch,
+ )
+-from grasp_gen.models.ptv3.ptv3 import PointTransformerV3
+ from grasp_gen.robot import get_gripper_info
+ from grasp_gen.utils.logging_config import get_logger
+ from grasp_gen.models.model_utils import load_pretrained_checkpoint_to_dict
+@@ -91,6 +90,7 @@ class GraspGenDiscriminator(nn.Module):
+                 feature_dim=1 if self.pose_repr == "pc_feature" else -1,
+             )
+         elif self.obs_backbone == "ptv3":
++            from grasp_gen.models.ptv3.ptv3 import PointTransformerV3
+             self.object_encoder = PointTransformerV3(
+                 in_channels=3,
+                 enable_flash=False,
+diff --git a/grasp_gen/models/generator.py b/grasp_gen/models/generator.py
+index cd11541..3e8bf81 100644
+--- a/grasp_gen/models/generator.py
++++ b/grasp_gen/models/generator.py
+@@ -28,7 +28,6 @@ from grasp_gen.models.model_utils import (
+     load_pretrained_checkpoint_to_dict,
+     offset2batch,
+ )
+-from grasp_gen.models.ptv3.ptv3 import PointTransformerV3
+ from grasp_gen.robot import get_gripper_info
+ from grasp_gen.utils.logging_config import get_logger
+ 
+@@ -139,6 +138,7 @@ class GraspGenGenerator(nn.Module):
+                 feature_dim=1 if self.pose_repr == "pc_feature" else -1,
+             )
+         elif obs_backbone == "ptv3":
++            from grasp_gen.models.ptv3.ptv3 import PointTransformerV3
+             self.object_encoder = PointTransformerV3(
+                 in_channels=3,
+                 enable_flash=False,
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/include/cuda_utils.h b/pointnet2_ops/pointnet2_ops/_ext-src/include/cuda_utils.h
+index 0fd5b6e..e09b5b6 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/include/cuda_utils.h
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/include/cuda_utils.h
+@@ -2,7 +2,7 @@
+ #define _CUDA_UTILS_H
+ 
+ #include <ATen/ATen.h>
+-#include <ATen/cuda/CUDAContext.h>
++#include <c10/cuda/CUDAStream.h>
+ #include <cmath>
+ 
+ #include <cuda.h>
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/include/utils.h b/pointnet2_ops/pointnet2_ops/_ext-src/include/utils.h
+index 5f080ed..633f1e8 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/include/utils.h
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/include/utils.h
+@@ -1,5 +1,5 @@
+ #pragma once
+-#include <ATen/cuda/CUDAContext.h>
++#include <c10/cuda/CUDAStream.h>
+ #include <torch/extension.h>
+ 
+ #define CHECK_CUDA(x)                                    \
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query.cpp b/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query.cpp
+index 4b8289b..36ec83c 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query.cpp
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query.cpp
+@@ -2,8 +2,8 @@
+ #include "utils.h"
+ #include <ATen/ATen.h>
+ #include <ATen/AccumulateType.h>
+-#include <ATen/cuda/CUDAContext.h>
+-#include <ATen/cuda/Exceptions.h>
++#include <c10/cuda/CUDAStream.h>
++#include <c10/cuda/CUDAException.h>
+ #include <c10/cuda/CUDAGuard.h>
+ 
+ void query_ball_point_kernel_wrapper(int b, int n, int m, float radius,
+@@ -20,7 +20,7 @@ at::Tensor ball_query(at::Tensor new_xyz, at::Tensor xyz, const float radius,
+   if (new_xyz.is_cuda()) {
+     CHECK_CUDA(xyz);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(xyz));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(xyz));
+   at::Tensor idx =
+       torch::zeros({new_xyz.size(0), new_xyz.size(1), nsample},
+                    at::device(new_xyz.device()).dtype(at::ScalarType::Int));
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query_gpu.cu b/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query_gpu.cu
+index 559aef9..315307f 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query_gpu.cu
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/ball_query_gpu.cu
+@@ -46,7 +46,7 @@ __global__ void query_ball_point_kernel(int b, int n, int m, float radius,
+ void query_ball_point_kernel_wrapper(int b, int n, int m, float radius,
+                                      int nsample, const float *new_xyz,
+                                      const float *xyz, int *idx) {
+-  cudaStream_t stream = at::cuda::getCurrentCUDAStream();
++  cudaStream_t stream = c10::cuda::getCurrentCUDAStream();
+   query_ball_point_kernel<<<b, opt_n_threads(m), 0, stream>>>(
+       b, n, m, radius, nsample, new_xyz, xyz, idx);
+ 
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points.cpp b/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points.cpp
+index 579b2f6..060c468 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points.cpp
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points.cpp
+@@ -2,8 +2,8 @@
+ #include "utils.h"
+ #include <ATen/ATen.h>
+ #include <ATen/AccumulateType.h>
+-#include <ATen/cuda/CUDAContext.h>
+-#include <ATen/cuda/Exceptions.h>
++#include <c10/cuda/CUDAStream.h>
++#include <c10/cuda/CUDAException.h>
+ #include <c10/cuda/CUDAGuard.h>
+ 
+ void group_points_kernel_wrapper(int b, int c, int n, int npoints, int nsample,
+@@ -23,7 +23,7 @@ at::Tensor group_points(at::Tensor points, at::Tensor idx) {
+   if (points.is_cuda()) {
+     CHECK_CUDA(idx);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(points));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(points));
+   at::Tensor output =
+       torch::zeros({points.size(0), points.size(1), idx.size(1), idx.size(2)},
+                    at::device(points.device()).dtype(at::ScalarType::Float));
+@@ -49,7 +49,7 @@ at::Tensor group_points_grad(at::Tensor grad_out, at::Tensor idx, const int n) {
+   if (grad_out.is_cuda()) {
+     CHECK_CUDA(idx);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(grad_out));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(grad_out));
+   
+   at::Tensor output =
+       torch::zeros({grad_out.size(0), grad_out.size(1), n},
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points_gpu.cu b/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points_gpu.cu
+index 57c2b1b..272119c 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points_gpu.cu
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/group_points_gpu.cu
+@@ -30,7 +30,7 @@ __global__ void group_points_kernel(int b, int c, int n, int npoints,
+ void group_points_kernel_wrapper(int b, int c, int n, int npoints, int nsample,
+                                  const float *points, const int *idx,
+                                  float *out) {
+-  cudaStream_t stream = at::cuda::getCurrentCUDAStream();
++  cudaStream_t stream = c10::cuda::getCurrentCUDAStream();
+ 
+   group_points_kernel<<<b, opt_block_config(npoints, c), 0, stream>>>(
+       b, c, n, npoints, nsample, points, idx, out);
+@@ -66,7 +66,7 @@ __global__ void group_points_grad_kernel(int b, int c, int n, int npoints,
+ void group_points_grad_kernel_wrapper(int b, int c, int n, int npoints,
+                                       int nsample, const float *grad_out,
+                                       const int *idx, float *grad_points) {
+-  cudaStream_t stream = at::cuda::getCurrentCUDAStream();
++  cudaStream_t stream = c10::cuda::getCurrentCUDAStream();
+ 
+   group_points_grad_kernel<<<b, opt_block_config(npoints, c), 0, stream>>>(
+       b, c, n, npoints, nsample, grad_out, idx, grad_points);
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate.cpp b/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate.cpp
+index f34098f..3c73a4b 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate.cpp
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate.cpp
+@@ -2,8 +2,8 @@
+ #include "utils.h"
+ #include <ATen/ATen.h>
+ #include <ATen/AccumulateType.h>
+-#include <ATen/cuda/CUDAContext.h>
+-#include <ATen/cuda/Exceptions.h>
++#include <c10/cuda/CUDAStream.h>
++#include <c10/cuda/CUDAException.h>
+ #include <c10/cuda/CUDAGuard.h>
+ 
+ void three_nn_kernel_wrapper(int b, int n, int m, const float *unknown,
+@@ -25,7 +25,7 @@ std::vector<at::Tensor> three_nn(at::Tensor unknowns, at::Tensor knows) {
+   if (unknowns.is_cuda()) {
+     CHECK_CUDA(knows);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(unknowns));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(unknowns));
+   at::Tensor idx =
+       torch::zeros({unknowns.size(0), unknowns.size(1), 3},
+                    at::device(unknowns.device()).dtype(at::ScalarType::Int));
+@@ -57,7 +57,7 @@ at::Tensor three_interpolate(at::Tensor points, at::Tensor idx,
+     CHECK_CUDA(idx);
+     CHECK_CUDA(weight);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(points));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(points));
+   at::Tensor output =
+       torch::zeros({points.size(0), points.size(1), idx.size(1)},
+                    at::device(points.device()).dtype(at::ScalarType::Float));
+@@ -86,7 +86,7 @@ at::Tensor three_interpolate_grad(at::Tensor grad_out, at::Tensor idx,
+     CHECK_CUDA(idx);
+     CHECK_CUDA(weight);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(grad_out));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(grad_out));
+   at::Tensor output =
+       torch::zeros({grad_out.size(0), grad_out.size(1), m},
+                    at::device(grad_out.device()).dtype(at::ScalarType::Float));
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate_gpu.cu b/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate_gpu.cu
+index 81c5548..c97d1ba 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate_gpu.cu
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/interpolate_gpu.cu
+@@ -60,7 +60,7 @@ __global__ void three_nn_kernel(int b, int n, int m,
+ 
+ void three_nn_kernel_wrapper(int b, int n, int m, const float *unknown,
+                              const float *known, float *dist2, int *idx) {
+-  cudaStream_t stream = at::cuda::getCurrentCUDAStream();
++  cudaStream_t stream = c10::cuda::getCurrentCUDAStream();
+   three_nn_kernel<<<b, opt_n_threads(n), 0, stream>>>(b, n, m, unknown, known,
+                                                       dist2, idx);
+ 
+@@ -103,7 +103,7 @@ __global__ void three_interpolate_kernel(int b, int c, int m, int n,
+ void three_interpolate_kernel_wrapper(int b, int c, int m, int n,
+                                       const float *points, const int *idx,
+                                       const float *weight, float *out) {
+-  cudaStream_t stream = at::cuda::getCurrentCUDAStream();
++  cudaStream_t stream = c10::cuda::getCurrentCUDAStream();
+   three_interpolate_kernel<<<b, opt_block_config(n, c), 0, stream>>>(
+       b, c, m, n, points, idx, weight, out);
+ 
+@@ -146,7 +146,7 @@ void three_interpolate_grad_kernel_wrapper(int b, int c, int n, int m,
+                                            const float *grad_out,
+                                            const int *idx, const float *weight,
+                                            float *grad_points) {
+-  cudaStream_t stream = at::cuda::getCurrentCUDAStream();
++  cudaStream_t stream = c10::cuda::getCurrentCUDAStream();
+   three_interpolate_grad_kernel<<<b, opt_block_config(n, c), 0, stream>>>(
+       b, c, n, m, grad_out, idx, weight, grad_points);
+ 
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling.cpp b/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling.cpp
+index 450ed3e..03effa5 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling.cpp
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling.cpp
+@@ -3,8 +3,8 @@
+ 
+ #include <ATen/ATen.h>
+ #include <ATen/AccumulateType.h>
+-#include <ATen/cuda/CUDAContext.h>
+-#include <ATen/cuda/Exceptions.h>
++#include <c10/cuda/CUDAStream.h>
++#include <c10/cuda/CUDAException.h>
+ #include <c10/cuda/CUDAGuard.h>
+ 
+ void gather_points_kernel_wrapper(int b, int c, int n, int npoints,
+@@ -27,7 +27,7 @@ at::Tensor gather_points(at::Tensor points, at::Tensor idx) {
+   if (points.is_cuda()) {
+     CHECK_CUDA(idx);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(points));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(points));
+   at::Tensor output =
+       torch::zeros({points.size(0), points.size(1), idx.size(1)},
+                    at::device(points.device()).dtype(at::ScalarType::Float));
+@@ -53,7 +53,7 @@ at::Tensor gather_points_grad(at::Tensor grad_out, at::Tensor idx,
+   if (grad_out.is_cuda()) {
+     CHECK_CUDA(idx);
+   }
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(grad_out));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(grad_out));
+   
+   at::Tensor output =
+       torch::zeros({grad_out.size(0), grad_out.size(1), n},
+@@ -74,7 +74,7 @@ at::Tensor furthest_point_sampling(at::Tensor points, const int nsamples) {
+   CHECK_CONTIGUOUS(points);
+   CHECK_IS_FLOAT(points);
+ 
+-  const at::cuda::OptionalCUDAGuard device_guard(device_of(points));
++  const c10::cuda::OptionalCUDAGuard device_guard(device_of(points));
+   
+   at::Tensor output =
+       torch::zeros({points.size(0), nsamples},
+diff --git a/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling_gpu.cu b/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling_gpu.cu
+index fc573f0..66ee9b3 100644
+--- a/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling_gpu.cu
++++ b/pointnet2_ops/pointnet2_ops/_ext-src/src/sampling_gpu.cu
+@@ -23,7 +23,7 @@ void gather_points_kernel_wrapper(int b, int c, int n, int npoints,
+                                   const float *points, const int *idx,
+                                   float *out) {
+   gather_points_kernel<<<dim3(b, c, 1), opt_n_threads(npoints), 0,
+-                         at::cuda::getCurrentCUDAStream()>>>(b, c, n, npoints,
++                         c10::cuda::getCurrentCUDAStream()>>>(b, c, n, npoints,
+                                                              points, idx, out);
+ 
+   CUDA_CHECK_ERRORS();
+@@ -50,7 +50,7 @@ void gather_points_grad_kernel_wrapper(int b, int c, int n, int npoints,
+                                        const float *grad_out, const int *idx,
+                                        float *grad_points) {
+   gather_points_grad_kernel<<<dim3(b, c, 1), opt_n_threads(npoints), 0,
+-                              at::cuda::getCurrentCUDAStream()>>>(
++                              c10::cuda::getCurrentCUDAStream()>>>(
+       b, c, n, npoints, grad_out, idx, grad_points);
+ 
+   CUDA_CHECK_ERRORS();
+@@ -177,7 +177,7 @@ void furthest_point_sampling_kernel_wrapper(int b, int n, int m,
+                                             int *idxs) {
+   unsigned int n_threads = opt_n_threads(n);
+ 
+-  cudaStream_t stream = at::cuda::getCurrentCUDAStream();
++  cudaStream_t stream = c10::cuda::getCurrentCUDAStream();
+ 
+   switch (n_threads) {
+     case 512:
+diff --git a/pointnet2_ops/setup.py b/pointnet2_ops/setup.py
+index 6b9bf76..15cd5a6 100644
+--- a/pointnet2_ops/setup.py
++++ b/pointnet2_ops/setup.py
+@@ -24,11 +24,13 @@ setup(
+         CUDAExtension(
+             name="pointnet2_ops._ext",
+             sources=_ext_sources,
++            extra_link_args=["/MANIFEST:NO"],
+             extra_compile_args={
+-                "cxx": ["-O3"],
++                "cxx": ["/O2"],
+                 "nvcc": ["-O3", "-Xfatbin", "-compress-all"],
+             },
+             include_dirs=[osp.join(this_dir, _ext_src_root, "include")],
++            library_dirs=[osp.join(__import__("os").environ["CUDA_HOME"], "lib")],
+         )
+     ],
+     cmdclass={"build_ext": BuildExtension},

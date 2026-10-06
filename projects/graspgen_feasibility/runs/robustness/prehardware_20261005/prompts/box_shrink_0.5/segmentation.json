@@ -1,0 +1,28 @@
+{
+  "box_xyxy": [
+    672.5,
+    399.0,
+    733.5,
+    451.0
+  ],
+  "predicted_quality": 0.890625,
+  "performance": {
+    "stages": {
+      "segmentation": {
+        "allocated_before_mib": 1187.59375,
+        "status": "ok",
+        "seconds": 0.7599545999983093,
+        "peak_allocated_mib": 1459.59375,
+        "peak_reserved_mib": 2176.0,
+        "device_peak_used_mib": 6441.02734375
+      }
+    },
+    "compute_stage_seconds": 0.7599545999983093,
+    "measured_stage_seconds": 0.7599545999983093,
+    "peak_allocated_mib": 1459.59375,
+    "peak_reserved_mib": 2176.0,
+    "device_peak_used_mib": 6441.02734375,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

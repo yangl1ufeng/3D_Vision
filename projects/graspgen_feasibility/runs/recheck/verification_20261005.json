@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "runs": [
+    {
+      "path": "runs\\recheck\\known_three_views_20261005",
+      "candidates": 100,
+      "status": "passed"
+    },
+    {
+      "path": "runs\\recheck\\refined_three_views_20261005",
+      "candidates": 100,
+      "status": "passed"
+    }
+  ],
+  "rejected_fusion_cli": "refused before candidate export",
+  "checks": [
+    "original pipeline artifacts",
+    "source and fusion file hashes",
+    "candidate IDs, scores and samples preserved",
+    "source-camera correction applied to every candidate",
+    "JSON/CSV/NPZ consistency",
+    "no acceptance with unresolved observations"
+  ]
+}

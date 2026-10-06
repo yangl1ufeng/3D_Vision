@@ -1,0 +1,49 @@
+{
+  "accepted": false,
+  "reasons": [
+    "insufficient_multiview_overlap"
+  ],
+  "pairs": [
+    {
+      "views": [
+        "A_view_0",
+        "A_view_1"
+      ],
+      "overlap_fraction": 0.09834788029925187,
+      "directions": [
+        {
+          "source": "A_view_0",
+          "scope": "scene",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        },
+        {
+          "source": "A_view_0",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        },
+        {
+          "source": "A_view_1",
+          "scope": "scene",
+          "evidence_points": 733,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.002365096463465478
+        },
+        {
+          "source": "A_view_1",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        }
+      ]
+    }
+  ]
+}

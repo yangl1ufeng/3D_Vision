@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "world_frame": "synthetic_table",
+  "target_id": "target",
+  "candidate_count": 100,
+  "source_run": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\offline\\refined_source_validation_20261005",
+  "fusion_run": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\fusion\\refined_v2_cli_20261005",
+  "accepted_candidate_ids_by_rank": [],
+  "source_camera_correction_world": [
+    [
+      0.9992386147625907,
+      0.03489418440502834,
+      0.01745241135337111,
+      -0.01567380067799906
+    ],
+    [
+      -0.03519858526280345,
+      0.9992279851174559,
+      0.017449737923717012,
+      0.012449216395407803
+    ],
+    [
+      -0.016830043459140243,
+      -0.018050752139928378,
+      0.9996954136057373,
+      -0.0059454986419416045
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "before": {
+    "accepted": 0,
+    "observation_checked": 51,
+    "unknown_cells": 181585,
+    "candidates_with_unknown": 51,
+    "observation_states": {
+      "occupied": 51
+    }
+  },
+  "after": {
+    "accepted": 0,
+    "observation_checked": 51,
+    "unknown_cells": 169292,
+    "candidates_with_unknown": 51,
+    "observation_states": {
+      "conflict": 47,
+      "occupied": 4
+    }
+  },
+  "collision_scope": "saved gripper surface samples vs FULL observed fused background, CPU Euclidean nearest-neighbor",
+  "notes": [
+    "Candidate scores and IDs preserved; poses follow the corrected source camera.",
+    "All rejection reasons recomputed using accepted depth views and full observed geometry.",
+    "Static same-target scene required; this is not robot execution or regenerated grasp inference."
+  ]
+}

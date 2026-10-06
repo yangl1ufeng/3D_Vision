@@ -1,0 +1,59 @@
+{
+  "stages": {
+    "pointcloud_reduction": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "ok",
+      "seconds": 0.0016692999997758307,
+      "peak_allocated_mib": 175.87158203125,
+      "peak_reserved_mib": 192.0,
+      "device_peak_used_mib": 4957.1015625
+    },
+    "small_obstacle_check": {
+      "status": "ok",
+      "seconds": 0.00605609999911394
+    },
+    "fixed_collision_check": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "ok",
+      "seconds": 3.426632399998198,
+      "peak_allocated_mib": 676.5185546875,
+      "peak_reserved_mib": 692.0,
+      "device_peak_used_mib": 5498.3515625
+    },
+    "full_approach_check": {
+      "status": "ok",
+      "seconds": 0.21416339999996126
+    },
+    "pointcloud_filter": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "ok",
+      "seconds": 1.4164144000023953,
+      "peak_allocated_mib": 316.6044921875,
+      "peak_reserved_mib": 692.0,
+      "device_peak_used_mib": 5528.96484375
+    },
+    "grasp_generation": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "ok",
+      "seconds": 0.5405341000005137,
+      "peak_allocated_mib": 196.93017578125,
+      "peak_reserved_mib": 700.0,
+      "device_peak_used_mib": 5448.65234375
+    },
+    "collision_check": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "ok",
+      "seconds": 0.36400850000063656,
+      "peak_allocated_mib": 676.51513671875,
+      "peak_reserved_mib": 700.0,
+      "device_peak_used_mib": 5456.65234375
+    }
+  },
+  "compute_stage_seconds": 0.9045426000011503,
+  "measured_stage_seconds": 5.969478200000594,
+  "peak_allocated_mib": 676.5185546875,
+  "peak_reserved_mib": 700.0,
+  "device_peak_used_mib": 5528.96484375,
+  "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+  "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+}

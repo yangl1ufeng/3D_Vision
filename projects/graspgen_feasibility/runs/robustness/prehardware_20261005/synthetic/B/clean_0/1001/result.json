@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "seed": 1001,
+  "segmentation_seconds": null,
+  "target_raw_points": 1456,
+  "mask_pixels": 1456,
+  "target_model_points": 1340,
+  "candidate_count": 100,
+  "eligible": 68,
+  "geometric_accepted": 15,
+  "accepted": 0,
+  "mean_score": 0.7637682557106018,
+  "unknown_candidate_fraction": 1.0,
+  "reference_seconds": 3.0606783000039286,
+  "reference_clear_eligible": 20,
+  "false_accept_geometry": 2,
+  "false_accept_final": 0,
+  "retained_reference_clear_final": 0,
+  "performance": {
+    "stages": {
+      "pointcloud": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.05188659999839729,
+        "peak_allocated_mib": 189.08251953125,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3075.00390625
+      },
+      "grasp_generation": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.17319639999914216,
+        "peak_allocated_mib": 196.53369140625,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3075.00390625
+      },
+      "collision_check": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.17932529999961844,
+        "peak_allocated_mib": 676.515625,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3075.19140625
+      },
+      "approach_check": {
+        "status": "ok",
+        "seconds": 0.8474831999992603
+      },
+      "observation_check": {
+        "status": "ok",
+        "seconds": 1.2914445999995223
+      }
+    },
+    "compute_stage_seconds": 2.5433360999959405,
+    "measured_stage_seconds": 2.5433360999959405,
+    "peak_allocated_mib": 676.515625,
+    "peak_reserved_mib": 734.0,
+    "device_peak_used_mib": 3075.19140625,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

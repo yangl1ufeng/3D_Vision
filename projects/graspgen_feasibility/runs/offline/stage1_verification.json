@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "first": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\offline\\stage1_validation",
+  "second": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\offline\\stage1_repeat",
+  "counts": {
+    "raw": 100,
+    "eligible_for_collision": 53,
+    "accepted": 7,
+    "rejected": 93,
+    "exclusion_reasons": {
+      "low_score": 47,
+      "scene_collision": 46
+    }
+  },
+  "bitwise_equal": {
+    "segmentation_mask": true,
+    "target_model_world_m": true,
+    "background_collision_world_m": true,
+    "gripper_surface_local_m": true,
+    "poses_world_graspgen_gripper": true,
+    "scores": true,
+    "accepted": true,
+    "exclusion_reasons": true
+  },
+  "max_pose_abs_difference": 0.0,
+  "max_score_abs_difference": 0.0,
+  "compute_seconds": [
+    1.8449305000012828,
+    1.4141022000003431
+  ]
+}

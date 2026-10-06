@@ -1,0 +1,6 @@
+{
+  "fusion_quality.json": "68584ce0de3bb28e6bd41834f5f46b8296d422b08b9375c83e0d8f980f49ff31",
+  "fusion_diagnostic.npz": "4e5c253ceb0a1e5d0fc87e58f71c08f62dda9185c489b377084be9cf29736c1c",
+  "fusion_usable.npz": "4e5c253ceb0a1e5d0fc87e58f71c08f62dda9185c489b377084be9cf29736c1c",
+  "accepted_depth_views.npz": "cd9d6e5148b614040c49ef784f551ada0877b31ca2f504faa69db59f04caa529"
+}

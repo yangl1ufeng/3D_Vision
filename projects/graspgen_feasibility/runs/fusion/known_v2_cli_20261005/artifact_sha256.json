@@ -1,0 +1,7 @@
+{
+  "fusion_quality.json": "824bc11afd29684aaaeeb1aa1910e25062abfe9192106a8509ce689c8925738b",
+  "fusion_diagnostic.npz": "740b3e1c677eaa2eefca655354340eab22dc861f728052bc465d024d29345cf3",
+  "fusion_usable.npz": "740b3e1c677eaa2eefca655354340eab22dc861f728052bc465d024d29345cf3",
+  "accepted_depth_views.npz": "54c869054fd81426d3329ae7905d7993eb714ed8b2e1022ba4168285f1bfd932",
+  "input_provenance.json": "666b9baa9fa060d7f2be2aba9ed071b435a2be3186ef977e8a8c17df9270300a"
+}

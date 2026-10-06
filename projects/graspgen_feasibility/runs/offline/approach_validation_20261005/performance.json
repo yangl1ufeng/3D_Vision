@@ -1,0 +1,93 @@
+{
+  "stages": {
+    "official_sample_conversion": {
+      "status": "ok",
+      "seconds": 0.06327780000037819
+    },
+    "input_loading": {
+      "status": "ok",
+      "seconds": 0.08480389999976978
+    },
+    "runtime_initialization": {
+      "status": "ok",
+      "seconds": 1.2967986000003293
+    },
+    "segmentation_model_loading": {
+      "allocated_before_mib": 0.0,
+      "status": "ok",
+      "seconds": 3.9268881999996665,
+      "peak_allocated_mib": 1000.84814453125,
+      "peak_reserved_mib": 1052.0,
+      "device_peak_used_mib": 2855.3828125
+    },
+    "grasp_model_loading": {
+      "allocated_before_mib": 1000.84814453125,
+      "status": "ok",
+      "seconds": 11.780307700000321,
+      "peak_allocated_mib": 1166.84375,
+      "peak_reserved_mib": 1222.0,
+      "device_peak_used_mib": 3023.3828125
+    },
+    "collision_geometry_loading": {
+      "status": "ok",
+      "seconds": 0.06962750000002416
+    },
+    "segmentation": {
+      "allocated_before_mib": 1166.84375,
+      "status": "ok",
+      "seconds": 0.8899969999997666,
+      "peak_allocated_mib": 1458.96875,
+      "peak_reserved_mib": 1678.0,
+      "device_peak_used_mib": 3499.3828125
+    },
+    "pointcloud": {
+      "allocated_before_mib": 1186.21875,
+      "status": "ok",
+      "seconds": 0.19239410000000134,
+      "peak_allocated_mib": 1308.9072265625,
+      "peak_reserved_mib": 1678.0,
+      "device_peak_used_mib": 3499.3828125
+    },
+    "grasp_generation": {
+      "allocated_before_mib": 1186.21875,
+      "status": "ok",
+      "seconds": 0.5084603999998762,
+      "peak_allocated_mib": 1207.2333984375,
+      "peak_reserved_mib": 1682.0,
+      "device_peak_used_mib": 3505.3828125
+    },
+    "score_filter": {
+      "status": "ok",
+      "seconds": 0.0003560000000106811
+    },
+    "collision_check": {
+      "allocated_before_mib": 1186.21875,
+      "status": "ok",
+      "seconds": 0.12840649999998277,
+      "peak_allocated_mib": 1686.86279296875,
+      "peak_reserved_mib": 2182.0,
+      "device_peak_used_mib": 4007.3828125
+    },
+    "approach_check": {
+      "status": "ok",
+      "seconds": 6.76930160000029
+    },
+    "provenance_hashing": {
+      "status": "ok",
+      "seconds": 1.906655999999657
+    },
+    "artifact_export": {
+      "status": "ok",
+      "seconds": 0.6123354999999719
+    }
+  },
+  "compute_stage_seconds": 8.488915599999928,
+  "measured_stage_seconds": 28.229610800000046,
+  "peak_allocated_mib": 1686.86279296875,
+  "peak_reserved_mib": 2182.0,
+  "device_peak_used_mib": 4007.3828125,
+  "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+  "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately.",
+  "analysis_wall_seconds": 28.35943330000009,
+  "wall_note": "From CLI argument parsing completion through export; Python startup/imports, final summary/performance JSON writes and console output excluded."
+}

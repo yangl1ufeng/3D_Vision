@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-05",
+  "camera_size": [
+    160,
+    120
+  ],
+  "visibility_voxel_m": 0.008,
+  "depth_tolerance_m": 0.002,
+  "fusion_config": {
+    "voxel_m": 0.004,
+    "registration_voxel_m": 0.006,
+    "max_iterations": 35,
+    "max_correspondence_m": 0.045,
+    "min_correspondences": 100,
+    "min_constraint_ratio": 0.001,
+    "max_correction_translation_m": 0.05,
+    "max_correction_rotation_deg": 8.0,
+    "overlap_distance_m": 0.012,
+    "min_overlap_fraction": 0.2,
+    "max_reprojection_p90_m": 0.008,
+    "max_free_conflict_fraction": 0.05,
+    "min_target_evidence": 30,
+    "min_scene_evidence": 100,
+    "depth_edge_m": 0.015,
+    "min_normal_agreement": 0.95,
+    "correspondence_neighbors": 12,
+    "normal_patch_agreement": 0.995
+  },
+  "coverage_reference_spacing_m": 0.004,
+  "coverage_distance_m": 0.006,
+  "source_sha256": {
+    "visibility_fusion_experiments.py": "d8037402c49f24eb819528c48ad705c1035f61c5209c3cf47e11d10991848aa3",
+    "offline_core\\observation.py": "f63c2df829ea3abf62d4edb8e3c5aafd410f18e49a1748f66f76c702d2295c52",
+    "offline_core\\fusion.py": "c7e0bc59ae8027a263331d60a721ddb7927b285028e5245fac06bf7a08ea6ade",
+    "experiments\\synthetic_depth.py": "f040156d368df299beb466dc753d317cce5666656170bb635548acc711cdc672"
+  },
+  "gripper_mesh_sha256": "553cbaa1383379bda82f72cd2328c70464b5395b239b0a1b97f1ed4da1303dbb",
+  "notes": [
+    "Exact ray/box z-depth, no added noise.",
+    "True geometry and poses are evaluation-only.",
+    "Two deterministic layouts, not a statistical real-camera benchmark.",
+    "Rejected fusion clouds are diagnostic only and never usable for planning."
+  ]
+}

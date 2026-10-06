@@ -1,0 +1,129 @@
+{
+  "accepted": true,
+  "reasons": [],
+  "pairs": [
+    {
+      "views": [
+        "A_view_0",
+        "A_view_1"
+      ],
+      "overlap_fraction": 0.6579714592603959,
+      "directions": [
+        {
+          "source": "A_view_0",
+          "scope": "scene",
+          "evidence_points": 4640,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0023467503641273592
+        },
+        {
+          "source": "A_view_0",
+          "scope": "target",
+          "evidence_points": 130,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0030681673775788455
+        },
+        {
+          "source": "A_view_1",
+          "scope": "scene",
+          "evidence_points": 6268,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0023364414773006546
+        },
+        {
+          "source": "A_view_1",
+          "scope": "target",
+          "evidence_points": 542,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.00122459187135181
+        }
+      ]
+    },
+    {
+      "views": [
+        "A_view_0",
+        "A_view_2"
+      ],
+      "overlap_fraction": 0.38460948289090074,
+      "directions": [
+        {
+          "source": "A_view_0",
+          "scope": "scene",
+          "evidence_points": 2739,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0023784163978890272
+        },
+        {
+          "source": "A_view_0",
+          "scope": "target",
+          "evidence_points": 139,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.003041641910176085
+        },
+        {
+          "source": "A_view_2",
+          "scope": "scene",
+          "evidence_points": 3151,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.002625758603142181
+        },
+        {
+          "source": "A_view_2",
+          "scope": "target",
+          "evidence_points": 31,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0034869202973462077
+        }
+      ]
+    },
+    {
+      "views": [
+        "A_view_1",
+        "A_view_2"
+      ],
+      "overlap_fraction": 0.39510598503740646,
+      "directions": [
+        {
+          "source": "A_view_1",
+          "scope": "scene",
+          "evidence_points": 2353,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0027181722246976125
+        },
+        {
+          "source": "A_view_1",
+          "scope": "target",
+          "evidence_points": 155,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0029681237325065446
+        },
+        {
+          "source": "A_view_2",
+          "scope": "scene",
+          "evidence_points": 2104,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0026886888251415166
+        },
+        {
+          "source": "A_view_2",
+          "scope": "target",
+          "evidence_points": 48,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0031794780724253573
+        }
+      ]
+    }
+  ]
+}

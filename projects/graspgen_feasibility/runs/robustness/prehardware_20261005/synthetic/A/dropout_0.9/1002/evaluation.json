@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "seed": 1002,
+  "segmentation_seconds": null,
+  "target_raw_points": 177,
+  "mask_pixels": 1887,
+  "error": "ValueError: only 0 target points remain after outlier removal",
+  "layout": "A",
+  "family": "dropout",
+  "level": 0.9,
+  "folder": "synthetic\\A\\dropout_0.9\\1002",
+  "target_observed_fraction": 0.09379968203497616,
+  "mask_iou": 1.0,
+  "mask_precision": 1.0,
+  "mask_recall": 1.0,
+  "target_surface_p95_m": null,
+  "target_coverage_6mm": 0.0,
+  "target_centroid_shift_m": null,
+  "material_degradation": true,
+  "degradation_reasons": "pipeline_failure|target_coverage_below_half_clean|eligible_candidates_below_half_clean"
+}

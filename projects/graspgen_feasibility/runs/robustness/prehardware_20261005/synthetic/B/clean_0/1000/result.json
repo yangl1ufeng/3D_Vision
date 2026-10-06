@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "seed": 1000,
+  "segmentation_seconds": null,
+  "target_raw_points": 1456,
+  "mask_pixels": 1456,
+  "target_model_points": 1340,
+  "candidate_count": 100,
+  "eligible": 70,
+  "geometric_accepted": 12,
+  "accepted": 0,
+  "mean_score": 0.7719570398330688,
+  "unknown_candidate_fraction": 1.0,
+  "reference_seconds": 3.26826710000023,
+  "reference_clear_eligible": 22,
+  "false_accept_geometry": 0,
+  "false_accept_final": 0,
+  "retained_reference_clear_final": 0,
+  "performance": {
+    "stages": {
+      "pointcloud": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.02242090000072494,
+        "peak_allocated_mib": 189.08251953125,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3139.00390625
+      },
+      "grasp_generation": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.13364349999756087,
+        "peak_allocated_mib": 196.53369140625,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3135.62890625
+      },
+      "collision_check": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.15919940000458155,
+        "peak_allocated_mib": 676.515625,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3135.62890625
+      },
+      "approach_check": {
+        "status": "ok",
+        "seconds": 0.9727478999993764
+      },
+      "observation_check": {
+        "status": "ok",
+        "seconds": 1.5280142999981763
+      }
+    },
+    "compute_stage_seconds": 2.81602600000042,
+    "measured_stage_seconds": 2.81602600000042,
+    "peak_allocated_mib": 676.515625,
+    "peak_reserved_mib": 734.0,
+    "device_peak_used_mib": 3139.00390625,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "seed": 1001,
+  "segmentation_seconds": null,
+  "target_raw_points": 520,
+  "mask_pixels": 1456,
+  "target_model_points": 319,
+  "candidate_count": 100,
+  "eligible": 38,
+  "geometric_accepted": 3,
+  "accepted": 0,
+  "mean_score": 0.6470884680747986,
+  "unknown_candidate_fraction": 1.0,
+  "reference_seconds": 1.4669723999977577,
+  "reference_clear_eligible": 7,
+  "false_accept_geometry": 1,
+  "false_accept_final": 0,
+  "retained_reference_clear_final": 0,
+  "fixed_decision_flip_fraction": 0.0,
+  "fixed_missed_reference_collisions": 6,
+  "performance": {
+    "stages": {
+      "pointcloud": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.0107616000022972,
+        "peak_allocated_mib": 178.2548828125,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3067.44921875
+      },
+      "grasp_generation": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.18481259999680333,
+        "peak_allocated_mib": 196.42822265625,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3067.44921875
+      },
+      "collision_check": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.12614320000284351,
+        "peak_allocated_mib": 676.513671875,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3067.44921875
+      },
+      "approach_check": {
+        "status": "ok",
+        "seconds": 0.5956873999966774
+      },
+      "observation_check": {
+        "status": "ok",
+        "seconds": 0.9338226999971084
+      },
+      "fixed_probe_check": {
+        "status": "ok",
+        "seconds": 0.7697228000033647
+      }
+    },
+    "compute_stage_seconds": 1.8512274999957299,
+    "measured_stage_seconds": 2.6209502999990946,
+    "peak_allocated_mib": 676.513671875,
+    "peak_reserved_mib": 734.0,
+    "device_peak_used_mib": 3067.44921875,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

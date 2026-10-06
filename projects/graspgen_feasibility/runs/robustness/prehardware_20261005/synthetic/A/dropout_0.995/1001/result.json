@@ -1,0 +1,27 @@
+{
+  "status": "failed",
+  "seed": 1001,
+  "segmentation_seconds": null,
+  "target_raw_points": 10,
+  "mask_pixels": 1887,
+  "error": "ValueError: target has 10 valid points; requires 100",
+  "performance": {
+    "stages": {
+      "pointcloud": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "failed",
+        "seconds": 0.00021460000425577164,
+        "peak_allocated_mib": 175.87060546875,
+        "peak_reserved_mib": 732.0,
+        "device_peak_used_mib": 3005.96484375
+      }
+    },
+    "compute_stage_seconds": 0.00021460000425577164,
+    "measured_stage_seconds": 0.00021460000425577164,
+    "peak_allocated_mib": 175.87060546875,
+    "peak_reserved_mib": 732.0,
+    "device_peak_used_mib": 3005.96484375,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

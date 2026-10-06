@@ -1,0 +1,54 @@
+{
+  "input_manifest": {
+    "schema_version": 1,
+    "scene_id": "official_1745619598_467125",
+    "rgb": "rgb.png",
+    "geometry": {
+      "kind": "xyz",
+      "path": "xyz_world_m.npy",
+      "unit": "m",
+      "frame": "world",
+      "aligned_to_rgb": true,
+      "valid_mask": "valid.npy"
+    },
+    "frames": {
+      "world": "official_scene_world"
+    },
+    "target": {
+      "id": "blue_bowl",
+      "box_xyxy": [
+        642,
+        373,
+        764,
+        477
+      ],
+      "prompt_origin": "Box derived from exact pixel correspondence of official segmented object points; simulates user selection. Reference points are not used as inference input."
+    },
+    "source": {
+      "path": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\sample_data\\real_scene_pc\\1745619598_467125.json",
+      "sha256": "293deadde5030f727595249db8b55624938285dd28c33d0347ed67a29728f522",
+      "note": "Uses supplied world XYZ; does not infer unknown depth units, intrinsics, or extrinsics."
+    }
+  },
+  "asset_paths": {
+    "manifest": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\offline_official\\scene.json",
+    "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\offline_official\\rgb.png",
+    "geometry": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\offline_official\\xyz_world_m.npy",
+    "valid_mask": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\offline_official\\valid.npy"
+  },
+  "asset_sha256": {
+    "manifest": "e7dcec6c12e3c1db46b307f998bdce2ee01a548892e2f47830d11043b3c91f6d",
+    "rgb": "d6cf09582634fb3c272c3f3b9b97d7f75f7d3b21df1ec2e34fd31ba208debd3f",
+    "geometry": "1a691c281297898ff3e08a0eb8f47def8dbd52db89b1fda7ce157f7d83c94f2f",
+    "valid_mask": "a977a24a59b7aa361a5ce501823c42cde66e85560122f29c56c362ad3e2f8974"
+  },
+  "geometry_source": "xyz",
+  "input_unit": "m",
+  "meters_per_unit": 1.0,
+  "output_unit": "m",
+  "world_frame": "official_scene_world",
+  "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+  "timestamp": null,
+  "valid_geometry_pixels": 433703,
+  "calibrated_depth_available": false
+}

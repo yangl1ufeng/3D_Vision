@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scene_id": "A_view_2",
+  "rgb": "rgb.png",
+  "geometry": {
+    "kind": "depth",
+    "path": "depth.npy",
+    "unit": "m",
+    "aligned_to_rgb": true,
+    "depth_convention": "z",
+    "pinhole_rectified": true,
+    "intrinsics": [
+      [
+        170.0,
+        0.0,
+        79.5
+      ],
+      [
+        0.0,
+        170.0,
+        59.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "frames": {
+    "world": "synthetic_table",
+    "camera_convention": "opencv",
+    "T_world_camera": [
+      [
+        -0.5283018867924528,
+        -0.4388511218212507,
+        0.7268471705164464,
+        -0.45
+      ],
+      [
+        -0.8490566037735848,
+        0.27306292024433376,
+        -0.4522604616546778,
+        0.28
+      ],
+      [
+        0.0,
+        -0.8560644452749258,
+        -0.5168690990339175,
+        0.4
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "target": {
+    "id": "target",
+    "mask": "target_mask.npy"
+  }
+}

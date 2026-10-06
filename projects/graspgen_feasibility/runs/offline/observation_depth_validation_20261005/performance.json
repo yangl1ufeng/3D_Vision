@@ -1,0 +1,81 @@
+{
+  "stages": {
+    "input_loading": {
+      "status": "ok",
+      "seconds": 0.014119399999799498
+    },
+    "runtime_initialization": {
+      "status": "ok",
+      "seconds": 9.922354000000269
+    },
+    "grasp_model_loading": {
+      "allocated_before_mib": 0.0,
+      "status": "ok",
+      "seconds": 18.437852600000042,
+      "peak_allocated_mib": 166.74560546875,
+      "peak_reserved_mib": 170.0,
+      "device_peak_used_mib": 2234.87890625
+    },
+    "collision_geometry_loading": {
+      "status": "ok",
+      "seconds": 0.06154309999965335
+    },
+    "segmentation": {
+      "status": "ok",
+      "seconds": 0.000598599999648286
+    },
+    "pointcloud": {
+      "allocated_before_mib": 166.74560546875,
+      "status": "ok",
+      "seconds": 0.2515003999997134,
+      "peak_allocated_mib": 187.56982421875,
+      "peak_reserved_mib": 206.0,
+      "device_peak_used_mib": 2290.87890625
+    },
+    "grasp_generation": {
+      "allocated_before_mib": 166.74560546875,
+      "status": "ok",
+      "seconds": 0.5311658999999054,
+      "peak_allocated_mib": 196.56884765625,
+      "peak_reserved_mib": 232.0,
+      "device_peak_used_mib": 2328.62890625
+    },
+    "score_filter": {
+      "status": "ok",
+      "seconds": 0.0003501999999571126
+    },
+    "collision_check": {
+      "allocated_before_mib": 175.87060546875,
+      "status": "ok",
+      "seconds": 0.09794820000024629,
+      "peak_allocated_mib": 676.51416015625,
+      "peak_reserved_mib": 732.0,
+      "device_peak_used_mib": 2828.62890625
+    },
+    "approach_check": {
+      "status": "ok",
+      "seconds": 0.21265420000054291
+    },
+    "observation_check": {
+      "status": "ok",
+      "seconds": 0.5640213999995467
+    },
+    "provenance_hashing": {
+      "status": "ok",
+      "seconds": 0.5793693999994503
+    },
+    "artifact_export": {
+      "status": "ok",
+      "seconds": 0.025759199999811244
+    }
+  },
+  "compute_stage_seconds": 1.65823889999956,
+  "measured_stage_seconds": 30.699236599998585,
+  "peak_allocated_mib": 676.51416015625,
+  "peak_reserved_mib": 732.0,
+  "device_peak_used_mib": 2828.62890625,
+  "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+  "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately.",
+  "analysis_wall_seconds": 30.79173710000032,
+  "wall_note": "From CLI argument parsing completion through export; Python startup/imports, final summary/performance JSON writes and console output excluded."
+}

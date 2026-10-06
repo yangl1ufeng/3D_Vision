@@ -1,0 +1,27 @@
+{
+  "status": "failed",
+  "seed": 1001,
+  "segmentation_seconds": null,
+  "target_raw_points": 1456,
+  "mask_pixels": 1456,
+  "error": "ValueError: only 3 target points remain after outlier removal",
+  "performance": {
+    "stages": {
+      "pointcloud": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "failed",
+        "seconds": 0.02316409999912139,
+        "peak_allocated_mib": 189.08251953125,
+        "peak_reserved_mib": 734.0,
+        "device_peak_used_mib": 3088.40234375
+      }
+    },
+    "compute_stage_seconds": 0.02316409999912139,
+    "measured_stage_seconds": 0.02316409999912139,
+    "peak_allocated_mib": 189.08251953125,
+    "peak_reserved_mib": 734.0,
+    "device_peak_used_mib": 3088.40234375,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

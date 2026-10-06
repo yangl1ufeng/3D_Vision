@@ -1,0 +1,22 @@
+{
+  "layout": "B",
+  "case": "perturbed_3_refined",
+  "views": 3,
+  "refine": true,
+  "expected_accepted": true,
+  "accepted": false,
+  "passed": false,
+  "reasons": "B_view_1:registration_not_converged|B_view_2:correction_exceeds_trusted_initial_pose|double_contour_or_depth_conflict:B_view_0:B_view_2:scene|double_contour_or_depth_conflict:B_view_0:B_view_2:target|double_contour_or_depth_conflict:B_view_1:B_view_2:scene|double_contour_or_depth_conflict:B_view_1:B_view_2:target|double_contour_or_depth_conflict:B_view_2:B_view_0:scene|double_contour_or_depth_conflict:B_view_2:B_view_1:scene|double_contour_or_depth_conflict:B_view_2:B_view_1:target",
+  "target_coverage_fraction": 0.5409738717339667,
+  "target_surface_error_p95_m": 0.03889166929575834,
+  "target_extent_x_m": 0.1637514344476887,
+  "target_extent_y_m": 0.10520756681789584,
+  "target_extent_z_m": 0.18006660168880062,
+  "max_target_extent_error_m": 0.06375143444768869,
+  "max_camera_translation_error_m": 0.0885812394020304,
+  "max_camera_rotation_error_deg": 5.657084075921673,
+  "observed_points": 39412,
+  "fused_points": 31425,
+  "fused_target_points": 3316,
+  "seconds": 0.49084420000053797
+}

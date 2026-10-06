@@ -1,0 +1,50 @@
+{
+  "accepted": false,
+  "reasons": [
+    "double_contour_or_depth_conflict:B_view_1:B_view_0:scene",
+    "double_contour_or_depth_conflict:B_view_1:B_view_0:target"
+  ],
+  "pairs": [
+    {
+      "views": [
+        "B_view_0",
+        "B_view_1"
+      ],
+      "overlap_fraction": 0.5578241895261845,
+      "directions": [
+        {
+          "source": "B_view_0",
+          "scope": "scene",
+          "evidence_points": 1634,
+          "free_conflicts": 5,
+          "free_conflict_fraction": 0.0030599755201958386,
+          "reprojection_p90_m": 0.003778289335172691
+        },
+        {
+          "source": "B_view_0",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        },
+        {
+          "source": "B_view_1",
+          "scope": "scene",
+          "evidence_points": 5868,
+          "free_conflicts": 2765,
+          "free_conflict_fraction": 0.47119972733469667,
+          "reprojection_p90_m": 0.01705410387390051
+        },
+        {
+          "source": "B_view_1",
+          "scope": "target",
+          "evidence_points": 90,
+          "free_conflicts": 90,
+          "free_conflict_fraction": 1.0,
+          "reprojection_p90_m": 0.017829143492634
+        }
+      ]
+    }
+  ]
+}

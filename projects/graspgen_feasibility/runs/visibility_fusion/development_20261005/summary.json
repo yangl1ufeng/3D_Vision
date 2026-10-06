@@ -1,0 +1,15 @@
+{
+  "status": "needs_review",
+  "visibility_cases": 9,
+  "visibility_passed": 9,
+  "fusion_cases": 18,
+  "fusion_passed": 15,
+  "planar_degeneracy": {
+    "accepted": false,
+    "reasons": [
+      "plane_moving:degenerate_registration_geometry"
+    ],
+    "passed": true
+  },
+  "output": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\development_20261005"
+}

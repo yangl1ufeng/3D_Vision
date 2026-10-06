@@ -1,0 +1,90 @@
+{
+  "kind": "single_view_integration_smoke_test_not_real_robot_grasp_success",
+  "source": "official GraspGen real_scene_pc/1745619598_467125.json",
+  "image_shape": [
+    720,
+    1280,
+    3
+  ],
+  "prompt_box": [
+    642.0,
+    373.0,
+    764.0,
+    477.0
+  ],
+  "prompt_origin": "Bounding box of the official segmented object, matched to exact XYZ pixels; simulates user object selection.",
+  "depth_usage": "Official per-pixel XYZ in world frame is indexed by SAM2 mask; no guessed camera intrinsics or new depth network.",
+  "segmentation_model": "SAM2 Hiera Large original checkpoint, BF16 inference; no optional CUDA postprocessing",
+  "grasp_model": "Official Robotiq-2F-140 PointNet++ checkpoint, FP32, 10 diffusion steps",
+  "execution": "Both models resident simultaneously; single cold image inference; checkpoint loading excluded from pipeline time.",
+  "reference_note": "Reference is correspondence to provided segmented points, not independently annotated segmentation ground truth.",
+  "mask_reference_valid_iou": 0.9940840473276213,
+  "sam_predicted_iou_score": 0.984375,
+  "mask_pixels": 10087,
+  "valid_object_points": 4894,
+  "raw_grasps": 100,
+  "above_08": 53,
+  "collision_free": 8,
+  "collision_parameters": {
+    "threshold_m": 0.02,
+    "scene_points": 8192,
+    "gripper_surface_samples": 2000,
+    "batch_size": 4
+  },
+  "io_seconds": 1.2745522999998684,
+  "sam_loading": {
+    "seconds": 1.8805680000000393,
+    "allocated_before_mib": 0.0,
+    "peak_allocated_mib": 1000.84814453125,
+    "peak_reserved_mib": 1052.0,
+    "device_peak_used_mib": 2657.921875
+  },
+  "grasp_loading": {
+    "seconds": 3.734049799999866,
+    "allocated_before_mib": 1000.84814453125,
+    "peak_allocated_mib": 1166.84375,
+    "peak_reserved_mib": 1222.0,
+    "device_peak_used_mib": 2811.921875
+  },
+  "stages": {
+    "segmentation": {
+      "seconds": 0.5985835999999836,
+      "allocated_before_mib": 1166.84375,
+      "peak_allocated_mib": 1458.96875,
+      "peak_reserved_mib": 1678.0,
+      "device_peak_used_mib": 3309.921875
+    },
+    "pointcloud_extraction": {
+      "seconds": 0.017185199999858014,
+      "allocated_before_mib": 1186.21875,
+      "peak_allocated_mib": 1186.27490234375,
+      "peak_reserved_mib": 1678.0,
+      "device_peak_used_mib": 3309.921875
+    },
+    "grasp_generation": {
+      "seconds": 0.4669170999995913,
+      "allocated_before_mib": 1186.27490234375,
+      "peak_allocated_mib": 1308.9072265625,
+      "peak_reserved_mib": 1682.0,
+      "device_peak_used_mib": 3315.921875
+    },
+    "collision_check": {
+      "seconds": 0.11209140000028128,
+      "allocated_before_mib": 1186.2822265625,
+      "peak_allocated_mib": 1686.92626953125,
+      "peak_reserved_mib": 2182.0,
+      "device_peak_used_mib": 3817.921875
+    }
+  },
+  "total": {
+    "seconds": 1.2028386000001774,
+    "allocated_before_mib": 1166.84375,
+    "peak_allocated_mib": 1686.92626953125,
+    "peak_reserved_mib": 2182.0,
+    "device_peak_used_mib": 3817.921875
+  },
+  "limitations": [
+    "One scene and one view; no multiview fusion, approach-path collision, arm reachability or physical grasp execution.",
+    "Sparse observed-scene collision filtering is not a guarantee for unobserved geometry."
+  ]
+}

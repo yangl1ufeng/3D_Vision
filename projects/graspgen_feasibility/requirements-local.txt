@@ -1,0 +1,16 @@
+# Tested on Python 3.12 / Windows, using existing CUDA PyTorch and SAM2 installation.
+torch==2.11.0
+numpy==1.26.4
+trimesh==4.5.3
+diffusers==0.11.1
+huggingface-hub==0.25.2
+transformers==4.44.2
+timm==1.0.15
+yourdfpy==0.0.56
+meshcat==0.3.2
+webdataset==1.0.2
+ninja==1.13.2
+tensorboardX==2.6.5
+addict==2.4.0
+# hydra-core, scipy, h5py, sklearn, Pillow and pynvml reused from existing environment.
+# CUDA PyTorch wheel must be obtained from the cu128 index; pointnet2_ops is compiled locally.

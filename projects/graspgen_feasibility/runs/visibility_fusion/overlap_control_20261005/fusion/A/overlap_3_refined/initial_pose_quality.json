@@ -1,0 +1,137 @@
+{
+  "accepted": false,
+  "reasons": [
+    "double_contour_or_depth_conflict:A_overlap_0:A_overlap_2:scene",
+    "double_contour_or_depth_conflict:A_overlap_0:A_overlap_2:target",
+    "double_contour_or_depth_conflict:A_overlap_1:A_overlap_0:scene",
+    "double_contour_or_depth_conflict:A_overlap_1:A_overlap_0:target",
+    "double_contour_or_depth_conflict:A_overlap_1:A_overlap_2:scene",
+    "double_contour_or_depth_conflict:A_overlap_1:A_overlap_2:target",
+    "double_contour_or_depth_conflict:A_overlap_2:A_overlap_1:scene"
+  ],
+  "pairs": [
+    {
+      "views": [
+        "A_overlap_0",
+        "A_overlap_1"
+      ],
+      "overlap_fraction": 0.6152587281795511,
+      "directions": [
+        {
+          "source": "A_overlap_0",
+          "scope": "scene",
+          "evidence_points": 1731,
+          "free_conflicts": 5,
+          "free_conflict_fraction": 0.0028885037550548816,
+          "reprojection_p90_m": 0.003770580226884146
+        },
+        {
+          "source": "A_overlap_0",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        },
+        {
+          "source": "A_overlap_1",
+          "scope": "scene",
+          "evidence_points": 7754,
+          "free_conflicts": 4661,
+          "free_conflict_fraction": 0.6011091049780758,
+          "reprojection_p90_m": 0.021817625873718403
+        },
+        {
+          "source": "A_overlap_1",
+          "scope": "target",
+          "evidence_points": 736,
+          "free_conflicts": 734,
+          "free_conflict_fraction": 0.9972826086956522,
+          "reprojection_p90_m": 0.025790773815581924
+        }
+      ]
+    },
+    {
+      "views": [
+        "A_overlap_0",
+        "A_overlap_2"
+      ],
+      "overlap_fraction": 0.7252056495421387,
+      "directions": [
+        {
+          "source": "A_overlap_0",
+          "scope": "scene",
+          "evidence_points": 7055,
+          "free_conflicts": 3656,
+          "free_conflict_fraction": 0.5182140326009922,
+          "reprojection_p90_m": 0.02305316301128755
+        },
+        {
+          "source": "A_overlap_0",
+          "scope": "target",
+          "evidence_points": 900,
+          "free_conflicts": 768,
+          "free_conflict_fraction": 0.8533333333333334,
+          "reprojection_p90_m": 0.027117600468591695
+        },
+        {
+          "source": "A_overlap_2",
+          "scope": "scene",
+          "evidence_points": 3155,
+          "free_conflicts": 74,
+          "free_conflict_fraction": 0.023454833597464343,
+          "reprojection_p90_m": 0.005718171179510012
+        },
+        {
+          "source": "A_overlap_2",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        }
+      ]
+    },
+    {
+      "views": [
+        "A_overlap_1",
+        "A_overlap_2"
+      ],
+      "overlap_fraction": 0.2856140897755611,
+      "directions": [
+        {
+          "source": "A_overlap_1",
+          "scope": "scene",
+          "evidence_points": 6811,
+          "free_conflicts": 5515,
+          "free_conflict_fraction": 0.8097195712817501,
+          "reprojection_p90_m": 0.049664271174667096
+        },
+        {
+          "source": "A_overlap_1",
+          "scope": "target",
+          "evidence_points": 926,
+          "free_conflicts": 925,
+          "free_conflict_fraction": 0.9989200863930886,
+          "reprojection_p90_m": 0.05459959236013723
+        },
+        {
+          "source": "A_overlap_2",
+          "scope": "scene",
+          "evidence_points": 1525,
+          "free_conflicts": 173,
+          "free_conflict_fraction": 0.11344262295081967,
+          "reprojection_p90_m": 0.008250435341563158
+        },
+        {
+          "source": "A_overlap_2",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        }
+      ]
+    }
+  ]
+}

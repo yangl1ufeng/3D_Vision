@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "bitwise_equal_baseline_arrays": [
+    "segmentation_mask",
+    "target_model_world_m",
+    "background_full_world_m",
+    "background_collision_world_m",
+    "gripper_surface_local_m",
+    "poses_world_graspgen_gripper",
+    "scores"
+  ],
+  "before_accepted": 7,
+  "after_accepted": 5,
+  "remaining_candidate_ids": [
+    80,
+    85,
+    64,
+    67,
+    33
+  ],
+  "newly_rejected": [
+    {
+      "candidate_id": 68,
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.7080009579658508,
+            -0.6974785327911377,
+            -0.11071760952472687,
+            0.007990178465843201
+          ],
+          [
+            -0.546929121017456,
+            -0.6407161951065063,
+            0.5388427376747131,
+            0.5325587928295136
+          ],
+          [
+            -0.4467697739601135,
+            -0.32094651460647583,
+            -0.8350989818572998,
+            0.17965727895498276
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.737705865618223,
+        "first_hit_source": "target",
+        "final_background_collision": false,
+        "final_target_collision": true
+      }
+    },
+    {
+      "candidate_id": 83,
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.8268798589706421,
+            -0.5283992290496826,
+            -0.19251984357833862,
+            0.03191825449466705
+          ],
+          [
+            0.0011810064315795898,
+            -0.3406991958618164,
+            0.9401717185974121,
+            0.4433641195297241
+          ],
+          [
+            -0.5623773336410522,
+            -0.7776364088058472,
+            -0.2810932397842407,
+            0.040437613427639005
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.8329087638019258,
+        "first_hit_source": "target",
+        "final_background_collision": false,
+        "final_target_collision": true
+      }
+    }
+  ],
+  "approach_seconds": 6.76930160000029,
+  "compute_seconds": 8.488915599999928,
+  "note": "Integration/regression check only; official sample lacks independent complete reference geometry."
+}

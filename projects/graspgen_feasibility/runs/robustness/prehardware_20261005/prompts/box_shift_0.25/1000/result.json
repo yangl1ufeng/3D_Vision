@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "seed": 1000,
+  "segmentation_seconds": 0.5173189999986789,
+  "target_raw_points": 4980,
+  "mask_pixels": 10251,
+  "target_model_points": 4792,
+  "candidate_count": 100,
+  "eligible": 55,
+  "geometric_accepted": 6,
+  "accepted": 6,
+  "mean_score": 0.7322344779968262,
+  "unknown_candidate_fraction": null,
+  "performance": {
+    "stages": {
+      "pointcloud": {
+        "allocated_before_mib": 1187.59375,
+        "status": "ok",
+        "seconds": 0.1166190000003553,
+        "peak_allocated_mib": 1314.4794921875,
+        "peak_reserved_mib": 2176.0,
+        "device_peak_used_mib": 5336.62890625
+      },
+      "grasp_generation": {
+        "allocated_before_mib": 1187.59375,
+        "status": "ok",
+        "seconds": 0.15835800000058953,
+        "peak_allocated_mib": 1208.61279296875,
+        "peak_reserved_mib": 2176.0,
+        "device_peak_used_mib": 5336.62890625
+      },
+      "collision_check": {
+        "allocated_before_mib": 1187.59375,
+        "status": "ok",
+        "seconds": 0.13436599999840837,
+        "peak_allocated_mib": 1688.23779296875,
+        "peak_reserved_mib": 2176.0,
+        "device_peak_used_mib": 5336.62890625
+      },
+      "approach_check": {
+        "status": "ok",
+        "seconds": 17.986247300003015
+      }
+    },
+    "compute_stage_seconds": 18.395590300002368,
+    "measured_stage_seconds": 18.395590300002368,
+    "peak_allocated_mib": 1688.23779296875,
+    "peak_reserved_mib": 2176.0,
+    "device_peak_used_mib": 5336.62890625,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

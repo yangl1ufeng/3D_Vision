@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "visibility_cases": 9,
+  "fusion_cases": 18,
+  "accepted_fusions": 9,
+  "rejected_fusions": 9,
+  "unsuccessful_small_error_recoveries": [
+    {
+      "layout": "A",
+      "case": "perturbed_3_refined",
+      "reasons": "A_view_2:registration_not_converged"
+    }
+  ],
+  "checks": [
+    "source hashes",
+    "visibility counters and no release of reference collisions",
+    "refusal prevents usable cloud/depth artifacts",
+    "all raw point pixel/pose provenance",
+    "coverage/extent metrics recomputed",
+    "accepted registration error bounds",
+    "planar degeneracy refusal"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "stages": {
+    "pointcloud_reduction": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "ok",
+      "seconds": 0.08612230000289856,
+      "peak_allocated_mib": 175.87158203125,
+      "peak_reserved_mib": 192.0,
+      "device_peak_used_mib": 4930.90234375
+    },
+    "small_obstacle_check": {
+      "status": "ok",
+      "seconds": 0.003491700001177378
+    },
+    "fixed_collision_check": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "ok",
+      "seconds": 0.655561100000341,
+      "peak_allocated_mib": 600.48046875,
+      "peak_reserved_mib": 616.0,
+      "device_peak_used_mib": 5406.40234375
+    },
+    "full_approach_check": {
+      "status": "ok",
+      "seconds": 0.18186150000110501
+    },
+    "pointcloud_filter": {
+      "allocated_before_mib": 175.87158203125,
+      "status": "failed",
+      "seconds": 0.014530399996147025,
+      "peak_allocated_mib": 181.82373046875,
+      "peak_reserved_mib": 618.0,
+      "device_peak_used_mib": 5354.90234375
+    }
+  },
+  "compute_stage_seconds": 0,
+  "measured_stage_seconds": 0.9415670000016689,
+  "peak_allocated_mib": 600.48046875,
+  "peak_reserved_mib": 618.0,
+  "device_peak_used_mib": 5406.40234375,
+  "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+  "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+}

@@ -1,0 +1,1 @@
+"""Offline core validation tools."""

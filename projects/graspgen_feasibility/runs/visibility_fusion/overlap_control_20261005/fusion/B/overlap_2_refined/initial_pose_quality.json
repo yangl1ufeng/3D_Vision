@@ -1,0 +1,50 @@
+{
+  "accepted": false,
+  "reasons": [
+    "double_contour_or_depth_conflict:B_overlap_1:B_overlap_0:scene",
+    "double_contour_or_depth_conflict:B_overlap_1:B_overlap_0:target"
+  ],
+  "pairs": [
+    {
+      "views": [
+        "B_overlap_0",
+        "B_overlap_1"
+      ],
+      "overlap_fraction": 0.6412874064837906,
+      "directions": [
+        {
+          "source": "B_overlap_0",
+          "scope": "scene",
+          "evidence_points": 1835,
+          "free_conflicts": 5,
+          "free_conflict_fraction": 0.0027247956403269754,
+          "reprojection_p90_m": 0.003747629403896369
+        },
+        {
+          "source": "B_overlap_0",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        },
+        {
+          "source": "B_overlap_1",
+          "scope": "scene",
+          "evidence_points": 7752,
+          "free_conflicts": 4480,
+          "free_conflict_fraction": 0.5779153766769866,
+          "reprojection_p90_m": 0.020830790290533873
+        },
+        {
+          "source": "B_overlap_1",
+          "scope": "target",
+          "evidence_points": 419,
+          "free_conflicts": 419,
+          "free_conflict_fraction": 1.0,
+          "reprojection_p90_m": 0.02234320028897945
+        }
+      ]
+    }
+  ]
+}

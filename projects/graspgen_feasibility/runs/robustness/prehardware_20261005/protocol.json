@@ -1,0 +1,156 @@
+{
+  "seeds": [
+    1000,
+    1001,
+    1002
+  ],
+  "synthetic_variants": [
+    [
+      "clean",
+      0
+    ],
+    [
+      "noise",
+      0.001
+    ],
+    [
+      "noise",
+      0.003
+    ],
+    [
+      "noise",
+      0.006
+    ],
+    [
+      "noise",
+      0.01
+    ],
+    [
+      "noise",
+      0.02
+    ],
+    [
+      "dropout",
+      0.25
+    ],
+    [
+      "dropout",
+      0.5
+    ],
+    [
+      "dropout",
+      0.75
+    ],
+    [
+      "dropout",
+      0.9
+    ],
+    [
+      "dropout",
+      0.97
+    ],
+    [
+      "dropout",
+      0.995
+    ],
+    [
+      "hole",
+      0.25
+    ],
+    [
+      "hole",
+      0.5
+    ],
+    [
+      "hole",
+      0.75
+    ],
+    [
+      "erode",
+      1
+    ],
+    [
+      "erode",
+      3
+    ],
+    [
+      "erode",
+      6
+    ],
+    [
+      "erode",
+      12
+    ],
+    [
+      "dilate",
+      1
+    ],
+    [
+      "dilate",
+      3
+    ],
+    [
+      "dilate",
+      6
+    ],
+    [
+      "dilate",
+      12
+    ]
+  ],
+  "box_variants": [
+    [
+      "box_clean",
+      0
+    ],
+    [
+      "box_shift",
+      0.1
+    ],
+    [
+      "box_shift",
+      0.25
+    ],
+    [
+      "box_shift",
+      0.5
+    ],
+    [
+      "box_shift",
+      1.0
+    ],
+    [
+      "box_shrink",
+      0.5
+    ],
+    [
+      "box_expand",
+      1.5
+    ]
+  ],
+  "candidate_budget": 100,
+  "source_root": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005",
+  "planned_synthetic_runs": 138,
+  "planned_prompt_runs": 21,
+  "failure_criteria": [
+    "pipeline exception",
+    "mask IoU < 0.70",
+    "model point nearest-clean-surface P95 > 10mm",
+    "coverage at 6mm < half clean",
+    "score-qualified count < half clean when clean >= 10",
+    "fixed clean-candidate approach decisions change > 20%"
+  ],
+  "notes": [
+    "One degradation family at a time. Three seeded replicates; not a sensor-specific confidence interval.",
+    "Noise is additive Gaussian z-depth, dropout independent per valid pixel; hole is a central box-area fraction.",
+    "Mask morphology uses a 3x3 square per iteration. Geometry and RGB unchanged for mask experiments.",
+    "Synthetic truth remains evaluation-only. SAM2 prompt experiment uses official real RGB and its existing XYZ.",
+    "Real-image clean SAM2 mask is a stability reference, not a human ground-truth annotation.",
+    "Final all-rejected baseline cannot demonstrate improved grasp success; inspect earlier stages and fixed probes."
+  ],
+  "source_sha256": {
+    "robustness_experiments.py": "ce0006a8f210dba0d890a9cc7716e882da07e845c001c64499f2ca42d1c7b47b",
+    "experiments\\input_degradation.py": "fe96d7d52f9de41a543543e0568476daf5578e18429c25be598dc65292b7d7a9",
+    "experiments\\degradation_runner.py": "906342f3847fbd7f332ec946371d02bc295d665e9cb59c53b4a75fee257842df"
+  }
+}

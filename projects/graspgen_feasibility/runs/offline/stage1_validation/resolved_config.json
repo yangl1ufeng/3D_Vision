@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "seed": 1000,
+  "device": "cuda:0",
+  "segmentation": {
+    "sam2_repo": "../goldilocs_reproduction/third_party/sam2",
+    "checkpoint": "../goldilocs_reproduction/checkpoints/sam2_hiera_large.pt",
+    "model_config": "configs/sam2/sam2_hiera_l.yaml",
+    "precision": "bfloat16"
+  },
+  "pointcloud": {
+    "max_target_points": 8192,
+    "max_scene_points": 8192,
+    "min_target_points": 100,
+    "outlier_neighbors": 20,
+    "outlier_threshold_m": 0.014
+  },
+  "grasp": {
+    "repo": "third_party/GraspGen",
+    "gripper_config": "checkpoints/graspgen_robotiq_2f_140.yml",
+    "expected_gripper": "robotiq_2f_140",
+    "candidates": 100,
+    "score_threshold": 0.8,
+    "precision": "float32"
+  },
+  "collision": {
+    "threshold_m": 0.02,
+    "surface_samples": 2000,
+    "batch_size": 4
+  }
+}

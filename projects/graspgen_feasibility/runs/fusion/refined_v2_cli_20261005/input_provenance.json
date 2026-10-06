@@ -1,0 +1,263 @@
+[
+  {
+    "input_manifest": {
+      "schema_version": 1,
+      "scene_id": "A_overlap_0",
+      "rgb": "rgb.png",
+      "geometry": {
+        "kind": "depth",
+        "path": "depth.npy",
+        "unit": "m",
+        "aligned_to_rgb": true,
+        "depth_convention": "z",
+        "pinhole_rectified": true,
+        "intrinsics": [
+          [
+            170.0,
+            0.0,
+            79.5
+          ],
+          [
+            0.0,
+            170.0,
+            59.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "frames": {
+        "world": "synthetic_table",
+        "camera_convention": "opencv",
+        "T_world_camera": [
+          [
+            0.7682212795973759,
+            0.3451642958869962,
+            -0.5391638660171921,
+            0.4
+          ],
+          [
+            0.64018439966448,
+            -0.41419715506439536,
+            0.6469966392206304,
+            -0.48
+          ],
+          [
+            -0.0,
+            -0.8422008819642708,
+            -0.539163866017192,
+            0.48
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target": {
+        "id": "target",
+        "mask": "target_mask.npy"
+      }
+    },
+    "asset_paths": {
+      "manifest": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_0\\scene.json",
+      "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_0\\rgb.png",
+      "geometry": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_0\\depth.npy",
+      "target_mask": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_0\\target_mask.npy"
+    },
+    "asset_sha256": {
+      "manifest": "f28ef1e42b8276f83b3875fd4f84716b1f008d294ef7a2baf025c5d861974c7f",
+      "rgb": "e259167167665206cded2fd10ab43e75eeeac933f1f678c867903660cfbdb308",
+      "geometry": "836515362815b5ff0040ac0a12905b0c9480cbdc219dd46c6ee052192829784c",
+      "target_mask": "7e790f17145e54ab1adcae44d7693f7289f6b716f2de2e53bee749304ef38c9f"
+    },
+    "geometry_source": "depth",
+    "input_unit": "m",
+    "meters_per_unit": 1.0,
+    "output_unit": "m",
+    "world_frame": "synthetic_table",
+    "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+    "timestamp": null,
+    "valid_geometry_pixels": 12886,
+    "calibrated_depth_available": true
+  },
+  {
+    "input_manifest": {
+      "schema_version": 1,
+      "scene_id": "A_overlap_1",
+      "rgb": "rgb.png",
+      "geometry": {
+        "kind": "depth",
+        "path": "depth.npy",
+        "unit": "m",
+        "aligned_to_rgb": true,
+        "depth_convention": "z",
+        "pinhole_rectified": true,
+        "intrinsics": [
+          [
+            170.0,
+            0.0,
+            79.5
+          ],
+          [
+            0.0,
+            170.0,
+            59.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "frames": {
+        "world": "synthetic_table",
+        "camera_convention": "opencv",
+        "T_world_camera": [
+          [
+            0.5488543421772065,
+            0.4328072642570446,
+            -0.7151480847206114,
+            0.50053343709668
+          ],
+          [
+            0.8355639399016527,
+            -0.2591582027481695,
+            0.4844274231341223,
+            -0.34256962805234215
+          ],
+          [
+            0.024327215402779923,
+            -0.8634320459391529,
+            -0.5038782478298456,
+            0.4283163143244811
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target": {
+        "id": "target",
+        "mask": "target_mask.npy"
+      }
+    },
+    "asset_paths": {
+      "manifest": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_1\\scene.json",
+      "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_1\\rgb.png",
+      "geometry": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_1\\depth.npy",
+      "target_mask": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_1\\target_mask.npy"
+    },
+    "asset_sha256": {
+      "manifest": "af9d821c462f1ca47ecfe55e65eeb20798f1a1b3a16cc0fa1dbabe9d6ef6eb43",
+      "rgb": "ca1b01291b5d97fbcd19a05ef4c41914571e2677eb6c3c0923ec85cfd6ceacba",
+      "geometry": "299348654e0800978b49e7a17d63aecda6a2ccbeff8473b92284460f23f9d005",
+      "target_mask": "5914f736e84e15a6351b33a127ba268457b3980166c8ffe5214498d11c52dc2c"
+    },
+    "geometry_source": "depth",
+    "input_unit": "m",
+    "meters_per_unit": 1.0,
+    "output_unit": "m",
+    "world_frame": "synthetic_table",
+    "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+    "timestamp": null,
+    "valid_geometry_pixels": 12832,
+    "calibrated_depth_available": true
+  },
+  {
+    "input_manifest": {
+      "schema_version": 1,
+      "scene_id": "A_overlap_2",
+      "rgb": "rgb.png",
+      "geometry": {
+        "kind": "depth",
+        "path": "depth.npy",
+        "unit": "m",
+        "aligned_to_rgb": true,
+        "depth_convention": "z",
+        "pinhole_rectified": true,
+        "intrinsics": [
+          [
+            170.0,
+            0.0,
+            79.5
+          ],
+          [
+            0.0,
+            170.0,
+            59.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "frames": {
+        "world": "synthetic_table",
+        "camera_convention": "opencv",
+        "T_world_camera": [
+          [
+            0.8048432551787659,
+            0.33744912887615613,
+            -0.48821657081050784,
+            0.3351362693707737
+          ],
+          [
+            0.5929819672091465,
+            -0.4911775966448503,
+            0.6380571722964641,
+            -0.43644658457522045
+          ],
+          [
+            -0.0244892049282703,
+            -0.8030396341245634,
+            -0.5954222240285201,
+            0.4975917512597875
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target": {
+        "id": "target",
+        "mask": "target_mask.npy"
+      }
+    },
+    "asset_paths": {
+      "manifest": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_2\\scene.json",
+      "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_2\\rgb.png",
+      "geometry": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_2\\depth.npy",
+      "target_mask": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_2\\target_mask.npy"
+    },
+    "asset_sha256": {
+      "manifest": "096564ae3062429ad4c26b49b512b65968f8c89d8ae47d64aaf55157f2f9fb6a",
+      "rgb": "880765fed42eac4a14f9b10cefe91c0cd3666679f0daade094c5f75807508235",
+      "geometry": "7778141e983e3c33963f33bb37aa5594ebfdf690fa17f70506916c34a91da32a",
+      "target_mask": "e86145643898597f3a808bdaa42e80a798858fa3405a49fede19d2d75d089b14"
+    },
+    "geometry_source": "depth",
+    "input_unit": "m",
+    "meters_per_unit": 1.0,
+    "output_unit": "m",
+    "world_frame": "synthetic_table",
+    "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+    "timestamp": null,
+    "valid_geometry_pixels": 13710,
+    "calibrated_depth_available": true
+  }
+]

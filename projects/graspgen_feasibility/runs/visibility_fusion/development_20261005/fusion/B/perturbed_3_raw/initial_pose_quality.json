@@ -1,0 +1,137 @@
+{
+  "accepted": false,
+  "reasons": [
+    "double_contour_or_depth_conflict:B_view_0:B_view_2:scene",
+    "double_contour_or_depth_conflict:B_view_1:B_view_0:scene",
+    "double_contour_or_depth_conflict:B_view_1:B_view_0:target",
+    "double_contour_or_depth_conflict:B_view_1:B_view_2:scene",
+    "double_contour_or_depth_conflict:B_view_2:B_view_0:scene",
+    "double_contour_or_depth_conflict:B_view_2:B_view_0:target",
+    "double_contour_or_depth_conflict:B_view_2:B_view_1:scene"
+  ],
+  "pairs": [
+    {
+      "views": [
+        "B_view_0",
+        "B_view_1"
+      ],
+      "overlap_fraction": 0.5578241895261845,
+      "directions": [
+        {
+          "source": "B_view_0",
+          "scope": "scene",
+          "evidence_points": 1634,
+          "free_conflicts": 5,
+          "free_conflict_fraction": 0.0030599755201958386,
+          "reprojection_p90_m": 0.003778289335172691
+        },
+        {
+          "source": "B_view_0",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        },
+        {
+          "source": "B_view_1",
+          "scope": "scene",
+          "evidence_points": 5868,
+          "free_conflicts": 2765,
+          "free_conflict_fraction": 0.47119972733469667,
+          "reprojection_p90_m": 0.01705410387390051
+        },
+        {
+          "source": "B_view_1",
+          "scope": "target",
+          "evidence_points": 90,
+          "free_conflicts": 90,
+          "free_conflict_fraction": 1.0,
+          "reprojection_p90_m": 0.017829143492634
+        }
+      ]
+    },
+    {
+      "views": [
+        "B_view_0",
+        "B_view_2"
+      ],
+      "overlap_fraction": 0.41137149442950444,
+      "directions": [
+        {
+          "source": "B_view_0",
+          "scope": "scene",
+          "evidence_points": 3170,
+          "free_conflicts": 210,
+          "free_conflict_fraction": 0.06624605678233439,
+          "reprojection_p90_m": 0.0068325513158734585
+        },
+        {
+          "source": "B_view_0",
+          "scope": "target",
+          "evidence_points": 27,
+          "free_conflicts": 22,
+          "free_conflict_fraction": 0.8148148148148148,
+          "reprojection_p90_m": 0.06508594010948665
+        },
+        {
+          "source": "B_view_2",
+          "scope": "scene",
+          "evidence_points": 4100,
+          "free_conflicts": 406,
+          "free_conflict_fraction": 0.09902439024390244,
+          "reprojection_p90_m": 0.006804787457583703
+        },
+        {
+          "source": "B_view_2",
+          "scope": "target",
+          "evidence_points": 86,
+          "free_conflicts": 62,
+          "free_conflict_fraction": 0.7209302325581395,
+          "reprojection_p90_m": 0.05354815364575638
+        }
+      ]
+    },
+    {
+      "views": [
+        "B_view_1",
+        "B_view_2"
+      ],
+      "overlap_fraction": 0.25477331367489864,
+      "directions": [
+        {
+          "source": "B_view_1",
+          "scope": "scene",
+          "evidence_points": 1837,
+          "free_conflicts": 728,
+          "free_conflict_fraction": 0.39629831246597713,
+          "reprojection_p90_m": 0.04064571654381471
+        },
+        {
+          "source": "B_view_1",
+          "scope": "target",
+          "evidence_points": 19,
+          "free_conflicts": 19,
+          "free_conflict_fraction": 1.0,
+          "reprojection_p90_m": 0.0479927042362146
+        },
+        {
+          "source": "B_view_2",
+          "scope": "scene",
+          "evidence_points": 1048,
+          "free_conflicts": 65,
+          "free_conflict_fraction": 0.06202290076335878,
+          "reprojection_p90_m": 0.006537635858288108
+        },
+        {
+          "source": "B_view_2",
+          "scope": "target",
+          "evidence_points": 0,
+          "free_conflicts": 0,
+          "free_conflict_fraction": null,
+          "reprojection_p90_m": null
+        }
+      ]
+    }
+  ]
+}

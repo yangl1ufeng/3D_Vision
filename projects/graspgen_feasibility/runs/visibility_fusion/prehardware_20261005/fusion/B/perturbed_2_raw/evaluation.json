@@ -1,0 +1,22 @@
+{
+  "layout": "B",
+  "case": "perturbed_2_raw",
+  "views": 2,
+  "refine": false,
+  "expected_accepted": false,
+  "accepted": false,
+  "passed": true,
+  "reasons": "double_contour_or_depth_conflict:B_view_1:B_view_0:scene|double_contour_or_depth_conflict:B_view_1:B_view_0:target",
+  "target_coverage_fraction": 0.23772763262074426,
+  "target_surface_error_p95_m": 0.01606929098045976,
+  "target_extent_x_m": 0.11658160043058685,
+  "target_extent_y_m": 0.08913003751141696,
+  "target_extent_z_m": 0.18349161045976595,
+  "max_target_extent_error_m": 0.016581600430586846,
+  "max_camera_translation_error_m": 0.022302154857194112,
+  "max_camera_rotation_error_deg": 2.4565581869275404,
+  "observed_points": 25847,
+  "fused_points": 23432,
+  "fused_target_points": 2003,
+  "seconds": 0.040450999999848136
+}

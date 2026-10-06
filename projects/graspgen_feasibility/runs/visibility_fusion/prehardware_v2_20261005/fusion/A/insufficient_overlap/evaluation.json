@@ -1,0 +1,22 @@
+{
+  "layout": "A",
+  "case": "insufficient_overlap",
+  "views": 2,
+  "refine": false,
+  "expected_accepted": false,
+  "accepted": false,
+  "passed": true,
+  "reasons": "insufficient_multiview_overlap",
+  "target_coverage_fraction": 0.31401115933044016,
+  "target_surface_error_p95_m": 0.6000000133751004,
+  "target_extent_x_m": 0.7193572625047457,
+  "target_extent_y_m": 0.09991143267800978,
+  "target_extent_z_m": 0.17996517277563145,
+  "max_target_extent_error_m": 0.5993572625047457,
+  "max_camera_translation_error_m": 0.6000000000000001,
+  "max_camera_rotation_error_deg": 0.0,
+  "observed_points": 25866,
+  "fused_points": 24244,
+  "fused_target_points": 2950,
+  "seconds": 0.04680039999948349
+}

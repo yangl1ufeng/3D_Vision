@@ -1,0 +1,87 @@
+{
+  "input_manifest": {
+    "schema_version": 1,
+    "scene_id": "A_view_1",
+    "rgb": "rgb.png",
+    "geometry": {
+      "kind": "depth",
+      "path": "depth.npy",
+      "unit": "m",
+      "aligned_to_rgb": true,
+      "depth_convention": "z",
+      "pinhole_rectified": true,
+      "intrinsics": [
+        [
+          170.0,
+          0.0,
+          79.5
+        ],
+        [
+          0.0,
+          170.0,
+          59.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "frames": {
+      "world": "synthetic_table",
+      "camera_convention": "opencv",
+      "T_world_camera": [
+        [
+          0.5780173407803391,
+          0.4083656509597028,
+          -0.7064937712913565,
+          0.48
+        ],
+        [
+          0.816024481101655,
+          -0.28925900276312283,
+          0.5004330879980442,
+          -0.34
+        ],
+        [
+          -0.0,
+          -0.8657752158827035,
+          -0.5004330879980441,
+          0.42
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "target": {
+      "id": "target",
+      "mask": "target_mask.npy"
+    }
+  },
+  "asset_paths": {
+    "manifest": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_20261005\\fusion\\A\\view_1\\scene.json",
+    "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_20261005\\fusion\\A\\view_1\\rgb.png",
+    "geometry": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_20261005\\fusion\\A\\view_1\\depth.npy",
+    "target_mask": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_20261005\\fusion\\A\\view_1\\target_mask.npy"
+  },
+  "asset_sha256": {
+    "manifest": "5cd1bd414ad33c38a1ad230c92f0fd280ce86832a331b84c60f5f1e3aec8fd5a",
+    "rgb": "ca1b01291b5d97fbcd19a05ef4c41914571e2677eb6c3c0923ec85cfd6ceacba",
+    "geometry": "299348654e0800978b49e7a17d63aecda6a2ccbeff8473b92284460f23f9d005",
+    "target_mask": "5914f736e84e15a6351b33a127ba268457b3980166c8ffe5214498d11c52dc2c"
+  },
+  "geometry_source": "depth",
+  "input_unit": "m",
+  "meters_per_unit": 1.0,
+  "output_unit": "m",
+  "world_frame": "synthetic_table",
+  "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+  "timestamp": null,
+  "valid_geometry_pixels": 12832,
+  "calibrated_depth_available": true
+}

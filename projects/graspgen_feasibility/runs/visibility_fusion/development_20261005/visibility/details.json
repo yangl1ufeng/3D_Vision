@@ -1,0 +1,1136 @@
+[
+  {
+    "case": "clear_single",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "observed_free",
+      "reasons": [],
+      "needs_more_views": false,
+      "message": "整个接近扫掠包络已有空闲观测。",
+      "cells": 4354,
+      "free_cells": 4354,
+      "unknown_cells": 0,
+      "occupied_cells": 0,
+      "conflict_cells": 0,
+      "unknown_fraction": 0.0,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "front_clear"
+      ],
+      "unknown_examples_world_m": []
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      }
+    ]
+  },
+  {
+    "case": "occluded_single",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "insufficient_observation",
+      "reasons": [
+        "insufficient_observation"
+      ],
+      "needs_more_views": true,
+      "message": "观测不足，需要补拍。",
+      "cells": 4354,
+      "free_cells": 0,
+      "unknown_cells": 4354,
+      "occupied_cells": 0,
+      "conflict_cells": 0,
+      "unknown_fraction": 1.0,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "front_shadow"
+      ],
+      "unknown_examples_world_m": [
+        [
+          -0.1,
+          -0.012,
+          0.732
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.74
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.748
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.756
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.764
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.772
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.78
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.788
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.7959999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8039999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8119999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.82
+        ]
+      ]
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      },
+      {
+        "name": "occluder",
+        "lower": [
+          -0.15,
+          -0.12,
+          0.53
+        ],
+        "upper": [
+          0.15,
+          0.12,
+          0.5700000000000001
+        ]
+      }
+    ]
+  },
+  {
+    "case": "occluded_plus_side",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "observed_free",
+      "reasons": [],
+      "needs_more_views": false,
+      "message": "整个接近扫掠包络已有空闲观测。",
+      "cells": 4354,
+      "free_cells": 4354,
+      "unknown_cells": 0,
+      "occupied_cells": 0,
+      "conflict_cells": 0,
+      "unknown_fraction": 0.0,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "front_shadow",
+        "side_shadow"
+      ],
+      "unknown_examples_world_m": []
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      },
+      {
+        "name": "occluder",
+        "lower": [
+          -0.15,
+          -0.12,
+          0.53
+        ],
+        "upper": [
+          0.15,
+          0.12,
+          0.5700000000000001
+        ]
+      }
+    ]
+  },
+  {
+    "case": "hidden_collision_single",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "insufficient_observation",
+      "reasons": [
+        "insufficient_observation"
+      ],
+      "needs_more_views": true,
+      "message": "观测不足，需要补拍。",
+      "cells": 4354,
+      "free_cells": 0,
+      "unknown_cells": 4354,
+      "occupied_cells": 0,
+      "conflict_cells": 0,
+      "unknown_fraction": 1.0,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "front_hidden"
+      ],
+      "unknown_examples_world_m": [
+        [
+          -0.1,
+          -0.012,
+          0.732
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.74
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.748
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.756
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.764
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.772
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.78
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.788
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.7959999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8039999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8119999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.82
+        ]
+      ]
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      },
+      {
+        "name": "occluder",
+        "lower": [
+          -0.15,
+          -0.12,
+          0.53
+        ],
+        "upper": [
+          0.15,
+          0.12,
+          0.5700000000000001
+        ]
+      },
+      {
+        "name": "hidden_finger_obstacle",
+        "lower": [
+          0.059000000000000004,
+          -0.0175,
+          0.865
+        ],
+        "upper": [
+          0.077,
+          0.0175,
+          0.895
+        ]
+      }
+    ]
+  },
+  {
+    "case": "hidden_collision_plus_side",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "occupied",
+      "reasons": [
+        "observed_surface_in_sweep_envelope",
+        "insufficient_observation"
+      ],
+      "needs_more_views": true,
+      "message": "观测不足，需要补拍。",
+      "cells": 4354,
+      "free_cells": 4086,
+      "unknown_cells": 186,
+      "occupied_cells": 82,
+      "conflict_cells": 0,
+      "unknown_fraction": 0.04271933853927423,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "front_hidden",
+        "side_hidden"
+      ],
+      "unknown_examples_world_m": [
+        [
+          -0.092,
+          -0.012,
+          0.876
+        ],
+        [
+          -0.092,
+          -0.012,
+          0.884
+        ],
+        [
+          -0.092,
+          -0.004,
+          0.876
+        ],
+        [
+          -0.092,
+          -0.004,
+          0.884
+        ],
+        [
+          -0.092,
+          0.004,
+          0.876
+        ],
+        [
+          -0.092,
+          0.004,
+          0.884
+        ],
+        [
+          -0.092,
+          0.012,
+          0.876
+        ],
+        [
+          -0.092,
+          0.012,
+          0.884
+        ],
+        [
+          -0.084,
+          -0.012,
+          0.876
+        ],
+        [
+          -0.084,
+          -0.012,
+          0.884
+        ],
+        [
+          -0.084,
+          -0.012,
+          0.892
+        ],
+        [
+          -0.084,
+          -0.012,
+          0.8999999999999999
+        ]
+      ]
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      },
+      {
+        "name": "occluder",
+        "lower": [
+          -0.15,
+          -0.12,
+          0.53
+        ],
+        "upper": [
+          0.15,
+          0.12,
+          0.5700000000000001
+        ]
+      },
+      {
+        "name": "hidden_finger_obstacle",
+        "lower": [
+          0.059000000000000004,
+          -0.0175,
+          0.865
+        ],
+        "upper": [
+          0.077,
+          0.0175,
+          0.895
+        ]
+      }
+    ]
+  },
+  {
+    "case": "missing_depth",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "insufficient_observation",
+      "reasons": [
+        "insufficient_observation"
+      ],
+      "needs_more_views": true,
+      "message": "观测不足，需要补拍。",
+      "cells": 4354,
+      "free_cells": 8,
+      "unknown_cells": 4346,
+      "occupied_cells": 0,
+      "conflict_cells": 0,
+      "unknown_fraction": 0.998162609095085,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "missing_depth"
+      ],
+      "unknown_examples_world_m": [
+        [
+          -0.1,
+          -0.012,
+          0.74
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.748
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.756
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.764
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.772
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.78
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.788
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.7959999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8039999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8119999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.82
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.828
+        ]
+      ]
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      }
+    ]
+  },
+  {
+    "case": "outside_fov",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "insufficient_observation",
+      "reasons": [
+        "insufficient_observation"
+      ],
+      "needs_more_views": true,
+      "message": "观测不足，需要补拍。",
+      "cells": 4354,
+      "free_cells": 0,
+      "unknown_cells": 4354,
+      "occupied_cells": 0,
+      "conflict_cells": 0,
+      "unknown_fraction": 1.0,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "front_clear"
+      ],
+      "unknown_examples_world_m": [
+        [
+          0.9,
+          -0.012,
+          0.732
+        ],
+        [
+          0.9,
+          -0.012,
+          0.74
+        ],
+        [
+          0.9,
+          -0.012,
+          0.748
+        ],
+        [
+          0.9,
+          -0.012,
+          0.756
+        ],
+        [
+          0.9,
+          -0.012,
+          0.764
+        ],
+        [
+          0.9,
+          -0.012,
+          0.772
+        ],
+        [
+          0.9,
+          -0.012,
+          0.78
+        ],
+        [
+          0.9,
+          -0.012,
+          0.788
+        ],
+        [
+          0.9,
+          -0.012,
+          0.7959999999999999
+        ],
+        [
+          0.9,
+          -0.012,
+          0.8039999999999999
+        ],
+        [
+          0.9,
+          -0.012,
+          0.8119999999999999
+        ],
+        [
+          0.9,
+          -0.012,
+          0.82
+        ]
+      ]
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      }
+    ]
+  },
+  {
+    "case": "enclosed_in_solid",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "insufficient_observation",
+      "reasons": [
+        "insufficient_observation"
+      ],
+      "needs_more_views": true,
+      "message": "观测不足，需要补拍。",
+      "cells": 4354,
+      "free_cells": 0,
+      "unknown_cells": 4354,
+      "occupied_cells": 0,
+      "conflict_cells": 0,
+      "unknown_fraction": 1.0,
+      "voxel_m": 0.008,
+      "view_ids": [
+        "front_enclosed"
+      ],
+      "unknown_examples_world_m": [
+        [
+          -0.1,
+          -0.012,
+          0.732
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.74
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.748
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.756
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.764
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.772
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.78
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.788
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.7959999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8039999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.8119999999999999
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.82
+        ]
+      ]
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      },
+      {
+        "name": "enclosing_solid",
+        "lower": [
+          -0.3,
+          -0.3,
+          0.5
+        ],
+        "upper": [
+          0.3,
+          0.3,
+          1.1
+        ]
+      }
+    ]
+  },
+  {
+    "case": "missing_calibration",
+    "pose": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.72
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "result": {
+      "state": "insufficient_observation",
+      "reasons": [
+        "observation_missing_calibration"
+      ],
+      "needs_more_views": true,
+      "message": "缺少带内外参的深度观测，需要采集或补充标定信息。",
+      "cells": 0,
+      "free_cells": 0,
+      "unknown_cells": 0,
+      "occupied_cells": 0,
+      "conflict_cells": 0
+    },
+    "boxes_for_evaluation_only": [
+      {
+        "name": "back_wall",
+        "lower": [
+          -1.0,
+          -1.0,
+          1.2
+        ],
+        "upper": [
+          1.0,
+          1.0,
+          1.22
+        ]
+      },
+      {
+        "name": "side_wall",
+        "lower": [
+          -0.72,
+          -1.0,
+          -0.25
+        ],
+        "upper": [
+          -0.7,
+          1.0,
+          1.75
+        ]
+      }
+    ]
+  }
+]

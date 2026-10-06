@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scene_id": "A_view_1",
+  "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\view_1\\rgb.png",
+  "geometry": {
+    "kind": "depth",
+    "path": "depth.npy",
+    "unit": "m",
+    "aligned_to_rgb": true,
+    "depth_convention": "z",
+    "pinhole_rectified": true,
+    "intrinsics": [
+      [
+        170.0,
+        0.0,
+        79.5
+      ],
+      [
+        0.0,
+        170.0,
+        59.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "frames": {
+    "world": "synthetic_table",
+    "camera_convention": "opencv",
+    "T_world_camera": [
+      [
+        0.5780173407803391,
+        0.4083656509597028,
+        -0.7064937712913565,
+        0.48
+      ],
+      [
+        0.816024481101655,
+        -0.28925900276312283,
+        0.5004330879980442,
+        -0.34
+      ],
+      [
+        -0.0,
+        -0.8657752158827035,
+        -0.5004330879980441,
+        0.42
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "target": {
+    "id": "target",
+    "mask": "mask.npy"
+  }
+}

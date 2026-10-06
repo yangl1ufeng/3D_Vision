@@ -68,3 +68,14 @@ Thumbs.db
 
 # Retired experiment retained locally
 /projects/goldilocs_reproduction/
+
+# Grasp preparation experiments: retain evidence and reproducible inputs.
+!/projects/graspgen_feasibility/runs/
+!/projects/graspgen_feasibility/runs/**
+/projects/graspgen_feasibility/runs/**/*.log
+!/projects/graspgen_feasibility/data/
+/projects/graspgen_feasibility/data/*
+!/projects/graspgen_feasibility/data/download_manifest.json
+!/projects/graspgen_feasibility/data/model_files.json
+!/projects/graspgen_feasibility/data/offline_official/
+!/projects/graspgen_feasibility/data/offline_official/**

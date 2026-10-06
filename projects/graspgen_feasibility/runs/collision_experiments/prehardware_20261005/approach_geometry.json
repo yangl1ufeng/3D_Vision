@@ -1,0 +1,18 @@
+{
+  "method": "continuous_point_vs_convex_component_translation",
+  "component_count": 11,
+  "direction_local": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "distance_m": 0.1,
+  "clearance_m": 0.002,
+  "target_contact_policy": "fixed_open_gripper_strict_material_collision",
+  "clearance_note": "Offset convex face planes; conservative, not Euclidean mesh distance.",
+  "gripper": "robotiq_2f_140",
+  "convexified_nonconvex_components": 1,
+  "source": "config/grippers/robotiq_2f_140.yaml: approach_direction; grasp_gen/robot.py: canonical +Z",
+  "gripper_model_origin": "GraspGen asset base frame, not robot TCP",
+  "nominal_tip_depth_m": 0.195
+}

@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "world_frame": "synthetic_table",
+  "target_id": "target",
+  "candidate_count": 100,
+  "source_run": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\offline\\observation_depth_validation_20261005",
+  "fusion_run": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\fusion\\known_v2_cli_20261005",
+  "accepted_candidate_ids_by_rank": [],
+  "source_camera_correction_world": [
+    [
+      1.0,
+      -1.1102230246251565e-16,
+      0.0,
+      -5.551115123125783e-17
+    ],
+    [
+      -5.551115123125783e-17,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      -5.551115123125783e-17,
+      0.0,
+      1.0000000000000002,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "before": {
+    "accepted": 0,
+    "observation_checked": 42,
+    "unknown_cells": 153525,
+    "candidates_with_unknown": 42,
+    "observation_states": {
+      "occupied": 41,
+      "insufficient_observation": 1
+    }
+  },
+  "after": {
+    "accepted": 0,
+    "observation_checked": 42,
+    "unknown_cells": 128885,
+    "candidates_with_unknown": 42,
+    "observation_states": {
+      "conflict": 41,
+      "occupied": 1
+    }
+  },
+  "collision_scope": "saved gripper surface samples vs FULL observed fused background, CPU Euclidean nearest-neighbor",
+  "notes": [
+    "Candidate scores and IDs preserved; poses follow the corrected source camera.",
+    "All rejection reasons recomputed using accepted depth views and full observed geometry.",
+    "Static same-target scene required; this is not robot execution or regenerated grasp inference."
+  ]
+}

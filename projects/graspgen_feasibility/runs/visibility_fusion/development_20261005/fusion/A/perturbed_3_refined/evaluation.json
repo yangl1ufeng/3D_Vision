@@ -1,0 +1,22 @@
+{
+  "layout": "A",
+  "case": "perturbed_3_refined",
+  "views": 3,
+  "refine": true,
+  "expected_accepted": true,
+  "accepted": false,
+  "passed": false,
+  "reasons": "A_view_2:correction_exceeds_trusted_initial_pose|double_contour_or_depth_conflict:A_view_0:A_view_2:scene|double_contour_or_depth_conflict:A_view_0:A_view_2:target|double_contour_or_depth_conflict:A_view_1:A_view_2:scene|double_contour_or_depth_conflict:A_view_1:A_view_2:target|double_contour_or_depth_conflict:A_view_2:A_view_0:scene|double_contour_or_depth_conflict:A_view_2:A_view_1:scene|double_contour_or_depth_conflict:A_view_2:A_view_1:target",
+  "target_coverage_fraction": 0.5525418474891507,
+  "target_surface_error_p95_m": 0.03472355303602726,
+  "target_extent_x_m": 0.1657867178403683,
+  "target_extent_y_m": 0.1455969762019636,
+  "target_extent_z_m": 0.18017656832233025,
+  "max_target_extent_error_m": 0.04578671784036831,
+  "max_camera_translation_error_m": 0.24344299993781737,
+  "max_camera_rotation_error_deg": 22.39876745069665,
+  "observed_points": 39329,
+  "fused_points": 32623,
+  "fused_target_points": 4874,
+  "seconds": 0.3820341999999073
+}

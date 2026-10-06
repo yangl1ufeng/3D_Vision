@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "scene_id": "A_overlap_1",
+  "target_id": "target",
+  "world_frame": "synthetic_table",
+  "translation_unit": "m",
+  "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+  "segmentation": {
+    "backend": "provided_mask",
+    "mask_pixels": 1887,
+    "predicted_quality": null,
+    "source": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\A\\overlap_error_1\\target_mask.npy"
+  },
+  "pointcloud": {
+    "target_raw_points": 1887,
+    "target_bounded_points": 1887,
+    "target_model_points": 1637,
+    "outliers": 250,
+    "target_sampling_dropped": 0,
+    "background_full_points": 10945,
+    "background_collision_points": 8192,
+    "target_bounds_m": [
+      [
+        -0.04744650796055794,
+        -0.06717252731323242,
+        0.004251187667250633
+      ],
+      [
+        0.07764256745576859,
+        0.0395895317196846,
+        0.18773247301578522
+      ]
+    ],
+    "outlier_method": "official mean distance to K neighbors using L1 norm, strict < threshold",
+    "collision_sampling": "seeded random subset; full background retained in export",
+    "sampling_seed": 1000
+  },
+  "grasp_generation": {
+    "gripper": "robotiq_2f_140",
+    "diffusion_steps": 10,
+    "model_config": "D:\\3D_Vision\\projects\\graspgen_feasibility\\checkpoints\\graspgen_robotiq_2f_140.yml",
+    "seed": 1000,
+    "candidate_budget": 100,
+    "precision": "float32",
+    "pose_frame": "graspgen_gripper",
+    "output_unit": "m",
+    "note": "Model scores are ranking scores, not measured physical grasp success."
+  },
+  "collision": {
+    "threshold_m": 0.02,
+    "surface_samples": 2000,
+    "batch_size": 4,
+    "surface_seed": 1001,
+    "scene_points": 8192,
+    "scope": "observed geometry, final gripper pose"
+  },
+  "approach": {
+    "method": "continuous_point_vs_convex_component_translation",
+    "component_count": 11,
+    "direction_local": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "distance_m": 0.1,
+    "clearance_m": 0.002,
+    "target_contact_policy": "fixed_open_gripper_strict_material_collision",
+    "clearance_note": "Offset convex face planes; conservative, not Euclidean mesh distance.",
+    "gripper": "robotiq_2f_140",
+    "convexified_nonconvex_components": 1,
+    "source": "config/grippers/robotiq_2f_140.yaml: approach_direction; grasp_gen/robot.py: canonical +Z",
+    "gripper_model_origin": "GraspGen asset base frame, not robot TCP",
+    "nominal_tip_depth_m": 0.195
+  },
+  "observation": {
+    "enabled": true,
+    "voxel_m": 0.008,
+    "tolerance_m": 0.002,
+    "max_cells": 500000,
+    "calibrated_depth_available": true,
+    "scope": "conservative voxel cover of straight gripper sweep; pinhole depth evidence"
+  },
+  "counts": {
+    "raw": 100,
+    "eligible_for_collision": 51,
+    "accepted": 0,
+    "rejected": 100,
+    "exclusion_reasons": {
+      "scene_collision": 34,
+      "final_background_collision": 32,
+      "approach_background_collision": 32,
+      "observed_surface_in_sweep_envelope": 51,
+      "insufficient_observation": 51,
+      "low_score": 49,
+      "final_target_collision": 14,
+      "approach_target_collision": 14
+    }
+  },
+  "accepted_candidate_ids_by_rank": [],
+  "inference_wall_with_loading_seconds": 7.504816000000574,
+  "limitations": [
+    "This entry analyzes one view; multi-view registration/fusion is available through fuse_scene.py.",
+    "No arm reachability, gripper closing simulation, or physical execution.",
+    "Approach and observation checks cover only a fixed-orientation straight translation when enabled.",
+    "Observation uses a conservative voxel envelope and a discrete calibrated depth model; sensor uncertainties are not calibrated.",
+    "Approach uses full observed points and convex component envelopes, including a conservative convexified base.",
+    "Collision uses sampled observed background and gripper surface; unobserved geometry can be missed.",
+    "T_world_graspgen_gripper is not a calibrated robot-base TCP command.",
+    "Scores and accepted counts do not measure physical grasp success."
+  ],
+  "output_directory": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\offline\\refined_source_validation_20261005",
+  "performance": {
+    "stages": {
+      "input_loading": {
+        "status": "ok",
+        "seconds": 0.036368599998240825
+      },
+      "runtime_initialization": {
+        "status": "ok",
+        "seconds": 1.2346175999991829
+      },
+      "grasp_model_loading": {
+        "allocated_before_mib": 0.0,
+        "status": "ok",
+        "seconds": 4.652926300001127,
+        "peak_allocated_mib": 166.74560546875,
+        "peak_reserved_mib": 170.0,
+        "device_peak_used_mib": 1975.76953125
+      },
+      "collision_geometry_loading": {
+        "status": "ok",
+        "seconds": 0.06158219999997527
+      },
+      "segmentation": {
+        "status": "ok",
+        "seconds": 0.0005132000005687587
+      },
+      "pointcloud": {
+        "allocated_before_mib": 166.74560546875,
+        "status": "ok",
+        "seconds": 0.10349510000014561,
+        "peak_allocated_mib": 187.56982421875,
+        "peak_reserved_mib": 206.0,
+        "device_peak_used_mib": 2031.76953125
+      },
+      "grasp_generation": {
+        "allocated_before_mib": 166.74560546875,
+        "status": "ok",
+        "seconds": 0.4397004999991623,
+        "peak_allocated_mib": 196.564453125,
+        "peak_reserved_mib": 232.0,
+        "device_peak_used_mib": 2054.76953125
+      },
+      "score_filter": {
+        "status": "ok",
+        "seconds": 0.00038020000283722766
+      },
+      "collision_check": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.1202649000006204,
+        "peak_allocated_mib": 676.5146484375,
+        "peak_reserved_mib": 732.0,
+        "device_peak_used_mib": 2574.76953125
+      },
+      "approach_check": {
+        "status": "ok",
+        "seconds": 0.2518627999997989
+      },
+      "observation_check": {
+        "status": "ok",
+        "seconds": 0.5152535000015632
+      },
+      "provenance_hashing": {
+        "status": "ok",
+        "seconds": 0.46926019999955315
+      },
+      "artifact_export": {
+        "status": "ok",
+        "seconds": 0.023905800000648014
+      }
+    },
+    "compute_stage_seconds": 1.4314702000046964,
+    "measured_stage_seconds": 7.9101309000034234,
+    "peak_allocated_mib": 676.5146484375,
+    "peak_reserved_mib": 732.0,
+    "device_peak_used_mib": 2574.76953125,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately.",
+    "analysis_wall_seconds": 7.9998110000015,
+    "wall_note": "From CLI argument parsing completion through export; Python startup/imports, final summary/performance JSON writes and console output excluded."
+  }
+}

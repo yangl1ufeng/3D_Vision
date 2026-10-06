@@ -1,0 +1,10 @@
+﻿split,method,total,accepted,false_accept,false_accept_among_accepted,reference_collisions,miss_rate_among_collisions,false_reject,reference_clear,retained_reference_clear
+all,final_only_default,216,90,54,0.6,150,0.36,30,66,36
+all,continuous_approach_only,216,64,3,0.046875,150,0.02,5,66,61
+all,combined_pipeline,216,39,3,0.07692307692307693,150,0.02,30,66,36
+development,final_only_default,108,54,18,0.3333333333333333,63,0.2857142857142857,9,45,36
+development,continuous_approach_only,108,40,0,0.0,63,0.0,5,45,40
+development,combined_pipeline,108,36,0,0.0,63,0.0,9,45,36
+held_out,final_only_default,108,36,36,1.0,87,0.41379310344827586,21,21,0
+held_out,continuous_approach_only,108,24,3,0.125,87,0.034482758620689655,0,21,21
+held_out,combined_pipeline,108,3,3,1.0,87,0.034482758620689655,21,21,0

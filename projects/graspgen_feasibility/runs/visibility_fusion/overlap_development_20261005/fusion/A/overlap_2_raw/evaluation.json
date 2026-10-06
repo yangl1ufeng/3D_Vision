@@ -1,0 +1,22 @@
+{
+  "layout": "A",
+  "case": "overlap_2_raw",
+  "views": 2,
+  "refine": false,
+  "expected_accepted": false,
+  "accepted": false,
+  "passed": true,
+  "reasons": "double_contour_or_depth_conflict:A_overlap_1:A_overlap_0:scene|double_contour_or_depth_conflict:A_overlap_1:A_overlap_0:target",
+  "target_coverage_fraction": 0.49333539987600744,
+  "target_surface_error_p95_m": 0.016405302418906958,
+  "target_extent_x_m": 0.13750685203169583,
+  "target_extent_y_m": 0.11647088916543774,
+  "target_extent_z_m": 0.1875032523292874,
+  "max_target_extent_error_m": 0.01750685203169583,
+  "max_camera_translation_error_m": 0.022302154857194112,
+  "max_camera_rotation_error_deg": 2.4565581869275404,
+  "observed_points": 25585,
+  "fused_points": 23266,
+  "fused_target_points": 3270,
+  "seconds": 0.036987499999668216
+}

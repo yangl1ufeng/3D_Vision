@@ -1,0 +1,188 @@
+{
+  "accepted": true,
+  "reasons": [],
+  "registration": [
+    {
+      "view_id": "B_view_1",
+      "accepted": true,
+      "reasons": [],
+      "converged": true,
+      "correction_world": [
+        [
+          0.9992478054612141,
+          0.034639259377514574,
+          0.017434018203652903,
+          -0.01679239547074591
+        ],
+        [
+          -0.03494345798063684,
+          0.9992368076218002,
+          0.01745729183319286,
+          0.012424855069359716
+        ],
+        [
+          -0.01681600503399954,
+          -0.018053365436146947,
+          0.9996956026566914,
+          -0.005942720789971547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_m": 0.021718137570429043,
+      "rotation_deg": 2.444361981047528,
+      "constraint_ratio": 0.024506188105328557,
+      "iterations": [
+        {
+          "iteration": 0,
+          "correspondences": 4772,
+          "rmse_point_plane_m": 0.007387373466472258,
+          "constraint_ratio": 0.020113712966819176
+        },
+        {
+          "iteration": 1,
+          "correspondences": 4862,
+          "rmse_point_plane_m": 0.0001296087208348019,
+          "constraint_ratio": 0.02467174556864915
+        },
+        {
+          "iteration": 2,
+          "correspondences": 4862,
+          "rmse_point_plane_m": 0.00010623007424187624,
+          "constraint_ratio": 0.024505832304151022
+        },
+        {
+          "iteration": 3,
+          "correspondences": 4862,
+          "rmse_point_plane_m": 0.00010621470502283775,
+          "constraint_ratio": 0.024506188105328557
+        }
+      ]
+    }
+  ],
+  "quality": {
+    "accepted": true,
+    "reasons": [],
+    "pairs": [
+      {
+        "views": [
+          "B_view_0",
+          "B_view_1"
+        ],
+        "overlap_fraction": 0.6513253937764119,
+        "directions": [
+          {
+            "source": "B_view_0",
+            "scope": "scene",
+            "evidence_points": 4615,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.0024425221738687557
+          },
+          {
+            "source": "B_view_0",
+            "scope": "target",
+            "evidence_points": 65,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.002960123551050087
+          },
+          {
+            "source": "B_view_1",
+            "scope": "scene",
+            "evidence_points": 6137,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.002350281424875345
+          },
+          {
+            "source": "B_view_1",
+            "scope": "target",
+            "evidence_points": 186,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.0014103383206709452
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "voxel_m": 0.004,
+    "registration_voxel_m": 0.006,
+    "max_iterations": 35,
+    "max_correspondence_m": 0.045,
+    "min_correspondences": 100,
+    "min_constraint_ratio": 0.001,
+    "max_correction_translation_m": 0.05,
+    "max_correction_rotation_deg": 8.0,
+    "overlap_distance_m": 0.012,
+    "min_overlap_fraction": 0.2,
+    "max_reprojection_p90_m": 0.008,
+    "max_free_conflict_fraction": 0.05,
+    "min_target_evidence": 30,
+    "min_scene_evidence": 100,
+    "depth_edge_m": 0.015,
+    "min_normal_agreement": 0.95,
+    "correspondence_neighbors": 12
+  },
+  "corrected_poses": {
+    "B_view_0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.0,
+        -0.5240974256643347,
+        0.851658316704544,
+        -0.65
+      ],
+      [
+        0.0,
+        -0.851658316704544,
+        -0.5240974256643347,
+        0.48
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "B_view_1": [
+      [
+        0.5778089340953596,
+        0.4084515707851988,
+        -0.7066145696224277,
+        0.4789654593279609
+      ],
+      [
+        0.8161720625266372,
+        -0.2891573828394551,
+        0.5002511092445995,
+        -0.3398964526848617
+      ],
+      [
+        5.531729745548303e-06,
+        -0.8657686309127518,
+        -0.5004444801342696,
+        0.42001077707098444
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "planning_allowed": true
+}

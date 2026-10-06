@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "scene_count": 12,
+  "candidates_per_scene": 6,
+  "seeds": [
+    1000,
+    1001,
+    1002
+  ],
+  "background_budgets": [
+    2048,
+    8192,
+    32768
+  ],
+  "surface_budgets": [
+    500,
+    2000,
+    4000
+  ],
+  "baseline_margins_m": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "approach_margins_m": [
+    0,
+    0.002,
+    0.005
+  ],
+  "approach_distance_m": 0.1,
+  "full_observed_background_points": 65536,
+  "candidate_origin": "fixed geometric perturbations, not learned GraspGen outputs",
+  "sampling": "area-weighted whole-box surfaces, nested prefixes per seed; not a depth-camera simulator",
+  "reference": "original mesh triangles vs solid boxes; continuous 13-axis SAT plus component winding containment",
+  "reference_clearance_m": 0,
+  "contact": "touching counts as solid collision; open gripper only",
+  "split": "6 development and 6 held-out scene templates; frozen before running, not real-data generalization",
+  "timing": "one warmed call per scene/config/seed; includes transform, transfer and synchronization, excludes sampling/reference",
+  "sources_sha256": {
+    "collision_experiments.py": "c463aef8c73f97c77b53756c58fc2d3010d65f0dd6aada30b260e0356a85848b",
+    "experiments\\collision_suite.py": "da4b7bf409eee0cffa0f10d9ae6c1f3e69af24fe4d5f7319619868d5eb8a5c06",
+    "experiments\\reference_geometry.py": "ae5f88327b52529814d3143687f2c03d997dc6129da6aedd847fd333f81eca22",
+    "offline_core\\approach.py": "acdde1067942053f60a5ee5b6ddda5fc5549b048b7cc82c8d93313063cb03eb1",
+    "offline_core\\collision.py": "621b52c2928b39df4ac4cc98f5b3b2e517de7da913c822bc35dabe72c8d42c1f"
+  },
+  "gripper_mesh_sha256": "553cbaa1383379bda82f72cd2328c70464b5395b239b0a1b97f1ed4da1303dbb",
+  "python": "3.12.6",
+  "numpy": "1.26.4",
+  "trimesh": "4.5.3",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU"
+}

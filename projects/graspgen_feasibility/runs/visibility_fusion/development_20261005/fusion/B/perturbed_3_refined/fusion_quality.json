@@ -1,0 +1,749 @@
+{
+  "accepted": false,
+  "reasons": [
+    "B_view_1:registration_not_converged",
+    "B_view_2:correction_exceeds_trusted_initial_pose",
+    "double_contour_or_depth_conflict:B_view_0:B_view_2:scene",
+    "double_contour_or_depth_conflict:B_view_0:B_view_2:target",
+    "double_contour_or_depth_conflict:B_view_1:B_view_2:scene",
+    "double_contour_or_depth_conflict:B_view_1:B_view_2:target",
+    "double_contour_or_depth_conflict:B_view_2:B_view_0:scene",
+    "double_contour_or_depth_conflict:B_view_2:B_view_1:scene",
+    "double_contour_or_depth_conflict:B_view_2:B_view_1:target"
+  ],
+  "registration": [
+    {
+      "view_id": "B_view_1",
+      "accepted": false,
+      "reasons": [
+        "registration_not_converged"
+      ],
+      "converged": false,
+      "correction_world": [
+        [
+          0.9977680543004641,
+          0.06455311318215363,
+          0.01708231237146137,
+          -0.016537542829215657
+        ],
+        [
+          -0.06483002752345177,
+          0.9977650466260599,
+          0.016185773463142514,
+          0.012092853111498025
+        ],
+        [
+          -0.015999292133485204,
+          -0.01725709447687385,
+          0.9997230693254204,
+          -0.005549548066315365
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_m": 0.021225571910899226,
+      "rotation_deg": 3.9470539205421047,
+      "constraint_ratio": 0.0435116616058893,
+      "iterations": [
+        {
+          "iteration": 0,
+          "correspondences": 5423,
+          "rmse_point_plane_m": 0.00795420619962295,
+          "constraint_ratio": 0.029312870965959886
+        },
+        {
+          "iteration": 1,
+          "correspondences": 5469,
+          "rmse_point_plane_m": 0.0036684337879055646,
+          "constraint_ratio": 0.03166951653944474
+        },
+        {
+          "iteration": 2,
+          "correspondences": 5481,
+          "rmse_point_plane_m": 0.003791931431398289,
+          "constraint_ratio": 0.031166370402780617
+        },
+        {
+          "iteration": 3,
+          "correspondences": 5465,
+          "rmse_point_plane_m": 0.003836494619842916,
+          "constraint_ratio": 0.04087881370647864
+        },
+        {
+          "iteration": 4,
+          "correspondences": 5468,
+          "rmse_point_plane_m": 0.003934705151245877,
+          "constraint_ratio": 0.04356194810426849
+        },
+        {
+          "iteration": 5,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.00397464081357739,
+          "constraint_ratio": 0.04354609192804677
+        },
+        {
+          "iteration": 6,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003991645512423948,
+          "constraint_ratio": 0.04351297485580208
+        },
+        {
+          "iteration": 7,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.003985837110086369,
+          "constraint_ratio": 0.04376476570645409
+        },
+        {
+          "iteration": 8,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003989686647585175,
+          "constraint_ratio": 0.0443533140698302
+        },
+        {
+          "iteration": 9,
+          "correspondences": 5478,
+          "rmse_point_plane_m": 0.004012650805044991,
+          "constraint_ratio": 0.04256935737605631
+        },
+        {
+          "iteration": 10,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003991203320875032,
+          "constraint_ratio": 0.04351166160613901
+        },
+        {
+          "iteration": 11,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.003985828917072393,
+          "constraint_ratio": 0.04376523727397809
+        },
+        {
+          "iteration": 12,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003989686627031417,
+          "constraint_ratio": 0.0443533072129322
+        },
+        {
+          "iteration": 13,
+          "correspondences": 5478,
+          "rmse_point_plane_m": 0.0040126508052379575,
+          "constraint_ratio": 0.04256935741822203
+        },
+        {
+          "iteration": 14,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003991203320875448,
+          "constraint_ratio": 0.04351166160588926
+        },
+        {
+          "iteration": 15,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.00398582891707239,
+          "constraint_ratio": 0.04376523727397963
+        },
+        {
+          "iteration": 16,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003989686627031422,
+          "constraint_ratio": 0.04435330721293219
+        },
+        {
+          "iteration": 17,
+          "correspondences": 5478,
+          "rmse_point_plane_m": 0.004012650805237962,
+          "constraint_ratio": 0.04256935741822203
+        },
+        {
+          "iteration": 18,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.00399120332087545,
+          "constraint_ratio": 0.04351166160588927
+        },
+        {
+          "iteration": 19,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.003985828917072393,
+          "constraint_ratio": 0.04376523727397965
+        },
+        {
+          "iteration": 20,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003989686627031427,
+          "constraint_ratio": 0.04435330721293217
+        },
+        {
+          "iteration": 21,
+          "correspondences": 5478,
+          "rmse_point_plane_m": 0.004012650805237965,
+          "constraint_ratio": 0.04256935741822202
+        },
+        {
+          "iteration": 22,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003991203320875455,
+          "constraint_ratio": 0.0435116616058893
+        },
+        {
+          "iteration": 23,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.0039858289170723975,
+          "constraint_ratio": 0.04376523727397965
+        },
+        {
+          "iteration": 24,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003989686627031431,
+          "constraint_ratio": 0.04435330721293217
+        },
+        {
+          "iteration": 25,
+          "correspondences": 5478,
+          "rmse_point_plane_m": 0.00401265080523797,
+          "constraint_ratio": 0.04256935741822203
+        },
+        {
+          "iteration": 26,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.00399120332087546,
+          "constraint_ratio": 0.04351166160588927
+        },
+        {
+          "iteration": 27,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.003985828917072403,
+          "constraint_ratio": 0.04376523727397964
+        },
+        {
+          "iteration": 28,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.0039896866270314356,
+          "constraint_ratio": 0.0443533072129322
+        },
+        {
+          "iteration": 29,
+          "correspondences": 5478,
+          "rmse_point_plane_m": 0.004012650805237976,
+          "constraint_ratio": 0.04256935741822202
+        },
+        {
+          "iteration": 30,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003991203320875464,
+          "constraint_ratio": 0.0435116616058893
+        },
+        {
+          "iteration": 31,
+          "correspondences": 5472,
+          "rmse_point_plane_m": 0.003985828917072408,
+          "constraint_ratio": 0.04376523727397963
+        },
+        {
+          "iteration": 32,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.00398968662703144,
+          "constraint_ratio": 0.04435330721293218
+        },
+        {
+          "iteration": 33,
+          "correspondences": 5478,
+          "rmse_point_plane_m": 0.004012650805237979,
+          "constraint_ratio": 0.04256935741822204
+        },
+        {
+          "iteration": 34,
+          "correspondences": 5473,
+          "rmse_point_plane_m": 0.003991203320875468,
+          "constraint_ratio": 0.0435116616058893
+        }
+      ]
+    },
+    {
+      "view_id": "B_view_2",
+      "accepted": false,
+      "reasons": [
+        "correction_exceeds_trusted_initial_pose"
+      ],
+      "converged": false,
+      "correction_world": [
+        [
+          0.9971320522761449,
+          0.0723665979884991,
+          -0.022152783552753772,
+          0.06887945509131845
+        ],
+        [
+          -0.07268246077239421,
+          0.9972596458453823,
+          -0.01380067623033139,
+          -0.03985512061217222
+        ],
+        [
+          0.02109336909157878,
+          0.01537121543392131,
+          0.9996593397335172,
+          0.004390485572479119
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_m": 0.07969997701536617,
+      "rotation_deg": 4.4202918429036835,
+      "constraint_ratio": 0.15463403765326106,
+      "iterations": [
+        {
+          "iteration": 0,
+          "correspondences": 5734,
+          "rmse_point_plane_m": 0.008126236954768386,
+          "constraint_ratio": 0.04667328784980728
+        },
+        {
+          "iteration": 1,
+          "correspondences": 5778,
+          "rmse_point_plane_m": 0.0054335814387033825,
+          "constraint_ratio": 0.07582745671308824
+        },
+        {
+          "iteration": 2,
+          "correspondences": 5757,
+          "rmse_point_plane_m": 0.004828275680362656,
+          "constraint_ratio": 0.11577906707856005
+        },
+        {
+          "iteration": 3,
+          "correspondences": 5743,
+          "rmse_point_plane_m": 0.005087600174621973,
+          "constraint_ratio": 0.1291416238326637
+        },
+        {
+          "iteration": 4,
+          "correspondences": 5751,
+          "rmse_point_plane_m": 0.0053772483545779,
+          "constraint_ratio": 0.1333052097620552
+        },
+        {
+          "iteration": 5,
+          "correspondences": 5751,
+          "rmse_point_plane_m": 0.00558034735378341,
+          "constraint_ratio": 0.1356795264523224
+        },
+        {
+          "iteration": 6,
+          "correspondences": 5742,
+          "rmse_point_plane_m": 0.005730851603498666,
+          "constraint_ratio": 0.1377401484480218
+        },
+        {
+          "iteration": 7,
+          "correspondences": 5741,
+          "rmse_point_plane_m": 0.005861513900860935,
+          "constraint_ratio": 0.13902287909922903
+        },
+        {
+          "iteration": 8,
+          "correspondences": 5737,
+          "rmse_point_plane_m": 0.00593238166184444,
+          "constraint_ratio": 0.13886064582449537
+        },
+        {
+          "iteration": 9,
+          "correspondences": 5735,
+          "rmse_point_plane_m": 0.006023886951677888,
+          "constraint_ratio": 0.14003131399743285
+        },
+        {
+          "iteration": 10,
+          "correspondences": 5731,
+          "rmse_point_plane_m": 0.006088120819807259,
+          "constraint_ratio": 0.13979031998551683
+        },
+        {
+          "iteration": 11,
+          "correspondences": 5731,
+          "rmse_point_plane_m": 0.006142014580629976,
+          "constraint_ratio": 0.13985921732908874
+        },
+        {
+          "iteration": 12,
+          "correspondences": 5728,
+          "rmse_point_plane_m": 0.006166624522390294,
+          "constraint_ratio": 0.1404664584821506
+        },
+        {
+          "iteration": 13,
+          "correspondences": 5728,
+          "rmse_point_plane_m": 0.006175008323112359,
+          "constraint_ratio": 0.14055938575019838
+        },
+        {
+          "iteration": 14,
+          "correspondences": 5727,
+          "rmse_point_plane_m": 0.006163275516514706,
+          "constraint_ratio": 0.1399985085049849
+        },
+        {
+          "iteration": 15,
+          "correspondences": 5727,
+          "rmse_point_plane_m": 0.006120406768370741,
+          "constraint_ratio": 0.1394320529491543
+        },
+        {
+          "iteration": 16,
+          "correspondences": 5729,
+          "rmse_point_plane_m": 0.006130972929012587,
+          "constraint_ratio": 0.14051804440253557
+        },
+        {
+          "iteration": 17,
+          "correspondences": 5722,
+          "rmse_point_plane_m": 0.00609377256891987,
+          "constraint_ratio": 0.13967359949448302
+        },
+        {
+          "iteration": 18,
+          "correspondences": 5716,
+          "rmse_point_plane_m": 0.006188908165587445,
+          "constraint_ratio": 0.14004271253908798
+        },
+        {
+          "iteration": 19,
+          "correspondences": 5715,
+          "rmse_point_plane_m": 0.006315369137343782,
+          "constraint_ratio": 0.14043050467647988
+        },
+        {
+          "iteration": 20,
+          "correspondences": 5717,
+          "rmse_point_plane_m": 0.006258514566459297,
+          "constraint_ratio": 0.13950099165537783
+        },
+        {
+          "iteration": 21,
+          "correspondences": 5715,
+          "rmse_point_plane_m": 0.006274465897824508,
+          "constraint_ratio": 0.13969549359219036
+        },
+        {
+          "iteration": 22,
+          "correspondences": 5711,
+          "rmse_point_plane_m": 0.006240816772224306,
+          "constraint_ratio": 0.13907838675388354
+        },
+        {
+          "iteration": 23,
+          "correspondences": 5717,
+          "rmse_point_plane_m": 0.006329066224813578,
+          "constraint_ratio": 0.13832818146335685
+        },
+        {
+          "iteration": 24,
+          "correspondences": 5716,
+          "rmse_point_plane_m": 0.006303958357500207,
+          "constraint_ratio": 0.13899692970033647
+        },
+        {
+          "iteration": 25,
+          "correspondences": 5761,
+          "rmse_point_plane_m": 0.00649129487968966,
+          "constraint_ratio": 0.14384704714558635
+        },
+        {
+          "iteration": 26,
+          "correspondences": 5765,
+          "rmse_point_plane_m": 0.006656684299635378,
+          "constraint_ratio": 0.1468181689061025
+        },
+        {
+          "iteration": 27,
+          "correspondences": 5758,
+          "rmse_point_plane_m": 0.006617526646243485,
+          "constraint_ratio": 0.15139323871038143
+        },
+        {
+          "iteration": 28,
+          "correspondences": 5747,
+          "rmse_point_plane_m": 0.006561964832884948,
+          "constraint_ratio": 0.1546140565515912
+        },
+        {
+          "iteration": 29,
+          "correspondences": 5746,
+          "rmse_point_plane_m": 0.006521001684296243,
+          "constraint_ratio": 0.15406657303403262
+        },
+        {
+          "iteration": 30,
+          "correspondences": 5744,
+          "rmse_point_plane_m": 0.006495524944809567,
+          "constraint_ratio": 0.1545129853435905
+        },
+        {
+          "iteration": 31,
+          "correspondences": 5743,
+          "rmse_point_plane_m": 0.006472495341290962,
+          "constraint_ratio": 0.15452236197781777
+        },
+        {
+          "iteration": 32,
+          "correspondences": 5738,
+          "rmse_point_plane_m": 0.006469229998660548,
+          "constraint_ratio": 0.154065444941863
+        },
+        {
+          "iteration": 33,
+          "correspondences": 5734,
+          "rmse_point_plane_m": 0.006511566544933543,
+          "constraint_ratio": 0.1547678555045066
+        },
+        {
+          "iteration": 34,
+          "correspondences": 5734,
+          "rmse_point_plane_m": 0.006538820045313139,
+          "constraint_ratio": 0.15463403765326106
+        }
+      ]
+    }
+  ],
+  "quality": {
+    "accepted": false,
+    "reasons": [
+      "double_contour_or_depth_conflict:B_view_0:B_view_2:scene",
+      "double_contour_or_depth_conflict:B_view_0:B_view_2:target",
+      "double_contour_or_depth_conflict:B_view_1:B_view_2:scene",
+      "double_contour_or_depth_conflict:B_view_1:B_view_2:target",
+      "double_contour_or_depth_conflict:B_view_2:B_view_0:scene",
+      "double_contour_or_depth_conflict:B_view_2:B_view_1:scene",
+      "double_contour_or_depth_conflict:B_view_2:B_view_1:target"
+    ],
+    "pairs": [
+      {
+        "views": [
+          "B_view_0",
+          "B_view_1"
+        ],
+        "overlap_fraction": 0.6542451018056089,
+        "directions": [
+          {
+            "source": "B_view_0",
+            "scope": "scene",
+            "evidence_points": 4332,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.002646523186865435
+          },
+          {
+            "source": "B_view_0",
+            "scope": "target",
+            "evidence_points": 49,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.0034668256685066235
+          },
+          {
+            "source": "B_view_1",
+            "scope": "scene",
+            "evidence_points": 6282,
+            "free_conflicts": 71,
+            "free_conflict_fraction": 0.011302133078637377,
+            "reprojection_p90_m": 0.003670197792104427
+          },
+          {
+            "source": "B_view_1",
+            "scope": "target",
+            "evidence_points": 194,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.0023303850158957313
+          }
+        ]
+      },
+      {
+        "views": [
+          "B_view_0",
+          "B_view_2"
+        ],
+        "overlap_fraction": 0.39761813292354975,
+        "directions": [
+          {
+            "source": "B_view_0",
+            "scope": "scene",
+            "evidence_points": 4623,
+            "free_conflicts": 1027,
+            "free_conflict_fraction": 0.22215011897036557,
+            "reprojection_p90_m": 0.03828283731919716
+          },
+          {
+            "source": "B_view_0",
+            "scope": "target",
+            "evidence_points": 404,
+            "free_conflicts": 330,
+            "free_conflict_fraction": 0.8168316831683168,
+            "reprojection_p90_m": 0.13784433401284238
+          },
+          {
+            "source": "B_view_2",
+            "scope": "scene",
+            "evidence_points": 4370,
+            "free_conflicts": 323,
+            "free_conflict_fraction": 0.07391304347826087,
+            "reprojection_p90_m": 0.003593797928938025
+          },
+          {
+            "source": "B_view_2",
+            "scope": "target",
+            "evidence_points": 26,
+            "free_conflicts": 9,
+            "free_conflict_fraction": 0.34615384615384615,
+            "reprojection_p90_m": 0.02967418475213318
+          }
+        ]
+      },
+      {
+        "views": [
+          "B_view_1",
+          "B_view_2"
+        ],
+        "overlap_fraction": 0.46221894581643935,
+        "directions": [
+          {
+            "source": "B_view_1",
+            "scope": "scene",
+            "evidence_points": 4870,
+            "free_conflicts": 1037,
+            "free_conflict_fraction": 0.21293634496919916,
+            "reprojection_p90_m": 0.030715587943380213
+          },
+          {
+            "source": "B_view_1",
+            "scope": "target",
+            "evidence_points": 398,
+            "free_conflicts": 241,
+            "free_conflict_fraction": 0.6055276381909548,
+            "reprojection_p90_m": 0.07491223949360351
+          },
+          {
+            "source": "B_view_2",
+            "scope": "scene",
+            "evidence_points": 4148,
+            "free_conflicts": 850,
+            "free_conflict_fraction": 0.20491803278688525,
+            "reprojection_p90_m": 0.030690074498683637
+          },
+          {
+            "source": "B_view_2",
+            "scope": "target",
+            "evidence_points": 418,
+            "free_conflicts": 295,
+            "free_conflict_fraction": 0.7057416267942583,
+            "reprojection_p90_m": 0.08243060678331525
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "voxel_m": 0.004,
+    "registration_voxel_m": 0.006,
+    "max_iterations": 35,
+    "max_correspondence_m": 0.045,
+    "min_correspondences": 100,
+    "min_constraint_ratio": 0.001,
+    "max_correction_translation_m": 0.05,
+    "max_correction_rotation_deg": 8.0,
+    "overlap_distance_m": 0.012,
+    "min_overlap_fraction": 0.2,
+    "max_reprojection_p90_m": 0.008,
+    "max_free_conflict_fraction": 0.05,
+    "min_target_evidence": 30,
+    "min_scene_evidence": 100,
+    "depth_edge_m": 0.015
+  },
+  "corrected_poses": {
+    "B_view_0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.0,
+        -0.5240974256643347,
+        0.851658316704544,
+        -0.65
+      ],
+      [
+        0.0,
+        -0.851658316704544,
+        -0.5240974256643347,
+        0.48
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "B_view_1": [
+      [
+        0.6019831477645481,
+        0.4003623772305095,
+        -0.6908880203808859,
+        0.4680814279177152
+      ],
+      [
+        0.798508006142811,
+        -0.300613218599076,
+        0.5215521612737616,
+        -0.35522811346398064
+      ],
+      [
+        0.0011197916390310488,
+        -0.8656452273892783,
+        -0.5006566551688346,
+        0.42055172808582597
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "B_view_2": [
+      [
+        -0.6093720874817243,
+        -0.40718859239239713,
+        0.6803404362697142,
+        -0.36343687807674596
+      ],
+      [
+        -0.7928842881043378,
+        0.31338431457426924,
+        -0.5226134107120631,
+        0.2987379247591206
+      ],
+      [
+        -0.00040580222430890156,
+        -0.8578972675118596,
+        -0.5138210911594046,
+        0.39846635316281287
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "planning_allowed": false
+}

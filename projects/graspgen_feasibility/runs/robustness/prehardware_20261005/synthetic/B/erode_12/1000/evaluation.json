@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "seed": 1000,
+  "segmentation_seconds": null,
+  "target_raw_points": 77,
+  "mask_pixels": 77,
+  "error": "ValueError: target has 77 valid points; requires 100",
+  "layout": "B",
+  "family": "erode",
+  "level": 12,
+  "folder": "synthetic\\B\\erode_12\\1000",
+  "target_observed_fraction": 1.0,
+  "mask_iou": 0.052884615384615384,
+  "mask_precision": 1.0,
+  "mask_recall": 0.052884615384615384,
+  "target_surface_p95_m": null,
+  "target_coverage_6mm": 0.0,
+  "target_centroid_shift_m": null,
+  "material_degradation": true,
+  "degradation_reasons": "pipeline_failure|mask_iou_below_0.70|target_coverage_below_half_clean|eligible_candidates_below_half_clean"
+}

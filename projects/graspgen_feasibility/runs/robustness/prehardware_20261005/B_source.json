@@ -1,0 +1,143 @@
+{
+  "input": {
+    "input_manifest": {
+      "schema_version": 1,
+      "scene_id": "B_view_1",
+      "rgb": "rgb.png",
+      "geometry": {
+        "kind": "depth",
+        "path": "depth.npy",
+        "unit": "m",
+        "aligned_to_rgb": true,
+        "depth_convention": "z",
+        "pinhole_rectified": true,
+        "intrinsics": [
+          [
+            170.0,
+            0.0,
+            79.5
+          ],
+          [
+            0.0,
+            170.0,
+            59.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "frames": {
+        "world": "synthetic_table",
+        "camera_convention": "opencv",
+        "T_world_camera": [
+          [
+            0.5780173407803391,
+            0.4083656509597028,
+            -0.7064937712913565,
+            0.48
+          ],
+          [
+            0.816024481101655,
+            -0.28925900276312283,
+            0.5004330879980442,
+            -0.34
+          ],
+          [
+            -0.0,
+            -0.8657752158827035,
+            -0.5004330879980441,
+            0.42
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target": {
+        "id": "target",
+        "mask": "target_mask.npy"
+      }
+    },
+    "asset_paths": {
+      "manifest": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\B\\view_1\\scene.json",
+      "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\B\\view_1\\rgb.png",
+      "geometry": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\B\\view_1\\depth.npy",
+      "target_mask": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\visibility_fusion\\prehardware_v2_20261005\\fusion\\B\\view_1\\target_mask.npy"
+    },
+    "asset_sha256": {
+      "manifest": "50419634520a7f01700e000dbf65b19f2f2d64254604953c4193b7b5e351118f",
+      "rgb": "12e785edb22521352b36cfd4725c078567b26682f6c5affdfc7b37a289071b4d",
+      "geometry": "8af611e9408f980dc12d1217a97e1ced1426a31aba52d6a7288590c6407f8c8f",
+      "target_mask": "0ab2b38d8fcad26a975bc7a0f68e626a747eae5fa5156c62de8795056ca4695f"
+    },
+    "geometry_source": "depth",
+    "input_unit": "m",
+    "meters_per_unit": 1.0,
+    "output_unit": "m",
+    "world_frame": "synthetic_table",
+    "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+    "timestamp": null,
+    "valid_geometry_pixels": 12832,
+    "calibrated_depth_available": true
+  },
+  "boxes_evaluation_only": [
+    {
+      "name": "table",
+      "lower": [
+        -0.5,
+        -0.4,
+        -0.02
+      ],
+      "upper": [
+        0.5,
+        0.4,
+        0.0
+      ]
+    },
+    {
+      "name": "target",
+      "lower": [
+        -0.030000000000000002,
+        -0.03,
+        0.0
+      ],
+      "upper": [
+        0.07,
+        0.05,
+        0.18
+      ]
+    },
+    {
+      "name": "occluder",
+      "lower": [
+        0.015,
+        -0.115,
+        0.0
+      ],
+      "upper": [
+        0.075,
+        -0.085,
+        0.2
+      ]
+    },
+    {
+      "name": "asymmetric_neighbor",
+      "lower": [
+        0.135,
+        0.02500000000000001,
+        0.0
+      ],
+      "upper": [
+        0.20500000000000002,
+        0.115,
+        0.13
+      ]
+    }
+  ]
+}

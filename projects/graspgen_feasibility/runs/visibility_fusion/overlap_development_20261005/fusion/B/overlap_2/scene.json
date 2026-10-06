@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scene_id": "B_overlap_2",
+  "rgb": "rgb.png",
+  "geometry": {
+    "kind": "depth",
+    "path": "depth.npy",
+    "unit": "m",
+    "aligned_to_rgb": true,
+    "depth_convention": "z",
+    "pinhole_rectified": true,
+    "intrinsics": [
+      [
+        170.0,
+        0.0,
+        79.5
+      ],
+      [
+        0.0,
+        170.0,
+        59.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "frames": {
+    "world": "synthetic_table",
+    "camera_convention": "opencv",
+    "T_world_camera": [
+      [
+        0.7893522173763263,
+        0.36415266233586685,
+        -0.4942832340235475,
+        0.35
+      ],
+      [
+        0.6139406135149204,
+        -0.4681962801461146,
+        0.6355070151731326,
+        -0.45
+      ],
+      [
+        -0.0,
+        -0.8050994235316786,
+        -0.593139880828257,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "target": {
+    "id": "target",
+    "mask": "target_mask.npy"
+  }
+}

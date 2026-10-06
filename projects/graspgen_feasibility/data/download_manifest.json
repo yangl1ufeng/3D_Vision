@@ -1,0 +1,32 @@
+[
+  {
+    "source": "checkpoints/graspgen_robotiq_2f_140.yml",
+    "path": "checkpoints\\graspgen_robotiq_2f_140.yml",
+    "bytes": 4870,
+    "sha256": "93804f423ec02def08add164d83379212204ddc33779cd273ffffdacf94f67f3"
+  },
+  {
+    "source": "checkpoints/graspgen_robotiq_2f_140_gen.pth",
+    "path": "checkpoints\\graspgen_robotiq_2f_140_gen.pth",
+    "bytes": 471436414,
+    "sha256": "fe8497108e39d8fc50be06cd7df22a2f680e0495e713d24c3104616f291e00dd"
+  },
+  {
+    "source": "checkpoints/graspgen_robotiq_2f_140_dis.pth",
+    "path": "checkpoints\\graspgen_robotiq_2f_140_dis.pth",
+    "bytes": 39427928,
+    "sha256": "52f68d3cd3decb71499e084fdb88808d174419a72cd9ef38f821083a4409895d"
+  },
+  {
+    "source": "sample_data/real_object_pc/1740787710_319213.json",
+    "path": "data\\sample_data\\real_object_pc\\1740787710_319213.json",
+    "bytes": 645583,
+    "sha256": "e812cef94653098fb744d9b4ea443a4e75047f803699c0ab8bf19fd5e606e032"
+  },
+  {
+    "source": "sample_data/real_scene_pc/1745619598_467125.json",
+    "path": "data\\sample_data\\real_scene_pc\\1745619598_467125.json",
+    "bytes": 77673191,
+    "sha256": "293deadde5030f727595249db8b55624938285dd28c33d0347ed67a29728f522"
+  }
+]

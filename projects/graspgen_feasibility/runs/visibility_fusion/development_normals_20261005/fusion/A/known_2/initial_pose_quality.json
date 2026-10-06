@@ -1,0 +1,47 @@
+{
+  "accepted": true,
+  "reasons": [],
+  "pairs": [
+    {
+      "views": [
+        "A_view_0",
+        "A_view_1"
+      ],
+      "overlap_fraction": 0.6579714592603959,
+      "directions": [
+        {
+          "source": "A_view_0",
+          "scope": "scene",
+          "evidence_points": 4640,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0023467503641273592
+        },
+        {
+          "source": "A_view_0",
+          "scope": "target",
+          "evidence_points": 130,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0030681673775788455
+        },
+        {
+          "source": "A_view_1",
+          "scope": "scene",
+          "evidence_points": 6268,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.0023364414773006546
+        },
+        {
+          "source": "A_view_1",
+          "scope": "target",
+          "evidence_points": 542,
+          "free_conflicts": 0,
+          "free_conflict_fraction": 0.0,
+          "reprojection_p90_m": 0.00122459187135181
+        }
+      ]
+    }
+  ]
+}

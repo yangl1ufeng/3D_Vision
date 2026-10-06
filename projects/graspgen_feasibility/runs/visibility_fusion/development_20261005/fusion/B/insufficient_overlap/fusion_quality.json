@@ -1,0 +1,128 @@
+{
+  "accepted": false,
+  "reasons": [
+    "insufficient_multiview_overlap"
+  ],
+  "registration": [],
+  "quality": {
+    "accepted": false,
+    "reasons": [
+      "insufficient_multiview_overlap"
+    ],
+    "pairs": [
+      {
+        "views": [
+          "B_view_0",
+          "B_view_1"
+        ],
+        "overlap_fraction": 0.1102711970074813,
+        "directions": [
+          {
+            "source": "B_view_0",
+            "scope": "scene",
+            "evidence_points": 0,
+            "free_conflicts": 0,
+            "free_conflict_fraction": null,
+            "reprojection_p90_m": null
+          },
+          {
+            "source": "B_view_0",
+            "scope": "target",
+            "evidence_points": 0,
+            "free_conflicts": 0,
+            "free_conflict_fraction": null,
+            "reprojection_p90_m": null
+          },
+          {
+            "source": "B_view_1",
+            "scope": "scene",
+            "evidence_points": 908,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.002519260818163706
+          },
+          {
+            "source": "B_view_1",
+            "scope": "target",
+            "evidence_points": 0,
+            "free_conflicts": 0,
+            "free_conflict_fraction": null,
+            "reprojection_p90_m": null
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "voxel_m": 0.004,
+    "registration_voxel_m": 0.006,
+    "max_iterations": 35,
+    "max_correspondence_m": 0.045,
+    "min_correspondences": 100,
+    "min_constraint_ratio": 0.001,
+    "max_correction_translation_m": 0.05,
+    "max_correction_rotation_deg": 8.0,
+    "overlap_distance_m": 0.012,
+    "min_overlap_fraction": 0.2,
+    "max_reprojection_p90_m": 0.008,
+    "max_free_conflict_fraction": 0.05,
+    "min_target_evidence": 30,
+    "min_scene_evidence": 100,
+    "depth_edge_m": 0.015
+  },
+  "corrected_poses": {
+    "B_view_0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.0,
+        -0.5240974256643347,
+        0.851658316704544,
+        -0.65
+      ],
+      [
+        0.0,
+        -0.851658316704544,
+        -0.5240974256643347,
+        0.48
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "B_view_1": [
+      [
+        0.5780173407803391,
+        0.4083656509597028,
+        -0.7064937712913565,
+        1.08
+      ],
+      [
+        0.816024481101655,
+        -0.28925900276312283,
+        0.5004330879980442,
+        -0.34
+      ],
+      [
+        0.0,
+        -0.8657752158827035,
+        -0.5004330879980441,
+        0.42
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "planning_allowed": false
+}

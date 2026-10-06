@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "seed": 1000,
+  "segmentation_seconds": null,
+  "target_raw_points": 1887,
+  "mask_pixels": 1887,
+  "target_model_points": 1683,
+  "candidate_count": 100,
+  "eligible": 42,
+  "geometric_accepted": 11,
+  "accepted": 0,
+  "mean_score": 0.7069923281669617,
+  "unknown_candidate_fraction": 1.0,
+  "reference_seconds": 2.1212325999949826,
+  "reference_clear_eligible": 11,
+  "false_accept_geometry": 0,
+  "false_accept_final": 0,
+  "retained_reference_clear_final": 0,
+  "performance": {
+    "stages": {
+      "pointcloud": {
+        "allocated_before_mib": 166.74560546875,
+        "status": "ok",
+        "seconds": 0.46803120000549825,
+        "peak_allocated_mib": 187.56982421875,
+        "peak_reserved_mib": 206.0,
+        "device_peak_used_mib": 2462.38671875
+      },
+      "grasp_generation": {
+        "allocated_before_mib": 166.74560546875,
+        "status": "ok",
+        "seconds": 2.800291200001084,
+        "peak_allocated_mib": 196.56884765625,
+        "peak_reserved_mib": 232.0,
+        "device_peak_used_mib": 2514.76171875
+      },
+      "collision_check": {
+        "allocated_before_mib": 175.87060546875,
+        "status": "ok",
+        "seconds": 0.17285300000366988,
+        "peak_allocated_mib": 676.51416015625,
+        "peak_reserved_mib": 732.0,
+        "device_peak_used_mib": 3014.76171875
+      },
+      "approach_check": {
+        "status": "ok",
+        "seconds": 0.4089808999997331
+      },
+      "observation_check": {
+        "status": "ok",
+        "seconds": 0.9064546000008704
+      }
+    },
+    "compute_stage_seconds": 4.756610900010855,
+    "measured_stage_seconds": 4.756610900010855,
+    "peak_allocated_mib": 676.51416015625,
+    "peak_reserved_mib": 732.0,
+    "device_peak_used_mib": 3014.76171875,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately."
+  }
+}

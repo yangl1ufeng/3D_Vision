@@ -1,0 +1,10 @@
+﻿case,views,expected_state,state,passed,reference_collision,planning_allowed_by_observation,cells,free_cells,unknown_cells,occupied_cells,conflict_cells,needs_more_views,seconds
+clear_single,1,observed_free,observed_free,True,False,True,4354,4354,0,0,0,False,0.2337599999991653
+occluded_single,1,insufficient_observation,insufficient_observation,True,False,False,4354,0,4354,0,0,True,0.24769839999862597
+occluded_plus_side,2,observed_free,observed_free,True,False,True,4354,4354,0,0,0,False,0.26289470000119763
+hidden_collision_single,1,insufficient_observation,insufficient_observation,True,True,False,4354,0,4354,0,0,True,0.26397630000064964
+hidden_collision_plus_side,2,occupied,occupied,True,True,False,4354,4086,186,82,0,True,0.23121850000097766
+missing_depth,1,insufficient_observation,insufficient_observation,True,False,False,4354,8,4346,0,0,True,0.22387800000069547
+outside_fov,1,insufficient_observation,insufficient_observation,True,False,False,4354,0,4354,0,0,True,0.21493889999692328
+enclosed_in_solid,1,insufficient_observation,insufficient_observation,True,True,False,4354,0,4354,0,0,True,0.21541240000078687
+missing_calibration,0,insufficient_observation,insufficient_observation,True,False,False,0,0,0,0,0,True,6.660000144620426e-05

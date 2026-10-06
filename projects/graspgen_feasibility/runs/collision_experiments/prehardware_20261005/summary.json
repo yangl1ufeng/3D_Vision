@@ -1,0 +1,136 @@
+{
+  "status": "complete",
+  "output": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\collision_experiments\\prehardware_20261005",
+  "reference_candidates": 72,
+  "baseline_candidate_evaluations": 5832,
+  "baseline_configurations": 27,
+  "default_final_only": {
+    "split": "all",
+    "background_points": 8192,
+    "surface_points": 2000,
+    "margin_m": 0.02,
+    "total": 216,
+    "accepted": 90,
+    "false_accept": 18,
+    "false_accept_among_accepted": 0.2,
+    "reference_collisions": 96,
+    "miss_rate_among_collisions": 0.1875,
+    "false_reject": 48,
+    "reference_clear": 120,
+    "retained_reference_clear": 72,
+    "mean_scene_seconds": 0.0135142888888898,
+    "max_cuda_mib": 384.59814453125
+  },
+  "path_comparison": [
+    {
+      "split": "all",
+      "method": "final_only_default",
+      "total": 216,
+      "accepted": 90,
+      "false_accept": 54,
+      "false_accept_among_accepted": 0.6,
+      "reference_collisions": 150,
+      "miss_rate_among_collisions": 0.36,
+      "false_reject": 30,
+      "reference_clear": 66,
+      "retained_reference_clear": 36
+    },
+    {
+      "split": "all",
+      "method": "continuous_approach_only",
+      "total": 216,
+      "accepted": 64,
+      "false_accept": 3,
+      "false_accept_among_accepted": 0.046875,
+      "reference_collisions": 150,
+      "miss_rate_among_collisions": 0.02,
+      "false_reject": 5,
+      "reference_clear": 66,
+      "retained_reference_clear": 61
+    },
+    {
+      "split": "all",
+      "method": "combined_pipeline",
+      "total": 216,
+      "accepted": 39,
+      "false_accept": 3,
+      "false_accept_among_accepted": 0.07692307692307693,
+      "reference_collisions": 150,
+      "miss_rate_among_collisions": 0.02,
+      "false_reject": 30,
+      "reference_clear": 66,
+      "retained_reference_clear": 36
+    }
+  ],
+  "approach": [
+    {
+      "split": "all",
+      "margin_m": 0,
+      "total": 216,
+      "accepted": 69,
+      "false_accept": 3,
+      "false_accept_among_accepted": 0.043478260869565216,
+      "reference_collisions": 150,
+      "miss_rate_among_collisions": 0.02,
+      "false_reject": 0,
+      "reference_clear": 66,
+      "retained_reference_clear": 66
+    },
+    {
+      "split": "all",
+      "margin_m": 0.002,
+      "total": 216,
+      "accepted": 64,
+      "false_accept": 3,
+      "false_accept_among_accepted": 0.046875,
+      "reference_collisions": 150,
+      "miss_rate_among_collisions": 0.02,
+      "false_reject": 5,
+      "reference_clear": 66,
+      "retained_reference_clear": 61
+    },
+    {
+      "split": "all",
+      "margin_m": 0.005,
+      "total": 216,
+      "accepted": 47,
+      "false_accept": 3,
+      "false_accept_among_accepted": 0.06382978723404255,
+      "reference_collisions": 150,
+      "miss_rate_among_collisions": 0.02,
+      "false_reject": 22,
+      "reference_clear": 66,
+      "retained_reference_clear": 44
+    }
+  ],
+  "thin_discrete": [
+    {
+      "requested_step_m": 0.1,
+      "poses": 2,
+      "detected": false
+    },
+    {
+      "requested_step_m": 0.02,
+      "poses": 6,
+      "detected": true
+    },
+    {
+      "requested_step_m": 0.005,
+      "poses": 21,
+      "detected": true
+    },
+    {
+      "requested_step_m": 0.001,
+      "poses": 101,
+      "detected": true
+    }
+  ],
+  "thin_continuous_detected": true,
+  "limitations": [
+    "Synthetic whole-surface box observations, not sensor data or real grasp success.",
+    "Rates pool 3 sampling repeats of the same 72 candidates; not 216 independent scenes.",
+    "Point observations cannot detect all solid containment; unknown-space processing is not implemented.",
+    "Convexified base and face-plane clearance can conservatively reject mesh-clear candidates.",
+    "No parameter was selected using held-out scenes; current defaults are not hardware-calibrated."
+  ]
+}

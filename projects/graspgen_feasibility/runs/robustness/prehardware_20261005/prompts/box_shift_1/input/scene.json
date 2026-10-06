@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "scene_id": "official_1745619598_467125",
+  "rgb": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\offline_official\\rgb.png",
+  "geometry": {
+    "kind": "xyz",
+    "path": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\offline_official\\xyz_world_m.npy",
+    "unit": "m",
+    "frame": "world",
+    "aligned_to_rgb": true,
+    "valid_mask": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\offline_official\\valid.npy"
+  },
+  "frames": {
+    "world": "official_scene_world"
+  },
+  "target": {
+    "id": "blue_bowl",
+    "box_xyxy": [
+      764.0,
+      373.0,
+      886.0,
+      477.0
+    ],
+    "prompt_source": "seeded preparation experiment"
+  },
+  "source": {
+    "path": "D:\\3D_Vision\\projects\\graspgen_feasibility\\data\\sample_data\\real_scene_pc\\1745619598_467125.json",
+    "sha256": "293deadde5030f727595249db8b55624938285dd28c33d0347ed67a29728f522",
+    "note": "Uses supplied world XYZ; does not infer unknown depth units, intrinsics, or extrinsics."
+  }
+}

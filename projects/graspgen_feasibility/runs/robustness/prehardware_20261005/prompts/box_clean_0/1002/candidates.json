@@ -1,0 +1,5877 @@
+{
+  "schema_version": 1,
+  "world_frame": "official_scene_world",
+  "translation_unit": "m",
+  "transform_convention": "p_world = T_world_graspgen_gripper @ p_gripper (homogeneous column vectors)",
+  "score_note": "Ranking score, not measured success probability.",
+  "candidates": [
+    {
+      "candidate_id": 0,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.8338969945907593,
+            0.25641340017318726,
+            0.48874083161354065,
+            -0.3060976594686508
+          ],
+          [
+            0.04928618669509888,
+            0.9165869951248169,
+            -0.39678603410720825,
+            0.844013124704361
+          ],
+          [
+            -0.5497147440910339,
+            -0.30679062008857727,
+            -0.7769768238067627,
+            0.18158126920461654
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.9486253779839368,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9620963931083679,
+      "T_world_graspgen_gripper": [
+        [
+          -0.8338969945907593,
+          0.25641340017318726,
+          0.48874083161354065,
+          -0.25722357630729675
+        ],
+        [
+          0.04928618669509888,
+          0.9165869951248169,
+          -0.39678603410720825,
+          0.8043345212936401
+        ],
+        [
+          -0.5497147440910339,
+          -0.30679062008857727,
+          -0.7769768238067627,
+          0.10388358682394028
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 1,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.5779243111610413,
+      "T_world_graspgen_gripper": [
+        [
+          0.11645567417144775,
+          0.8952966928482056,
+          0.4299789369106293,
+          -0.20748049020767212
+        ],
+        [
+          -0.2604483962059021,
+          0.4453025460243225,
+          -0.8566634654998779,
+          0.9363729953765869
+        ],
+        [
+          -0.9584387540817261,
+          -0.012224016711115837,
+          0.28503650426864624,
+          -0.11513973027467728
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7712813019752502,
+      "T_world_graspgen_gripper": [
+        [
+          0.2563211917877197,
+          0.6572225093841553,
+          0.7087722420692444,
+          -0.2431938648223877
+        ],
+        [
+          -0.14077115058898926,
+          0.7508334517478943,
+          -0.6453158855438232,
+          0.8870564103126526
+        ],
+        [
+          -0.9562860131263733,
+          0.06563344597816467,
+          0.28497248888015747,
+          -0.11883609741926193
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 3,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            -0.18154752254486084,
+            0.787885844707489,
+            0.5884524583816528,
+            -0.3100978970527649
+          ],
+          [
+            0.7574575543403625,
+            0.4936556816101074,
+            -0.42727282643318176,
+            0.9161848336458206
+          ],
+          [
+            -0.627135157585144,
+            0.3681575059890747,
+            -0.68641197681427,
+            0.16596967428922654
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.9261366724967957,
+      "T_world_graspgen_gripper": [
+        [
+          -0.18154752254486084,
+          0.787885844707489,
+          0.5884524583816528,
+          -0.2512526512145996
+        ],
+        [
+          0.7574575543403625,
+          0.4936556816101074,
+          -0.42727282643318176,
+          0.8734575510025024
+        ],
+        [
+          -0.627135157585144,
+          0.3681575059890747,
+          -0.68641197681427,
+          0.09732847660779953
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 4,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.8848882913589478,
+            0.3350350856781006,
+            -0.3236112892627716,
+            0.0683029904961586
+          ],
+          [
+            0.13539758324623108,
+            0.8497458100318909,
+            0.5095091462135315,
+            0.5701332986354828
+          ],
+          [
+            0.445690780878067,
+            0.4070425033569336,
+            -0.7972930669784546,
+            0.19433176070451735
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.9560187082985036,
+        "first_hit_source": "target",
+        "final_background_collision": false,
+        "final_target_collision": true
+      },
+      "score": 0.9727747440338135,
+      "T_world_graspgen_gripper": [
+        [
+          -0.8848882913589478,
+          0.3350350856781006,
+          -0.3236112892627716,
+          0.03594186156988144
+        ],
+        [
+          0.13539758324623108,
+          0.8497458100318909,
+          0.5095091462135315,
+          0.6210842132568359
+        ],
+        [
+          0.445690780878067,
+          0.4070425033569336,
+          -0.7972930669784546,
+          0.1146024540066719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.5528034567832947,
+      "T_world_graspgen_gripper": [
+        [
+          0.5971754789352417,
+          0.5715475082397461,
+          0.5627743005752563,
+          -0.2302413284778595
+        ],
+        [
+          -0.3773636221885681,
+          0.8193119764328003,
+          -0.43165338039398193,
+          0.839181125164032
+        ],
+        [
+          -0.7077981233596802,
+          0.045402273535728455,
+          0.704954206943512,
+          -0.22186481952667236
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 6,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.6520075798034668,
+      "T_world_graspgen_gripper": [
+        [
+          -0.1856023073196411,
+          0.45473331212997437,
+          -0.8710737228393555,
+          0.09807335585355759
+        ],
+        [
+          0.8978710174560547,
+          0.4386433959007263,
+          0.03767633065581322,
+          0.6710646152496338
+        ],
+        [
+          0.3992234170436859,
+          -0.7751190066337585,
+          -0.48970508575439453,
+          0.04777061939239502
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 7,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.13937479257583618,
+            -0.9712240099906921,
+            0.1931283175945282,
+            -0.14051593393087386
+          ],
+          [
+            -0.7152847051620483,
+            0.036131083965301514,
+            0.6978985667228699,
+            0.4584902226924896
+          ],
+          [
+            -0.6847937703132629,
+            -0.2354111671447754,
+            -0.6896657943725586,
+            0.12948970943689347
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.507589836283647,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9461755752563477,
+      "T_world_graspgen_gripper": [
+        [
+          0.13937479257583618,
+          -0.9712240099906921,
+          0.1931283175945282,
+          -0.12120310217142105
+        ],
+        [
+          -0.7152847051620483,
+          0.036131083965301514,
+          0.6978985667228699,
+          0.5282800793647766
+        ],
+        [
+          -0.6847937703132629,
+          -0.2354111671447754,
+          -0.6896657943725586,
+          0.060523129999637604
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 8,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7874389290809631,
+      "T_world_graspgen_gripper": [
+        [
+          -0.14290404319763184,
+          0.5879436731338501,
+          -0.7961788773536682,
+          0.07526084035634995
+        ],
+        [
+          0.753294050693512,
+          0.5863898992538452,
+          0.29781705141067505,
+          0.5864823460578918
+        ],
+        [
+          0.6419709920883179,
+          -0.5571975111961365,
+          -0.5266920328140259,
+          0.06074816733598709
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 9,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.24875253438949585,
+            -0.7969004511833191,
+            0.5505196452140808,
+            -0.2569685995578766
+          ],
+          [
+            -0.28718921542167664,
+            0.48214054107666016,
+            0.8276852369308472,
+            0.4197970390319824
+          ],
+          [
+            -0.9250105023384094,
+            -0.3639920651912689,
+            -0.10892748832702637,
+            -0.020751550793647766
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8800035119056702,
+      "T_world_graspgen_gripper": [
+        [
+          0.24875253438949585,
+          -0.7969004511833191,
+          0.5505196452140808,
+          -0.2019166350364685
+        ],
+        [
+          -0.28718921542167664,
+          0.48214054107666016,
+          0.8276852369308472,
+          0.5025655627250671
+        ],
+        [
+          -0.9250105023384094,
+          -0.3639920651912689,
+          -0.10892748832702637,
+          -0.0316442996263504
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 10,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.526600182056427,
+      "T_world_graspgen_gripper": [
+        [
+          -0.18500912189483643,
+          0.6407449245452881,
+          0.7451293468475342,
+          -0.25968942046165466
+        ],
+        [
+          -0.021973103284835815,
+          -0.7607262134552002,
+          0.648701012134552,
+          0.6109907031059265
+        ],
+        [
+          0.982491135597229,
+          0.10364276170730591,
+          0.15482032299041748,
+          -0.11850570142269135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 11,
+      "accepted": true,
+      "rank": 5,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.7908694744110107,
+            0.2299678474664688,
+            0.5671334266662598,
+            -0.3249954879283905
+          ],
+          [
+            0.5112759470939636,
+            -0.7575877904891968,
+            -0.4057806134223938,
+            0.8157285392284394
+          ],
+          [
+            0.33633676171302795,
+            0.6108811497688293,
+            -0.716729998588562,
+            0.1715404108166695
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.9055299758911133,
+      "T_world_graspgen_gripper": [
+        [
+          0.7908694744110107,
+          0.2299678474664688,
+          0.5671334266662598,
+          -0.2682821452617645
+        ],
+        [
+          0.5112759470939636,
+          -0.7575877904891968,
+          -0.4057806134223938,
+          0.7751504778862
+        ],
+        [
+          0.33633676171302795,
+          0.6108811497688293,
+          -0.716729998588562,
+          0.09986741095781326
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 12,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.6473994851112366,
+      "T_world_graspgen_gripper": [
+        [
+          0.1843186616897583,
+          -0.308460533618927,
+          0.9332088232040405,
+          -0.3339082896709442
+        ],
+        [
+          -0.6198678612709045,
+          -0.7733216285705566,
+          -0.1331813633441925,
+          0.8129674792289734
+        ],
+        [
+          0.7627518177032471,
+          -0.5539183616638184,
+          -0.3337423801422119,
+          0.03581671416759491
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 13,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.8099620342254639,
+            0.5806688070297241,
+            0.08237055689096451,
+            -0.07293102815747261
+          ],
+          [
+            0.2617742717266083,
+            0.2322586178779602,
+            0.9367656707763672,
+            0.42320460081100464
+          ],
+          [
+            0.5248194336891174,
+            0.7803073525428772,
+            -0.3401247262954712,
+            0.03604768067598343
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.8438727408486935,
+        "first_hit_source": "target",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8834429383277893,
+      "T_world_graspgen_gripper": [
+        [
+          -0.8099620342254639,
+          0.5806688070297241,
+          0.08237055689096451,
+          -0.06469397246837616
+        ],
+        [
+          0.2617742717266083,
+          0.2322586178779602,
+          0.9367656707763672,
+          0.5168811678886414
+        ],
+        [
+          0.5248194336891174,
+          0.7803073525428772,
+          -0.3401247262954712,
+          0.00203520804643631
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 14,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.2783198356628418,
+            0.6751886010169983,
+            0.6831240057945251,
+            -0.28505858182907107
+          ],
+          [
+            0.8919637203216553,
+            0.08213245868682861,
+            -0.4445841908454895,
+            0.9107063114643097
+          ],
+          [
+            -0.35628485679626465,
+            0.7330583930015564,
+            -0.5793848037719727,
+            0.1265772894024849
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.9561229944229126,
+      "T_world_graspgen_gripper": [
+        [
+          0.2783198356628418,
+          0.6751886010169983,
+          0.6831240057945251,
+          -0.21674618124961853
+        ],
+        [
+          0.8919637203216553,
+          0.08213245868682861,
+          -0.4445841908454895,
+          0.8662478923797607
+        ],
+        [
+          -0.35628485679626465,
+          0.7330583930015564,
+          -0.5793848037719727,
+          0.06863880902528763
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 15,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.47583842277526855,
+            -0.7126533389091492,
+            0.5154638886451721,
+            -0.21368210911750793
+          ],
+          [
+            -0.2009759545326233,
+            -0.48245978355407715,
+            -0.8525498509407043,
+            0.9991359889507294
+          ],
+          [
+            0.8562631011009216,
+            -0.5092718005180359,
+            0.08634674549102783,
+            -0.09256020486354828
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.892967700958252,
+      "T_world_graspgen_gripper": [
+        [
+          -0.47583842277526855,
+          -0.7126533389091492,
+          0.5154638886451721,
+          -0.16213572025299072
+        ],
+        [
+          -0.2009759545326233,
+          -0.48245978355407715,
+          -0.8525498509407043,
+          0.9138810038566589
+        ],
+        [
+          0.8562631011009216,
+          -0.5092718005180359,
+          0.08634674549102783,
+          -0.0839255303144455
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 16,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.4989359378814697,
+      "T_world_graspgen_gripper": [
+        [
+          0.579464316368103,
+          0.28717175126075745,
+          0.7627276182174683,
+          -0.2881975769996643
+        ],
+        [
+          -0.15229111909866333,
+          0.9575340747833252,
+          -0.24481798708438873,
+          0.7847389578819275
+        ],
+        [
+          -0.8006424903869629,
+          0.02570663020014763,
+          0.5985904932022095,
+          -0.19945946335792542
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 17,
+      "accepted": true,
+      "rank": 10,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.4640950560569763,
+            -0.8766645193099976,
+            -0.1267876774072647,
+            -0.02205390930175781
+          ],
+          [
+            -0.8698728084564209,
+            -0.4780740737915039,
+            0.12151739746332169,
+            0.6034009240567684
+          ],
+          [
+            -0.16714389622211456,
+            0.053893521428108215,
+            -0.9844584465026855,
+            0.25796656012535096
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.8575908541679382,
+      "T_world_graspgen_gripper": [
+        [
+          0.4640950560569763,
+          -0.8766645193099976,
+          -0.1267876774072647,
+          -0.03473267704248428
+        ],
+        [
+          -0.8698728084564209,
+          -0.4780740737915039,
+          0.12151739746332169,
+          0.6155526638031006
+        ],
+        [
+          -0.16714389622211456,
+          0.053893521428108215,
+          -0.9844584465026855,
+          0.1595207154750824
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 18,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.18538984656333923,
+      "T_world_graspgen_gripper": [
+        [
+          0.9980552792549133,
+          0.033905234187841415,
+          0.05230758711695671,
+          -0.07763224840164185
+        ],
+        [
+          -0.025998996570706367,
+          -0.5362443923950195,
+          0.8436621427536011,
+          0.5395344495773315
+        ],
+        [
+          0.05665421858429909,
+          -0.843381404876709,
+          -0.5343199968338013,
+          0.06912221759557724
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 19,
+      "accepted": true,
+      "rank": 6,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            -0.27210843563079834,
+            -0.949944794178009,
+            0.15349926054477692,
+            -0.16208967715501785
+          ],
+          [
+            -0.9147797226905823,
+            0.30486029386520386,
+            0.2650250792503357,
+            0.565021675825119
+          ],
+          [
+            -0.29855501651763916,
+            -0.0683024600148201,
+            -0.9519453048706055,
+            0.2541001260280609
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.904327392578125,
+      "T_world_graspgen_gripper": [
+        [
+          -0.27210843563079834,
+          -0.949944794178009,
+          0.15349926054477692,
+          -0.14673975110054016
+        ],
+        [
+          -0.9147797226905823,
+          0.30486029386520386,
+          0.2650250792503357,
+          0.5915241837501526
+        ],
+        [
+          -0.29855501651763916,
+          -0.0683024600148201,
+          -0.9519453048706055,
+          0.15890559554100037
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 20,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.2804269790649414,
+            -0.7977235317230225,
+            -0.5338518619537354,
+            0.11321092694997788
+          ],
+          [
+            -0.08187386393547058,
+            -0.5740197896957397,
+            0.8147380352020264,
+            0.496031129360199
+          ],
+          [
+            -0.9563772678375244,
+            -0.18476605415344238,
+            -0.22628343105316162,
+            0.005340045690536501
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8668711185455322,
+      "T_world_graspgen_gripper": [
+        [
+          0.2804269790649414,
+          -0.7977235317230225,
+          -0.5338518619537354,
+          0.05982574075460434
+        ],
+        [
+          -0.08187386393547058,
+          -0.5740197896957397,
+          0.8147380352020264,
+          0.5775049328804016
+        ],
+        [
+          -0.9563772678375244,
+          -0.18476605415344238,
+          -0.22628343105316162,
+          -0.017288297414779663
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 21,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.6960431337356567,
+            -0.7157545685768127,
+            -0.05673915892839432,
+            -0.02479746490716934
+          ],
+          [
+            -0.28385165333747864,
+            -0.3468970060348511,
+            0.8939186930656433,
+            0.4097389757633209
+          ],
+          [
+            -0.6595090627670288,
+            -0.6061004400253296,
+            -0.44462335109710693,
+            0.08598761707544328
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.9532387852668762,
+      "T_world_graspgen_gripper": [
+        [
+          0.6960431337356567,
+          -0.7157545685768127,
+          -0.05673915892839432,
+          -0.030471380800008774
+        ],
+        [
+          -0.28385165333747864,
+          -0.3468970060348511,
+          0.8939186930656433,
+          0.49913084506988525
+        ],
+        [
+          -0.6595090627670288,
+          -0.6061004400253296,
+          -0.44462335109710693,
+          0.041525281965732574
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 22,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.26822906732559204,
+            -0.8965097665786743,
+            -0.35259518027305603,
+            0.041723068058490756
+          ],
+          [
+            -0.11340473592281342,
+            -0.39284729957580566,
+            0.9125844836235046,
+            0.4448054611682892
+          ],
+          [
+            -0.9566569328308105,
+            -0.2047957479953766,
+            -0.20704162120819092,
+            -0.013241908699274062
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8699657320976257,
+      "T_world_graspgen_gripper": [
+        [
+          0.26822906732559204,
+          -0.8965097665786743,
+          -0.35259518027305603,
+          0.00646355003118515
+        ],
+        [
+          -0.11340473592281342,
+          -0.39284729957580566,
+          0.9125844836235046,
+          0.5360639095306396
+        ],
+        [
+          -0.9566569328308105,
+          -0.2047957479953766,
+          -0.20704162120819092,
+          -0.033946070820093155
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 23,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.5021951794624329,
+      "T_world_graspgen_gripper": [
+        [
+          -0.06277072429656982,
+          -0.6199877262115479,
+          -0.7820965051651001,
+          0.06950683146715164
+        ],
+        [
+          0.431723952293396,
+          0.6896612644195557,
+          -0.5813619494438171,
+          0.8532617688179016
+        ],
+        [
+          0.8998188972473145,
+          -0.3741423785686493,
+          0.22437304258346558,
+          -0.11823942512273788
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 24,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.398334264755249,
+      "T_world_graspgen_gripper": [
+        [
+          -0.3729207515716553,
+          0.5732160806655884,
+          -0.7296255826950073,
+          0.0632595643401146
+        ],
+        [
+          -0.436834454536438,
+          -0.8022148609161377,
+          -0.4069729149341583,
+          0.8124501705169678
+        ],
+        [
+          -0.8185998797416687,
+          0.16695697605609894,
+          0.5495630502700806,
+          -0.1691303551197052
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 25,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.6306965351104736,
+            -0.31488990783691406,
+            0.7092715501785278,
+            -0.3565084159374237
+          ],
+          [
+            0.07417608797550201,
+            0.8853285312652588,
+            0.4590112566947937,
+            0.5680363714694977
+          ],
+          [
+            -0.7724762558937073,
+            0.3421078622341156,
+            -0.5350162982940674,
+            0.11722229570150375
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.8352097019188894,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9228256344795227,
+      "T_world_graspgen_gripper": [
+        [
+          -0.6306965351104736,
+          -0.31488990783691406,
+          0.7092715501785278,
+          -0.2855812609195709
+        ],
+        [
+          0.07417608797550201,
+          0.8853285312652588,
+          0.4590112566947937,
+          0.613937497138977
+        ],
+        [
+          -0.7724762558937073,
+          0.3421078622341156,
+          -0.5350162982940674,
+          0.06372066587209702
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 26,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.7494239807128906,
+            -0.6545543074607849,
+            0.09961028397083282,
+            -0.06521428823471069
+          ],
+          [
+            -0.3524281084537506,
+            0.26701200008392334,
+            -0.896938681602478,
+            1.0121590733528136
+          ],
+          [
+            0.5604979395866394,
+            -0.7072928547859192,
+            -0.43078839778900146,
+            0.059464216232299805
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.474370539133486,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8002226948738098,
+      "T_world_graspgen_gripper": [
+        [
+          -0.7494239807128906,
+          -0.6545543074607849,
+          0.09961028397083282,
+          -0.05525325983762741
+        ],
+        [
+          -0.3524281084537506,
+          0.26701200008392334,
+          -0.896938681602478,
+          0.9224652051925659
+        ],
+        [
+          0.5604979395866394,
+          -0.7072928547859192,
+          -0.43078839778900146,
+          0.016385376453399658
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 27,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.32348644733428955,
+            -0.7040830254554749,
+            0.6321580410003662,
+            -0.2708286762237549
+          ],
+          [
+            0.13425962626934052,
+            -0.6954724788665771,
+            -0.7058982849121094,
+            0.9425416469573975
+          ],
+          [
+            0.9366595149040222,
+            -0.14347510039806366,
+            0.3195057511329651,
+            -0.17123910486698152
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8756929636001587,
+      "T_world_graspgen_gripper": [
+        [
+          -0.32348644733428955,
+          -0.7040830254554749,
+          0.6321580410003662,
+          -0.20761287212371826
+        ],
+        [
+          0.13425962626934052,
+          -0.6954724788665771,
+          -0.7058982849121094,
+          0.8719518184661865
+        ],
+        [
+          0.9366595149040222,
+          -0.14347510039806366,
+          0.3195057511329651,
+          -0.139288529753685
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 28,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.23590290546417236,
+            0.4283216595649719,
+            0.872290313243866,
+            -0.33849634528160094
+          ],
+          [
+            0.3171432316303253,
+            0.8145439624786377,
+            -0.48573487997055054,
+            0.9302127301692963
+          ],
+          [
+            -0.9185695052146912,
+            0.39122718572616577,
+            0.056313931941986084,
+            -0.06587461978197098
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8646737337112427,
+      "T_world_graspgen_gripper": [
+        [
+          0.23590290546417236,
+          0.4283216595649719,
+          0.872290313243866,
+          -0.25126731395721436
+        ],
+        [
+          0.3171432316303253,
+          0.8145439624786377,
+          -0.48573487997055054,
+          0.8816392421722412
+        ],
+        [
+          -0.9185695052146912,
+          0.39122718572616577,
+          0.056313931941986084,
+          -0.06024322658777237
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 29,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.620274007320404,
+      "T_world_graspgen_gripper": [
+        [
+          0.17657208442687988,
+          0.03839102014899254,
+          0.9835387468338013,
+          -0.2847713232040405
+        ],
+        [
+          -0.9774383306503296,
+          0.12451684474945068,
+          0.1706165224313736,
+          0.6289796829223633
+        ],
+        [
+          -0.11591698229312897,
+          -0.9914745092391968,
+          0.05951106548309326,
+          -0.040614910423755646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 30,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.05325448513031006,
+            -0.7233785390853882,
+            -0.6883949041366577,
+            0.09002318978309631
+          ],
+          [
+            -0.7447243928909302,
+            -0.43048226833343506,
+            0.5099711418151855,
+            0.5190064549446106
+          ],
+          [
+            -0.6652439832687378,
+            0.5398226976394653,
+            -0.5157923698425293,
+            0.10663415491580963
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.8530022184735783,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8416551947593689,
+      "T_world_graspgen_gripper": [
+        [
+          -0.05325448513031006,
+          -0.7233785390853882,
+          -0.6883949041366577,
+          0.021183699369430542
+        ],
+        [
+          -0.7447243928909302,
+          -0.43048226833343506,
+          0.5099711418151855,
+          0.5700035691261292
+        ],
+        [
+          -0.6652439832687378,
+          0.5398226976394653,
+          -0.5157923698425293,
+          0.0550549179315567
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 31,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.28315967321395874,
+            -0.9472525715827942,
+            -0.15011101961135864,
+            -0.03257278352975845
+          ],
+          [
+            -0.9205560088157654,
+            -0.31234896183013916,
+            0.2345525324344635,
+            0.5736850589513779
+          ],
+          [
+            -0.2690674960613251,
+            0.07176978141069412,
+            -0.9604436159133911,
+            0.2293456494808197
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.8270061016082764,
+      "T_world_graspgen_gripper": [
+        [
+          0.28315967321395874,
+          -0.9472525715827942,
+          -0.15011101961135864,
+          -0.04758388549089432
+        ],
+        [
+          -0.9205560088157654,
+          -0.31234896183013916,
+          0.2345525324344635,
+          0.5971403121948242
+        ],
+        [
+          -0.2690674960613251,
+          0.07176978141069412,
+          -0.9604436159133911,
+          0.1333012878894806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 32,
+      "accepted": true,
+      "rank": 2,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            -0.8836946487426758,
+            0.15335486829280853,
+            -0.4422285854816437,
+            0.10512811392545701
+          ],
+          [
+            -0.059622570872306824,
+            0.9002264738082886,
+            0.43132054805755615,
+            0.6105581641197204
+          ],
+          [
+            0.46425101161003113,
+            0.40752243995666504,
+            -0.7863819599151611,
+            0.19027655571699142
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.962812066078186,
+      "T_world_graspgen_gripper": [
+        [
+          -0.8836946487426758,
+          0.15335486829280853,
+          -0.4422285854816437,
+          0.06090525537729263
+        ],
+        [
+          -0.059622570872306824,
+          0.9002264738082886,
+          0.43132054805755615,
+          0.6536902189254761
+        ],
+        [
+          0.46425101161003113,
+          0.40752243995666504,
+          -0.7863819599151611,
+          0.11163835972547531
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 33,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.087628073990345,
+      "T_world_graspgen_gripper": [
+        [
+          -0.7357349395751953,
+          -0.05821205675601959,
+          0.6747633218765259,
+          -0.2765432298183441
+        ],
+        [
+          -0.5193894505500793,
+          0.6879026889801025,
+          -0.5069758892059326,
+          0.8531123399734497
+        ],
+        [
+          -0.43465936183929443,
+          -0.723464846611023,
+          -0.536348819732666,
+          0.10201137512922287
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 34,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.0031752586364746094,
+            0.6511350870132446,
+            -0.7589552402496338,
+            0.12438169717788697
+          ],
+          [
+            0.5351489782333374,
+            0.6422417163848877,
+            0.5487633347511292,
+            0.5090839803218842
+          ],
+          [
+            0.8447517156600952,
+            -0.4044116139411926,
+            -0.35049355030059814,
+            0.05342746376991272
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.5115683560762404,
+        "first_hit_source": "target",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8978833556175232,
+      "T_world_graspgen_gripper": [
+        [
+          -0.0031752586364746094,
+          0.6511350870132446,
+          -0.7589552402496338,
+          0.048486173152923584
+        ],
+        [
+          0.5351489782333374,
+          0.6422417163848877,
+          0.5487633347511292,
+          0.5639603137969971
+        ],
+        [
+          0.8447517156600952,
+          -0.4044116139411926,
+          -0.35049355030059814,
+          0.018378108739852905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 35,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.48993706703186035,
+            0.6744722127914429,
+            -0.5523123741149902,
+            0.09333299994468688
+          ],
+          [
+            0.12168028950691223,
+            -0.6802691221237183,
+            -0.7227917909622192,
+            0.9496594309806824
+          ],
+          [
+            -0.8632240295410156,
+            0.28691697120666504,
+            -0.41535913944244385,
+            0.04414394497871399
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9111232757568359,
+      "T_world_graspgen_gripper": [
+        [
+          0.48993706703186035,
+          0.6744722127914429,
+          -0.5523123741149902,
+          0.038101762533187866
+        ],
+        [
+          0.12168028950691223,
+          -0.6802691221237183,
+          -0.7227917909622192,
+          0.8773802518844604
+        ],
+        [
+          -0.8632240295410156,
+          0.28691697120666504,
+          -0.41535913944244385,
+          0.0026080310344696045
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 36,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.5136604309082031,
+            -0.24832937121391296,
+            -0.8212705254554749,
+            0.21952911019325255
+          ],
+          [
+            -0.2890184223651886,
+            0.9513371586799622,
+            -0.1068924218416214,
+            0.7872807815670967
+          ],
+          [
+            0.8078497052192688,
+            0.182455912232399,
+            -0.5604360103607178,
+            0.12032188326120377
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.7880125127020795,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.9239931106567383,
+      "T_world_graspgen_gripper": [
+        [
+          -0.5136604309082031,
+          -0.24832937121391296,
+          -0.8212705254554749,
+          0.13740205764770508
+        ],
+        [
+          -0.2890184223651886,
+          0.9513371586799622,
+          -0.1068924218416214,
+          0.7765915393829346
+        ],
+        [
+          0.8078497052192688,
+          0.182455912232399,
+          -0.5604360103607178,
+          0.06427828222513199
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 37,
+      "accepted": true,
+      "rank": 8,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.8374897837638855,
+            -0.5299232602119446,
+            -0.13338759541511536,
+            0.02702915668487549
+          ],
+          [
+            -0.5078055262565613,
+            -0.8448835611343384,
+            0.1682422012090683,
+            0.6302508965134621
+          ],
+          [
+            -0.20185241103172302,
+            -0.07316616177558899,
+            -0.9766793251037598,
+            0.24768444895744324
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.895546555519104,
+      "T_world_graspgen_gripper": [
+        [
+          0.8374897837638855,
+          -0.5299232602119446,
+          -0.13338759541511536,
+          0.013690397143363953
+        ],
+        [
+          -0.5078055262565613,
+          -0.8448835611343384,
+          0.1682422012090683,
+          0.6470751166343689
+        ],
+        [
+          -0.20185241103172302,
+          -0.07316616177558899,
+          -0.9766793251037598,
+          0.15001651644706726
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 38,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.0827254131436348,
+      "T_world_graspgen_gripper": [
+        [
+          0.6413164138793945,
+          -0.5209147930145264,
+          -0.5633479952812195,
+          0.03438889980316162
+        ],
+        [
+          0.6619502902030945,
+          0.004358768463134766,
+          0.7495349049568176,
+          0.5786476135253906
+        ],
+        [
+          -0.38798847794532776,
+          -0.8535974621772766,
+          0.34761518239974976,
+          -0.1164226233959198
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 39,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.49725091457366943,
+      "T_world_graspgen_gripper": [
+        [
+          0.2685084342956543,
+          -0.30763593316078186,
+          0.9128325581550598,
+          -0.29770252108573914
+        ],
+        [
+          -0.1852426379919052,
+          0.9134544134140015,
+          0.36233434081077576,
+          0.5898029208183289
+        ],
+        [
+          -0.9452980160713196,
+          -0.26638534665107727,
+          0.18828296661376953,
+          -0.07163158804178238
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 40,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7891762852668762,
+      "T_world_graspgen_gripper": [
+        [
+          -0.016081809997558594,
+          -0.28533345460891724,
+          0.9582933783531189,
+          -0.2957572638988495
+        ],
+        [
+          0.05947338044643402,
+          0.9564473628997803,
+          0.2857819199562073,
+          0.6861266493797302
+        ],
+        [
+          -0.9981003403663635,
+          0.06158886104822159,
+          0.001588284969329834,
+          -0.06843031942844391
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 41,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.6325641870498657,
+            0.7139924764633179,
+            0.3001289367675781,
+            -0.2443753957748413
+          ],
+          [
+            0.47111713886260986,
+            0.6622865200042725,
+            -0.5826021432876587,
+            0.9215293645858764
+          ],
+          [
+            -0.6147449016571045,
+            -0.22713732719421387,
+            -0.7553128004074097,
+            0.15572370439767838
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.6446918076213345,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9578052759170532,
+      "T_world_graspgen_gripper": [
+        [
+          -0.6325641870498657,
+          0.7139924764633179,
+          0.3001289367675781,
+          -0.2143625020980835
+        ],
+        [
+          0.47111713886260986,
+          0.6622865200042725,
+          -0.5826021432876587,
+          0.8632691502571106
+        ],
+        [
+          -0.6147449016571045,
+          -0.22713732719421387,
+          -0.7553128004074097,
+          0.08019242435693741
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 42,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.47993505001068115,
+            0.3608568012714386,
+            0.7996528744697571,
+            -0.365778648853302
+          ],
+          [
+            0.619899332523346,
+            -0.7844738960266113,
+            -0.018043695017695427,
+            0.6687600193545222
+          ],
+          [
+            0.6207956075668335,
+            0.5043640732765198,
+            -0.6001913547515869,
+            0.11231112480163574
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.5690070755578,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8810984492301941,
+      "T_world_graspgen_gripper": [
+        [
+          0.47993505001068115,
+          0.3608568012714386,
+          0.7996528744697571,
+          -0.2858133614063263
+        ],
+        [
+          0.619899332523346,
+          -0.7844738960266113,
+          -0.018043695017695427,
+          0.6669556498527527
+        ],
+        [
+          0.6207956075668335,
+          0.5043640732765198,
+          -0.6001913547515869,
+          0.05229198932647705
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 43,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.6133195757865906,
+      "T_world_graspgen_gripper": [
+        [
+          0.4291388988494873,
+          0.5000061988830566,
+          0.7522191405296326,
+          -0.28121501207351685
+        ],
+        [
+          -0.43104684352874756,
+          0.845220148563385,
+          -0.31591373682022095,
+          0.7744839787483215
+        ],
+        [
+          -0.7937496304512024,
+          -0.188670814037323,
+          0.5782428979873657,
+          -0.19064420461654663
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 44,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.384466290473938,
+            0.8120086193084717,
+            0.4391214847564697,
+            -0.17805664837360383
+          ],
+          [
+            0.1367988884449005,
+            0.4203159809112549,
+            -0.8970063924789429,
+            1.031558096408844
+          ],
+          [
+            -0.9129467010498047,
+            0.40494009852409363,
+            0.05051541328430176,
+            -0.06540389657020569
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8339700102806091,
+      "T_world_graspgen_gripper": [
+        [
+          0.384466290473938,
+          0.8120086193084717,
+          0.4391214847564697,
+          -0.13414449989795685
+        ],
+        [
+          0.1367988884449005,
+          0.4203159809112549,
+          -0.8970063924789429,
+          0.9418574571609497
+        ],
+        [
+          -0.9129467010498047,
+          0.40494009852409363,
+          0.05051541328430176,
+          -0.06035235524177551
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 45,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.6941942572593689,
+      "T_world_graspgen_gripper": [
+        [
+          0.6494324207305908,
+          0.56353360414505,
+          0.5105559825897217,
+          -0.13257816433906555
+        ],
+        [
+          0.27023935317993164,
+          0.45654529333114624,
+          -0.8476656675338745,
+          0.9306128621101379
+        ],
+        [
+          -0.7107800245285034,
+          0.6884739398956299,
+          0.14420640468597412,
+          -0.06030140444636345
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 46,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.6258967518806458,
+      "T_world_graspgen_gripper": [
+        [
+          0.13899660110473633,
+          0.7206918001174927,
+          0.6791783571243286,
+          -0.27348217368125916
+        ],
+        [
+          -0.3137756288051605,
+          0.6825495958328247,
+          -0.6600537300109863,
+          0.884401798248291
+        ],
+        [
+          -0.9392682313919067,
+          -0.12136438488960266,
+          0.3210076093673706,
+          -0.1328526735305786
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 47,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.42927733063697815,
+      "T_world_graspgen_gripper": [
+        [
+          0.9508803486824036,
+          -0.3065432608127594,
+          -0.04310223460197449,
+          -0.09635945409536362
+        ],
+        [
+          0.2955028712749481,
+          0.9403430223464966,
+          -0.16862095892429352,
+          0.7821279764175415
+        ],
+        [
+          0.0922205001115799,
+          0.14760152995586395,
+          0.9847381114959717,
+          -0.2849460244178772
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 48,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.10674858093261719,
+            0.5724717974662781,
+            -0.8129457235336304,
+            0.1545322671532631
+          ],
+          [
+            0.1268060952425003,
+            0.8187795281410217,
+            0.559928834438324,
+            0.5484124004840851
+          ],
+          [
+            0.9861667156219482,
+            -0.043314870446920395,
+            -0.15999650955200195,
+            -0.01931563913822174
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.9012174606323242,
+      "T_world_graspgen_gripper": [
+        [
+          -0.10674858093261719,
+          0.5724717974662781,
+          -0.8129457235336304,
+          0.07323769479990005
+        ],
+        [
+          0.1268060952425003,
+          0.8187795281410217,
+          0.559928834438324,
+          0.6044052839279175
+        ],
+        [
+          0.9861667156219482,
+          -0.043314870446920395,
+          -0.15999650955200195,
+          -0.035315290093421936
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 49,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.30676019191741943,
+            0.266561895608902,
+            -0.913697361946106,
+            0.19923372119665145
+          ],
+          [
+            -0.4812498688697815,
+            -0.7847855091094971,
+            -0.3905256390571594,
+            0.8112417042255402
+          ],
+          [
+            -0.8211556673049927,
+            0.5595144629478455,
+            -0.11245810985565186,
+            -0.01356426104903221
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.9197807312011719,
+      "T_world_graspgen_gripper": [
+        [
+          0.30676019191741943,
+          0.266561895608902,
+          -0.913697361946106,
+          0.10786398500204086
+        ],
+        [
+          -0.4812498688697815,
+          -0.7847855091094971,
+          -0.3905256390571594,
+          0.7721891403198242
+        ],
+        [
+          -0.8211556673049927,
+          0.5595144629478455,
+          -0.11245810985565186,
+          -0.024810072034597397
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 50,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.26643091440200806,
+            0.8872243165969849,
+            -0.37662672996520996,
+            -0.03045844733715057
+          ],
+          [
+            0.6782695055007935,
+            0.10504227876663208,
+            0.7272665500640869,
+            0.4498893141746521
+          ],
+          [
+            0.6848102807998657,
+            -0.4492207467556,
+            -0.5737906694412231,
+            0.11553709208965302
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.7209345543292874,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8866017460823059,
+      "T_world_graspgen_gripper": [
+        [
+          0.26643091440200806,
+          0.8872243165969849,
+          -0.37662672996520996,
+          -0.06812112033367157
+        ],
+        [
+          0.6782695055007935,
+          0.10504227876663208,
+          0.7272665500640869,
+          0.5226159691810608
+        ],
+        [
+          0.6848102807998657,
+          -0.4492207467556,
+          -0.5737906694412231,
+          0.0581580251455307
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 51,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.020973142236471176,
+      "T_world_graspgen_gripper": [
+        [
+          -0.26472699642181396,
+          -0.7842180728912354,
+          -0.5611789226531982,
+          0.08058732002973557
+        ],
+        [
+          0.36436033248901367,
+          -0.6201448440551758,
+          0.6947388648986816,
+          0.4970351755619049
+        ],
+        [
+          -0.8928389549255371,
+          -0.020555198192596436,
+          0.4499068856239319,
+          -0.1441451609134674
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 52,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.4974903166294098,
+      "T_world_graspgen_gripper": [
+        [
+          -0.1162571907043457,
+          -0.9921776652336121,
+          0.04547235369682312,
+          -0.11212098598480225
+        ],
+        [
+          0.12239688634872437,
+          -0.05974555015563965,
+          -0.9906812906265259,
+          1.0149774551391602
+        ],
+        [
+          0.9856486320495605,
+          -0.10960814356803894,
+          0.12838530540466309,
+          -0.06093510985374451
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 53,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.19962894916534424,
+            0.811927080154419,
+            0.5485643744468689,
+            -0.25546084642410277
+          ],
+          [
+            -0.25020748376846313,
+            0.5835119485855103,
+            -0.7725995182991028,
+            0.976594740152359
+          ],
+          [
+            -0.9473882913589478,
+            0.01697838492691517,
+            0.31963616609573364,
+            -0.1646980345249176
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8390137553215027,
+      "T_world_graspgen_gripper": [
+        [
+          0.19962894916534424,
+          0.811927080154419,
+          0.5485643744468689,
+          -0.2006044089794159
+        ],
+        [
+          -0.25020748376846313,
+          0.5835119485855103,
+          -0.7725995182991028,
+          0.8993347883224487
+        ],
+        [
+          -0.9473882913589478,
+          0.01697838492691517,
+          0.31963616609573364,
+          -0.13273441791534424
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 54,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.663751482963562,
+      "T_world_graspgen_gripper": [
+        [
+          -0.0047370195388793945,
+          0.8422284126281738,
+          0.5391002893447876,
+          -0.23513302206993103
+        ],
+        [
+          -0.35913529992103577,
+          0.5017063617706299,
+          -0.7869641780853271,
+          0.8441252708435059
+        ],
+        [
+          -0.9332735538482666,
+          -0.19733771681785583,
+          0.3000972270965576,
+          -0.1214882880449295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 55,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7908670902252197,
+      "T_world_graspgen_gripper": [
+        [
+          0.13946998119354248,
+          -0.675902247428894,
+          -0.7236742377281189,
+          0.06278025358915329
+        ],
+        [
+          -0.8930739164352417,
+          -0.40154850482940674,
+          0.2029235064983368,
+          0.6074364185333252
+        ],
+        [
+          -0.4277467131614685,
+          0.6179927587509155,
+          -0.6596345901489258,
+          0.08644668012857437
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 56,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.24643480777740479,
+            -0.7646809220314026,
+            0.5954266786575317,
+            -0.2632196366786957
+          ],
+          [
+            -0.5045088529586792,
+            0.6257856488227844,
+            0.594864010810852,
+            0.5090217471122742
+          ],
+          [
+            -0.8274906277656555,
+            -0.15380287170410156,
+            -0.5400035381317139,
+            0.11533324271440507
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.7555636006884588,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8910423517227173,
+      "T_world_graspgen_gripper": [
+        [
+          -0.24643480777740479,
+          -0.7646809220314026,
+          0.5954266786575317,
+          -0.2036769688129425
+        ],
+        [
+          -0.5045088529586792,
+          0.6257856488227844,
+          0.594864010810852,
+          0.5685081481933594
+        ],
+        [
+          -0.8274906277656555,
+          -0.15380287170410156,
+          -0.5400035381317139,
+          0.06133288890123367
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 57,
+      "accepted": true,
+      "rank": 1,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            -0.6938036680221558,
+            0.45432570576667786,
+            -0.5587705969810486,
+            0.11293376237154007
+          ],
+          [
+            0.3689291775226593,
+            0.8905742764472961,
+            0.2660239040851593,
+            0.6210558384656906
+          ],
+          [
+            0.6184882521629333,
+            -0.021578453481197357,
+            -0.7854976654052734,
+            0.17571529895067217
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.9781284928321838,
+      "T_world_graspgen_gripper": [
+        [
+          -0.6938036680221558,
+          0.45432570576667786,
+          -0.5587705969810486,
+          0.05705670267343521
+        ],
+        [
+          0.3689291775226593,
+          0.8905742764472961,
+          0.2660239040851593,
+          0.6476582288742065
+        ],
+        [
+          0.6184882521629333,
+          -0.021578453481197357,
+          -0.7854976654052734,
+          0.0971655324101448
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 58,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.6942365765571594,
+      "T_world_graspgen_gripper": [
+        [
+          0.9386371374130249,
+          -0.3245578110218048,
+          0.11671586334705353,
+          -0.16023533046245575
+        ],
+        [
+          -0.14663010835647583,
+          -0.6817963123321533,
+          -0.7166963219642639,
+          0.8887208700180054
+        ],
+        [
+          0.3121858239173889,
+          0.6556037068367004,
+          -0.6875492334365845,
+          0.07900234311819077
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 59,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7442446947097778,
+      "T_world_graspgen_gripper": [
+        [
+          0.16603463888168335,
+          -0.5999147295951843,
+          -0.782646119594574,
+          0.06468043476343155
+        ],
+        [
+          -0.8618869781494141,
+          -0.4739183187484741,
+          0.1804230958223343,
+          0.6159195899963379
+        ],
+        [
+          -0.4791487455368042,
+          0.6445958614349365,
+          -0.5957456827163696,
+          0.05978779494762421
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 60,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.06609511375427246,
+            -0.6502554416656494,
+            -0.7568351030349731,
+            0.16764360517263413
+          ],
+          [
+            -0.11598053574562073,
+            -0.7583589553833008,
+            0.641435980796814,
+            0.49045073986053467
+          ],
+          [
+            -0.9910498857498169,
+            0.045382410287857056,
+            -0.12554073333740234,
+            -0.012587787955999373
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.9005643129348755,
+      "T_world_graspgen_gripper": [
+        [
+          0.06609511375427246,
+          -0.6502554416656494,
+          -0.7568351030349731,
+          0.09196009486913681
+        ],
+        [
+          -0.11598053574562073,
+          -0.7583589553833008,
+          0.641435980796814,
+          0.5545943379402161
+        ],
+        [
+          -0.9910498857498169,
+          0.045382410287857056,
+          -0.12554073333740234,
+          -0.02514186128973961
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 61,
+      "accepted": true,
+      "rank": 4,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            -0.9149154424667358,
+            0.11667857319116592,
+            -0.38641420006752014,
+            0.08881062716245652
+          ],
+          [
+            0.2820182144641876,
+            0.8696721792221069,
+            -0.4051371216773987,
+            0.8142773687839509
+          ],
+          [
+            0.28878283500671387,
+            -0.47964203357696533,
+            -0.8285820484161377,
+            0.20069561153650284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.9059056043624878,
+      "T_world_graspgen_gripper": [
+        [
+          -0.9149154424667358,
+          0.11667857319116592,
+          -0.38641420006752014,
+          0.0501692071557045
+        ],
+        [
+          0.2820182144641876,
+          0.8696721792221069,
+          -0.4051371216773987,
+          0.7737636566162109
+        ],
+        [
+          0.28878283500671387,
+          -0.47964203357696533,
+          -0.8285820484161377,
+          0.11783740669488907
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 62,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7890113592147827,
+      "T_world_graspgen_gripper": [
+        [
+          -0.055274128913879395,
+          0.22649067640304565,
+          0.972443699836731,
+          -0.3206656575202942
+        ],
+        [
+          -0.2744719386100769,
+          -0.9398585557937622,
+          0.20330019295215607,
+          0.7260237336158752
+        ],
+        [
+          0.9600051641464233,
+          -0.25567126274108887,
+          0.11411523818969727,
+          -0.09227721393108368
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 63,
+      "accepted": true,
+      "rank": 3,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.5598773956298828,
+            0.5973919630050659,
+            0.5741603970527649,
+            -0.3115275681018829
+          ],
+          [
+            0.7568350434303284,
+            -0.6507610082626343,
+            -0.06091570109128952,
+            0.6845338098704815
+          ],
+          [
+            0.337250679731369,
+            0.46865004301071167,
+            -0.8164734840393066,
+            0.20119658559560777
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.9294989109039307,
+      "T_world_graspgen_gripper": [
+        [
+          0.5598773956298828,
+          0.5973919630050659,
+          0.5741603970527649,
+          -0.25411152839660645
+        ],
+        [
+          0.7568350434303284,
+          -0.6507610082626343,
+          -0.06091570109128952,
+          0.6784422397613525
+        ],
+        [
+          0.337250679731369,
+          0.46865004301071167,
+          -0.8164734840393066,
+          0.1195492371916771
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 64,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.4017467796802521,
+      "T_world_graspgen_gripper": [
+        [
+          0.24052733182907104,
+          -0.179890975356102,
+          0.953826904296875,
+          -0.31313639879226685
+        ],
+        [
+          0.4874449372291565,
+          0.8721635937690735,
+          0.04156994819641113,
+          0.7319268584251404
+        ],
+        [
+          -0.8393712043762207,
+          0.45493942499160767,
+          0.2974661588668823,
+          -0.12984806299209595
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 65,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.5755126476287842,
+      "T_world_graspgen_gripper": [
+        [
+          0.4166327118873596,
+          -0.30069345235824585,
+          0.857904851436615,
+          -0.2897038757801056
+        ],
+        [
+          0.6215001940727234,
+          -0.5945049524307251,
+          -0.5101976990699768,
+          0.7503412961959839
+        ],
+        [
+          0.6634416580200195,
+          0.7457529902458191,
+          -0.06080925464630127,
+          -0.051833342760801315
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 66,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.08581680059432983,
+            0.9180228114128113,
+            0.3871300518512726,
+            -0.21631255447864534
+          ],
+          [
+            -0.013606131076812744,
+            0.3896070718765259,
+            -0.9208806753158569,
+            0.997786545753479
+          ],
+          [
+            -0.9962180852890015,
+            0.0737597644329071,
+            0.04592549800872803,
+            -0.0788302019238472
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8496230840682983,
+      "T_world_graspgen_gripper": [
+        [
+          0.08581680059432983,
+          0.9180228114128113,
+          0.3871300518512726,
+          -0.17759954929351807
+        ],
+        [
+          -0.013606131076812744,
+          0.3896070718765259,
+          -0.9208806753158569,
+          0.9056984782218933
+        ],
+        [
+          -0.9962180852890015,
+          0.0737597644329071,
+          0.04592549800872803,
+          -0.0742376521229744
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 67,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.15892809629440308,
+            0.6980921030044556,
+            -0.6981470584869385,
+            0.16160942763090136
+          ],
+          [
+            -0.045896828174591064,
+            -0.701146125793457,
+            -0.7115389704704285,
+            0.9154545843601227
+          ],
+          [
+            -0.9862227439880371,
+            0.14512622356414795,
+            -0.07939159870147705,
+            -0.028307635337114334
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8879243731498718,
+      "T_world_graspgen_gripper": [
+        [
+          0.15892809629440308,
+          0.6980921030044556,
+          -0.6981470584869385,
+          0.09179472178220749
+        ],
+        [
+          -0.045896828174591064,
+          -0.701146125793457,
+          -0.7115389704704285,
+          0.8443006873130798
+        ],
+        [
+          -0.9862227439880371,
+          0.14512622356414795,
+          -0.07939159870147705,
+          -0.03624679520726204
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 68,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.39049655199050903,
+            0.8660356998443604,
+            -0.31224143505096436,
+            0.01664528325200081
+          ],
+          [
+            0.004127055406570435,
+            -0.3408135175704956,
+            -0.9401218891143799,
+            1.0007074356079102
+          ],
+          [
+            -0.9205951690673828,
+            0.36582574248313904,
+            -0.13666069507598877,
+            -0.03201429694890976
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8634772300720215,
+      "T_world_graspgen_gripper": [
+        [
+          0.39049655199050903,
+          0.8660356998443604,
+          -0.31224143505096436,
+          -0.014578860253095627
+        ],
+        [
+          0.004127055406570435,
+          -0.3408135175704956,
+          -0.9401218891143799,
+          0.9066952466964722
+        ],
+        [
+          -0.9205951690673828,
+          0.36582574248313904,
+          -0.13666069507598877,
+          -0.045680366456508636
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 69,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.16289640963077545,
+      "T_world_graspgen_gripper": [
+        [
+          -0.2564951181411743,
+          -0.870513916015625,
+          -0.42001885175704956,
+          0.011374875903129578
+        ],
+        [
+          0.3528928756713867,
+          -0.48890113830566406,
+          0.7977734208106995,
+          0.5316604375839233
+        ],
+        [
+          -0.8998205065727234,
+          0.056403279304504395,
+          0.4325988292694092,
+          -0.13618972897529602
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 70,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.5382229089736938,
+            0.8425423502922058,
+            0.020938411355018616,
+            -0.14899638742208482
+          ],
+          [
+            0.7619045376777649,
+            -0.49703121185302734,
+            0.4152847230434418,
+            0.5343413263559341
+          ],
+          [
+            0.36030203104019165,
+            -0.207562655210495,
+            -0.9094504117965698,
+            0.22548324465751649
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.8832874298095703,
+      "T_world_graspgen_gripper": [
+        [
+          0.5382229089736938,
+          0.8425423502922058,
+          0.020938411355018616,
+          -0.14690254628658295
+        ],
+        [
+          0.7619045376777649,
+          -0.49703121185302734,
+          0.4152847230434418,
+          0.5758697986602783
+        ],
+        [
+          0.36030203104019165,
+          -0.207562655210495,
+          -0.9094504117965698,
+          0.1345382034778595
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 71,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.6702934503555298,
+            0.7275736927986145,
+            0.1460932493209839,
+            -0.19480090141296386
+          ],
+          [
+            0.55633145570755,
+            -0.6229556798934937,
+            0.549928605556488,
+            0.5182729303836823
+          ],
+          [
+            0.4911231994628906,
+            -0.2873372435569763,
+            -0.8223352432250977,
+            0.17803925126791
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.8084791382111985,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8602907061576843,
+      "T_world_graspgen_gripper": [
+        [
+          0.6702934503555298,
+          0.7275736927986145,
+          0.1460932493209839,
+          -0.18019157648086548
+        ],
+        [
+          0.55633145570755,
+          -0.6229556798934937,
+          0.549928605556488,
+          0.573265790939331
+        ],
+        [
+          0.4911231994628906,
+          -0.2873372435569763,
+          -0.8223352432250977,
+          0.09580572694540024
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 72,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.504616916179657,
+      "T_world_graspgen_gripper": [
+        [
+          -0.08462607860565186,
+          0.10636412352323532,
+          -0.9907195568084717,
+          0.09880626946687698
+        ],
+        [
+          0.2379528284072876,
+          0.9676752686500549,
+          0.08356444537639618,
+          0.6572311520576477
+        ],
+        [
+          0.9675830602645874,
+          -0.2286727875471115,
+          -0.10720014572143555,
+          -0.04677043855190277
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 73,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.18593215942382812,
+            0.938799262046814,
+            -0.28997424244880676,
+            0.006957831978797915
+          ],
+          [
+            -0.01551184244453907,
+            -0.2922790050506592,
+            -0.956207275390625,
+            1.032462215423584
+          ],
+          [
+            -0.9824401140213013,
+            0.18228770792484283,
+            -0.03978157043457031,
+            -0.047187792509794234
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9283655285835266,
+      "T_world_graspgen_gripper": [
+        [
+          0.18593215942382812,
+          0.938799262046814,
+          -0.28997424244880676,
+          -0.022039592266082764
+        ],
+        [
+          -0.01551184244453907,
+          -0.2922790050506592,
+          -0.956207275390625,
+          0.9368414878845215
+        ],
+        [
+          -0.9824401140213013,
+          0.18228770792484283,
+          -0.03978157043457031,
+          -0.051165949553251266
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 74,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.20272588729858398,
+            -0.883988618850708,
+            0.4212675392627716,
+            -0.1782953232526779
+          ],
+          [
+            -0.09617725014686584,
+            0.41014599800109863,
+            0.9069344997406006,
+            0.430775785446167
+          ],
+          [
+            -0.9745010137557983,
+            -0.22437545657157898,
+            -0.001872420310974121,
+            -0.06068087965250015
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8486324548721313,
+      "T_world_graspgen_gripper": [
+        [
+          0.20272588729858398,
+          -0.883988618850708,
+          0.4212675392627716,
+          -0.13616856932640076
+        ],
+        [
+          -0.09617725014686584,
+          0.41014599800109863,
+          0.9069344997406006,
+          0.521469235420227
+        ],
+        [
+          -0.9745010137557983,
+          -0.22437545657157898,
+          -0.001872420310974121,
+          -0.060868121683597565
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 75,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.5859813690185547,
+            -0.6895046830177307,
+            -0.42568665742874146,
+            0.06825746297836305
+          ],
+          [
+            -0.42332178354263306,
+            0.7084243297576904,
+            -0.5647421479225159,
+            0.937332159280777
+          ],
+          [
+            0.6909591555595398,
+            -0.15072591602802277,
+            -0.7070057392120361,
+            0.1426184132695198
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.6337872981329026,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9603784680366516,
+      "T_world_graspgen_gripper": [
+        [
+          -0.5859813690185547,
+          -0.6895046830177307,
+          -0.42568665742874146,
+          0.02568879723548889
+        ],
+        [
+          -0.42332178354263306,
+          0.7084243297576904,
+          -0.5647421479225159,
+          0.8808579444885254
+        ],
+        [
+          0.6909591555595398,
+          -0.15072591602802277,
+          -0.7070057392120361,
+          0.07191783934831619
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 76,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.15502989292144775,
+      "T_world_graspgen_gripper": [
+        [
+          -0.15330064296722412,
+          -0.513066828250885,
+          0.8445480465888977,
+          -0.2852148115634918
+        ],
+        [
+          -0.9827519655227661,
+          0.16860973834991455,
+          -0.07595589011907578,
+          0.728900134563446
+        ],
+        [
+          -0.10342858731746674,
+          -0.8416253328323364,
+          -0.5300652980804443,
+          0.07170633226633072
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 77,
+      "accepted": true,
+      "rank": 7,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.8947441577911377,
+            -0.35719960927963257,
+            0.2680322229862213,
+            -0.10070077031850815
+          ],
+          [
+            -0.4230565130710602,
+            -0.485750675201416,
+            0.764898419380188,
+            0.46378483772277834
+          ],
+          [
+            -0.14302457869052887,
+            -0.797781229019165,
+            -0.5857383012771606,
+            0.12798073440790175
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.8970864415168762,
+      "T_world_graspgen_gripper": [
+        [
+          0.8947441577911377,
+          -0.35719960927963257,
+          0.2680322229862213,
+          -0.07389754801988602
+        ],
+        [
+          -0.4230565130710602,
+          -0.485750675201416,
+          0.764898419380188,
+          0.5402746796607971
+        ],
+        [
+          -0.14302457869052887,
+          -0.797781229019165,
+          -0.5857383012771606,
+          0.0694069042801857
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 78,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.3053622245788574,
+      "T_world_graspgen_gripper": [
+        [
+          -0.2755773067474365,
+          -0.6734204292297363,
+          -0.6859754323959351,
+          0.09740481525659561
+        ],
+        [
+          0.13414549827575684,
+          -0.733565092086792,
+          0.6662487983703613,
+          0.5451670289039612
+        ],
+        [
+          -0.9518730640411377,
+          0.09158244729042053,
+          0.29249006509780884,
+          -0.10018417239189148
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 79,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.006516695022583008,
+            -0.35989099740982056,
+            -0.932971715927124,
+            0.21375259310007094
+          ],
+          [
+            0.11033467948436737,
+            0.9275535345077515,
+            -0.35703033208847046,
+            0.7991041243076324
+          ],
+          [
+            0.9938732385635376,
+            -0.10061244666576385,
+            0.04575300216674805,
+            -0.07025312930345536
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8256843090057373,
+      "T_world_graspgen_gripper": [
+        [
+          0.006516695022583008,
+          -0.35989099740982056,
+          -0.932971715927124,
+          0.12045542150735855
+        ],
+        [
+          0.11033467948436737,
+          0.9275535345077515,
+          -0.35703033208847046,
+          0.7634010910987854
+        ],
+        [
+          0.9938732385635376,
+          -0.10061244666576385,
+          0.04575300216674805,
+          -0.06567782908678055
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 80,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7523066997528076,
+      "T_world_graspgen_gripper": [
+        [
+          0.6322323083877563,
+          -0.7208361029624939,
+          -0.2840381860733032,
+          -0.10192935168743134
+        ],
+        [
+          -0.3675517439842224,
+          0.04368084669113159,
+          -0.9289767146110535,
+          0.9283164739608765
+        ],
+        [
+          0.6820469498634338,
+          0.6917278170585632,
+          -0.2373281717300415,
+          -0.027378294616937637
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 81,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.2705885171890259,
+            -0.9437656998634338,
+            0.18996912240982056,
+            -0.16646465957164763
+          ],
+          [
+            -0.08868355304002762,
+            -0.17205500602722168,
+            -0.981087327003479,
+            1.0761892437934875
+          ],
+          [
+            0.958601713180542,
+            -0.282318115234375,
+            -0.037140488624572754,
+            -0.0473467618227005
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8425902724266052,
+      "T_world_graspgen_gripper": [
+        [
+          -0.2705885171890259,
+          -0.9437656998634338,
+          0.18996912240982056,
+          -0.1474677473306656
+        ],
+        [
+          -0.08868355304002762,
+          -0.17205500602722168,
+          -0.981087327003479,
+          0.9780805110931396
+        ],
+        [
+          0.958601713180542,
+          -0.282318115234375,
+          -0.037140488624572754,
+          -0.051060810685157776
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 82,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            -0.43245506286621094,
+            -0.3874996304512024,
+            0.8141417503356934,
+            -0.3568291485309601
+          ],
+          [
+            -0.8079139590263367,
+            0.5674241781234741,
+            -0.15907517075538635,
+            0.6966084152460098
+          ],
+          [
+            -0.40032219886779785,
+            -0.7265492677688599,
+            -0.558451771736145,
+            0.12102188020944596
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.8453108668327332,
+      "T_world_graspgen_gripper": [
+        [
+          -0.43245506286621094,
+          -0.3874996304512024,
+          0.8141417503356934,
+          -0.27541497349739075
+        ],
+        [
+          -0.8079139590263367,
+          0.5674241781234741,
+          -0.15907517075538635,
+          0.6807008981704712
+        ],
+        [
+          -0.40032219886779785,
+          -0.7265492677688599,
+          -0.558451771736145,
+          0.06517670303583145
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 83,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.681834876537323,
+      "T_world_graspgen_gripper": [
+        [
+          0.26206082105636597,
+          -0.28517946600914,
+          0.9219526648521423,
+          -0.3046727478504181
+        ],
+        [
+          -0.147388756275177,
+          0.9323057532310486,
+          0.3302764296531677,
+          0.6326643228530884
+        ],
+        [
+          -0.9537298083305359,
+          -0.22243796288967133,
+          0.20228856801986694,
+          -0.10484908521175385
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 84,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            -0.3795703649520874,
+            -0.8910159468650818,
+            -0.24903176724910736,
+            0.01416866332292557
+          ],
+          [
+            -0.7173754572868347,
+            0.45343273878097534,
+            -0.5289340019226074,
+            0.9516884684562683
+          ],
+          [
+            0.5842077732086182,
+            -0.022118359804153442,
+            -0.811302661895752,
+            0.17972088605165482
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.839519004327883,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9116732478141785,
+      "T_world_graspgen_gripper": [
+        [
+          -0.3795703649520874,
+          -0.8910159468650818,
+          -0.24903176724910736,
+          -0.010734513401985168
+        ],
+        [
+          -0.7173754572868347,
+          0.45343273878097534,
+          -0.5289340019226074,
+          0.8987950682640076
+        ],
+        [
+          0.5842077732086182,
+          -0.022118359804153442,
+          -0.811302661895752,
+          0.09859061986207962
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 85,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.29744914174079895,
+      "T_world_graspgen_gripper": [
+        [
+          0.09625804424285889,
+          -0.9911224842071533,
+          -0.09170886874198914,
+          -0.03723224252462387
+        ],
+        [
+          0.09825488924980164,
+          -0.08222520351409912,
+          0.9917585849761963,
+          0.44604259729385376
+        ],
+        [
+          -0.990494966506958,
+          -0.10447564721107483,
+          0.08946776390075684,
+          -0.05521924048662186
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 86,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.775567352771759,
+      "T_world_graspgen_gripper": [
+        [
+          -0.02722632884979248,
+          0.8705454468727112,
+          -0.49133411049842834,
+          0.05327510088682175
+        ],
+        [
+          -0.23157623410224915,
+          -0.4836381673812866,
+          -0.8440773487091064,
+          0.9140099287033081
+        ],
+        [
+          -0.9724355936050415,
+          0.09080018848180771,
+          0.2147654891014099,
+          -0.09318573772907257
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 87,
+      "accepted": true,
+      "rank": 9,
+      "collision_checked": true,
+      "collision_state": "clear",
+      "reasons": [],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.15624189376831055,
+            -0.7738301157951355,
+            -0.6138203740119934,
+            0.06880649626255037
+          ],
+          [
+            -0.9223468899726868,
+            0.10802161693572998,
+            -0.3709549009799957,
+            0.9035978943109513
+          ],
+          [
+            0.35336196422576904,
+            0.6241139769554138,
+            -0.6968623399734497,
+            0.1671421155333519
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.8708382248878479,
+      "T_world_graspgen_gripper": [
+        [
+          0.15624189376831055,
+          -0.7738301157951355,
+          -0.6138203740119934,
+          0.007424458861351013
+        ],
+        [
+          -0.9223468899726868,
+          0.10802161693572998,
+          -0.3709549009799957,
+          0.8665024042129517
+        ],
+        [
+          0.35336196422576904,
+          0.6241139769554138,
+          -0.6968623399734497,
+          0.09745588153600693
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 88,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.33481109142303467,
+            0.9368425011634827,
+            -0.10113196074962616,
+            -0.017905949056148528
+          ],
+          [
+            0.23808494210243225,
+            -0.1879512071609497,
+            -0.9528850317001343,
+            1.0339635491371155
+          ],
+          [
+            -0.9117110371589661,
+            0.29495853185653687,
+            -0.2859762907028198,
+            0.03022463470697403
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.047932723290395864,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.9208906888961792,
+      "T_world_graspgen_gripper": [
+        [
+          0.33481109142303467,
+          0.9368425011634827,
+          -0.10113196074962616,
+          -0.028019145131111145
+        ],
+        [
+          0.23808494210243225,
+          -0.1879512071609497,
+          -0.9528850317001343,
+          0.938675045967102
+        ],
+        [
+          -0.9117110371589661,
+          0.29495853185653687,
+          -0.2859762907028198,
+          0.0016270056366920471
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 89,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7939311861991882,
+      "T_world_graspgen_gripper": [
+        [
+          0.2651740312576294,
+          -0.7833719849586487,
+          -0.5621486306190491,
+          -0.02327359840273857
+        ],
+        [
+          -0.8422698378562927,
+          0.09558606147766113,
+          -0.5305137634277344,
+          0.8972472548484802
+        ],
+        [
+          0.46932321786880493,
+          0.614159345626831,
+          -0.6344636678695679,
+          0.06749775260686874
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 90,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7319675087928772,
+      "T_world_graspgen_gripper": [
+        [
+          -0.0009403228759765625,
+          0.9879354238510132,
+          0.1548636257648468,
+          -0.13711221516132355
+        ],
+        [
+          0.12480738759040833,
+          0.15376877784729004,
+          -0.980193018913269,
+          0.9909380674362183
+        ],
+        [
+          -0.992180585861206,
+          0.01840648055076599,
+          -0.12344622611999512,
+          -0.007596008479595184
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 91,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.702350378036499,
+            -0.7032047510147095,
+            0.11048582196235657,
+            -0.06519720405340194
+          ],
+          [
+            -0.18915140628814697,
+            -0.03473687171936035,
+            0.981333315372467,
+            0.39806931614875796
+          ],
+          [
+            -0.6862403154373169,
+            -0.7101383805274963,
+            -0.15740966796875,
+            -0.0077944301068782786
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.13003957176478836,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8781210780143738,
+      "T_world_graspgen_gripper": [
+        [
+          0.702350378036499,
+          -0.7032047510147095,
+          0.11048582196235657,
+          -0.05414862185716629
+        ],
+        [
+          -0.18915140628814697,
+          -0.03473687171936035,
+          0.981333315372467,
+          0.49620264768600464
+        ],
+        [
+          -0.6862403154373169,
+          -0.7101383805274963,
+          -0.15740966796875,
+          -0.02353539690375328
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 92,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.41337013244628906,
+      "T_world_graspgen_gripper": [
+        [
+          0.403270423412323,
+          -0.9094750881195068,
+          0.10113370418548584,
+          -0.14403748512268066
+        ],
+        [
+          0.4908033311367035,
+          0.12169146537780762,
+          -0.8627301454544067,
+          0.8983966112136841
+        ],
+        [
+          0.7723245024681091,
+          0.3975503444671631,
+          0.49544793367385864,
+          -0.15757238864898682
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 93,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.7253961563110352,
+      "T_world_graspgen_gripper": [
+        [
+          0.2861540913581848,
+          -0.41962823271751404,
+          0.8614104986190796,
+          -0.286136269569397
+        ],
+        [
+          0.41553136706352234,
+          -0.7557222843170166,
+          -0.5061795711517334,
+          0.7958698868751526
+        ],
+        [
+          0.8633942604064941,
+          0.5027884244918823,
+          -0.041884422302246094,
+          -0.0805988684296608
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 94,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.26808425784111023,
+      "T_world_graspgen_gripper": [
+        [
+          -0.4067491292953491,
+          -0.8435544967651367,
+          0.35067203640937805,
+          -0.17650097608566284
+        ],
+        [
+          0.3205013573169708,
+          -0.49123096466064453,
+          -0.8099203109741211,
+          0.8994458317756653
+        ],
+        [
+          0.8554729223251343,
+          -0.21704351902008057,
+          0.47016823291778564,
+          -0.1772896945476532
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 95,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": false,
+      "collision_state": "not_checked",
+      "reasons": [
+        "low_score"
+      ],
+      "score": 0.06687833368778229,
+      "T_world_graspgen_gripper": [
+        [
+          -0.20740079879760742,
+          0.956807553768158,
+          -0.2037256956100464,
+          -0.03927693888545036
+        ],
+        [
+          -0.724743664264679,
+          -0.29016196727752686,
+          -0.6249420642852783,
+          0.9155493378639221
+        ],
+        [
+          -0.6570627689361572,
+          0.018035411834716797,
+          0.7536200881004333,
+          -0.2371523380279541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 96,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision",
+        "final_target_collision",
+        "approach_target_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision",
+          "final_target_collision",
+          "approach_target_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.6911315321922302,
+            0.6546915769577026,
+            0.3061310350894928,
+            -0.2408987671136856
+          ],
+          [
+            -0.13767504692077637,
+            -0.2965582609176636,
+            0.9450391530990601,
+            0.4646468997001648
+          ],
+          [
+            0.7094948291778564,
+            -0.6952929496765137,
+            -0.11482608318328857,
+            -0.02797790914773941
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.0,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": true
+      },
+      "score": 0.8083919286727905,
+      "T_world_graspgen_gripper": [
+        [
+          0.6911315321922302,
+          0.6546915769577026,
+          0.3061310350894928,
+          -0.21028566360473633
+        ],
+        [
+          -0.13767504692077637,
+          -0.2965582609176636,
+          0.9450391530990601,
+          0.5591508150100708
+        ],
+        [
+          0.7094948291778564,
+          -0.6952929496765137,
+          -0.11482608318328857,
+          -0.03946051746606827
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 97,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            -0.3241078853607178,
+            -0.523055911064148,
+            0.7882680892944336,
+            -0.3458904266357422
+          ],
+          [
+            -0.8377076387405396,
+            0.5458303689956665,
+            0.017750442028045654,
+            0.6451378881931304
+          ],
+          [
+            -0.4395451545715332,
+            -0.6545851826667786,
+            -0.615075945854187,
+            0.1380507692694664
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.8855924606323242,
+      "T_world_graspgen_gripper": [
+        [
+          -0.3241078853607178,
+          -0.523055911064148,
+          0.7882680892944336,
+          -0.26706361770629883
+        ],
+        [
+          -0.8377076387405396,
+          0.5458303689956665,
+          0.017750442028045654,
+          0.6469129323959351
+        ],
+        [
+          -0.4395451545715332,
+          -0.6545851826667786,
+          -0.615075945854187,
+          0.0765431746840477
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 98,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision"
+      ],
+      "approach": {
+        "state": "clear",
+        "reasons": [],
+        "pregrasp_pose_world": [
+          [
+            0.6051130890846252,
+            -0.7708841562271118,
+            -0.1989368051290512,
+            0.020691049098968507
+          ],
+          [
+            -0.7350226640701294,
+            -0.6369510889053345,
+            0.2324541211128235,
+            0.5937568962574005
+          ],
+          [
+            -0.3059082329273224,
+            0.005562029778957367,
+            -0.9520447254180908,
+            0.2290317714214325
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": null,
+        "first_hit_source": null,
+        "final_background_collision": false,
+        "final_target_collision": false
+      },
+      "score": 0.888359546661377,
+      "T_world_graspgen_gripper": [
+        [
+          0.6051130890846252,
+          -0.7708841562271118,
+          -0.1989368051290512,
+          0.000797368586063385
+        ],
+        [
+          -0.7350226640701294,
+          -0.6369510889053345,
+          0.2324541211128235,
+          0.6170023083686829
+        ],
+        [
+          -0.3059082329273224,
+          0.005562029778957367,
+          -0.9520447254180908,
+          0.1338272988796234
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 99,
+      "accepted": false,
+      "rank": null,
+      "collision_checked": true,
+      "collision_state": "collision",
+      "reasons": [
+        "scene_collision",
+        "final_background_collision",
+        "approach_background_collision"
+      ],
+      "approach": {
+        "state": "collision",
+        "reasons": [
+          "final_background_collision",
+          "approach_background_collision"
+        ],
+        "pregrasp_pose_world": [
+          [
+            0.4843214750289917,
+            0.8635693192481995,
+            0.14028805494308472,
+            -0.18967128098011016
+          ],
+          [
+            0.6612270474433899,
+            -0.46630585193634033,
+            0.5876544713973999,
+            0.5041246056556702
+          ],
+          [
+            0.5728974938392639,
+            -0.1918514370918274,
+            -0.7968573570251465,
+            0.170590440928936
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "first_hit_fraction": 0.7623665500051077,
+        "first_hit_source": "background",
+        "final_background_collision": true,
+        "final_target_collision": false
+      },
+      "score": 0.8482563495635986,
+      "T_world_graspgen_gripper": [
+        [
+          0.4843214750289917,
+          0.8635693192481995,
+          0.14028805494308472,
+          -0.1756424754858017
+        ],
+        [
+          0.6612270474433899,
+          -0.46630585193634033,
+          0.5876544713973999,
+          0.5628900527954102
+        ],
+        [
+          0.5728974938392639,
+          -0.1918514370918274,
+          -0.7968573570251465,
+          0.09090470522642136
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

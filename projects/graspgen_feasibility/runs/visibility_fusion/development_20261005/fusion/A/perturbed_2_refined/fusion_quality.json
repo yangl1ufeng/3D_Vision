@@ -1,0 +1,210 @@
+{
+  "accepted": true,
+  "reasons": [],
+  "registration": [
+    {
+      "view_id": "A_view_1",
+      "accepted": true,
+      "reasons": [],
+      "converged": true,
+      "correction_world": [
+        [
+          0.9990098169815693,
+          0.041102758430402606,
+          0.01702788371651549,
+          -0.015350517425915111
+        ],
+        [
+          -0.041394317011134454,
+          0.9989958764755358,
+          0.01713911619828462,
+          0.008444972958446251
+        ],
+        [
+          -0.01630632066509519,
+          -0.01782700295306434,
+          0.9997081083356674,
+          -0.005835934090486521
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_m": 0.018466566552034373,
+      "rotation_deg": 2.7398131838441233,
+      "constraint_ratio": 0.06803981518220324,
+      "iterations": [
+        {
+          "iteration": 0,
+          "correspondences": 5441,
+          "rmse_point_plane_m": 0.008507955590802545,
+          "constraint_ratio": 0.028731817253886217
+        },
+        {
+          "iteration": 1,
+          "correspondences": 5463,
+          "rmse_point_plane_m": 0.003844836175268362,
+          "constraint_ratio": 0.03548113062408515
+        },
+        {
+          "iteration": 2,
+          "correspondences": 5462,
+          "rmse_point_plane_m": 0.004060326622225013,
+          "constraint_ratio": 0.062264581469435414
+        },
+        {
+          "iteration": 3,
+          "correspondences": 5451,
+          "rmse_point_plane_m": 0.0044938692440710335,
+          "constraint_ratio": 0.07146002058980035
+        },
+        {
+          "iteration": 4,
+          "correspondences": 5459,
+          "rmse_point_plane_m": 0.004520864633870094,
+          "constraint_ratio": 0.06863101290995141
+        },
+        {
+          "iteration": 5,
+          "correspondences": 5463,
+          "rmse_point_plane_m": 0.004489925739081558,
+          "constraint_ratio": 0.06914212223940758
+        },
+        {
+          "iteration": 6,
+          "correspondences": 5461,
+          "rmse_point_plane_m": 0.004490410055345842,
+          "constraint_ratio": 0.06804057674598185
+        },
+        {
+          "iteration": 7,
+          "correspondences": 5461,
+          "rmse_point_plane_m": 0.004490407823073666,
+          "constraint_ratio": 0.06803981518220324
+        }
+      ]
+    }
+  ],
+  "quality": {
+    "accepted": true,
+    "reasons": [],
+    "pairs": [
+      {
+        "views": [
+          "A_view_0",
+          "A_view_1"
+        ],
+        "overlap_fraction": 0.6606567439005677,
+        "directions": [
+          {
+            "source": "A_view_0",
+            "scope": "scene",
+            "evidence_points": 4247,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.0024237339422600534
+          },
+          {
+            "source": "A_view_0",
+            "scope": "target",
+            "evidence_points": 63,
+            "free_conflicts": 0,
+            "free_conflict_fraction": 0.0,
+            "reprojection_p90_m": 0.0030625977133722725
+          },
+          {
+            "source": "A_view_1",
+            "scope": "scene",
+            "evidence_points": 6271,
+            "free_conflicts": 2,
+            "free_conflict_fraction": 0.0003189284005740711,
+            "reprojection_p90_m": 0.005128956219269787
+          },
+          {
+            "source": "A_view_1",
+            "scope": "target",
+            "evidence_points": 545,
+            "free_conflicts": 2,
+            "free_conflict_fraction": 0.003669724770642202,
+            "reprojection_p90_m": 0.005992009572812584
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "voxel_m": 0.004,
+    "registration_voxel_m": 0.006,
+    "max_iterations": 35,
+    "max_correspondence_m": 0.045,
+    "min_correspondences": 100,
+    "min_constraint_ratio": 0.001,
+    "max_correction_translation_m": 0.05,
+    "max_correction_rotation_deg": 8.0,
+    "overlap_distance_m": 0.012,
+    "min_overlap_fraction": 0.2,
+    "max_reprojection_p90_m": 0.008,
+    "max_free_conflict_fraction": 0.05,
+    "min_target_evidence": 30,
+    "min_scene_evidence": 100,
+    "depth_edge_m": 0.015
+  },
+  "corrected_poses": {
+    "A_view_0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.0,
+        -0.5240974256643347,
+        0.851658316704544,
+        -0.65
+      ],
+      [
+        0.0,
+        -0.851658316704544,
+        -0.5240974256643347,
+        0.48
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "A_view_1": [
+      [
+        0.583069099697949,
+        0.4070241683755435,
+        -0.7031086340926418,
+        0.47790006368797044
+      ],
+      [
+        0.8124224268319514,
+        -0.2916121991662839,
+        0.5049080368521446,
+        -0.347158949560626
+      ],
+      [
+        0.00047471876531517826,
+        -0.8656174973136811,
+        -0.5007056250797399,
+        0.42030048931416414
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "planning_allowed": true
+}

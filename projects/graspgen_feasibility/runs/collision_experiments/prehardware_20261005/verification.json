@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "reference_candidates": 72,
+  "baseline_evaluations": 5832,
+  "approach_evaluations": 648,
+  "path_comparison_evaluations": 648,
+  "checks": [
+    "reference consistency",
+    "unique candidate identities",
+    "all summary confusion counts and denominators",
+    "combined filter semantics",
+    "thin obstacle endpoint miss and continuous detection"
+  ]
+}

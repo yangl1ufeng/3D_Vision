@@ -1,0 +1,55 @@
+{
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "executable": "D:\\3D_Vision\\projects\\graspgen_feasibility\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "trimesh": "4.5.3",
+    "diffusers": "0.11.1",
+    "huggingface-hub": "0.25.2",
+    "transformers": "4.44.2",
+    "hydra-core": "1.3.7",
+    "pointnet2_ops": "3.0.0"
+  },
+  "cuda_runtime": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "gpu_total_memory_mib": 8187.5,
+  "graspgen_source": {
+    "commit": "2dd8852e1be60f5f9d277fafcc621835cdf59110",
+    "modified": true,
+    "diff_sha256": "ae4c1311cecfbc538945cff5542d53690f42a6eab57ed05eee7a9cd1ce97f519"
+  },
+  "sam2_source": null,
+  "weights": {
+    "generator": {
+      "path": "D:\\3D_Vision\\projects\\graspgen_feasibility\\checkpoints\\graspgen_robotiq_2f_140_gen.pth",
+      "sha256": "fe8497108e39d8fc50be06cd7df22a2f680e0495e713d24c3104616f291e00dd",
+      "bytes": 471436414
+    },
+    "discriminator": {
+      "path": "D:\\3D_Vision\\projects\\graspgen_feasibility\\checkpoints\\graspgen_robotiq_2f_140_dis.pth",
+      "sha256": "52f68d3cd3decb71499e084fdb88808d174419a72cd9ef38f821083a4409895d",
+      "bytes": 39427928
+    }
+  },
+  "core_source_sha256": {
+    "__init__.py": "af8960012952b27bacc365c994ef85f1d950ab2a64d9462ce6539d005ec32a88",
+    "approach.py": "acdde1067942053f60a5ee5b6ddda5fc5549b048b7cc82c8d93313063cb03eb1",
+    "collision.py": "621b52c2928b39df4ac4cc98f5b3b2e517de7da913c822bc35dabe72c8d42c1f",
+    "config.py": "7b5724344c74b596bdc04c8d77bfbdd0c76b3dc22c78282d545108287072dff8",
+    "export.py": "efa8a9cff1189b7136188c2dcbef168cc6a6223370ad4c59bad2664fd2435c27",
+    "fusion.py": "c7e0bc59ae8027a263331d60a721ddb7927b285028e5245fac06bf7a08ea6ade",
+    "geometry.py": "0a7c67a24180e4d9dac42e3f86fbd8a7047c333ee4bc660ec3524841d932e9b1",
+    "grasp.py": "d9d00389ee97ce50965b3ffa433a6f7273927e0ce10da2576c33ecb1bae3696a",
+    "observation.py": "f63c2df829ea3abf62d4edb8e3c5aafd410f18e49a1748f66f76c702d2295c52",
+    "official_sample.py": "00c608192c87965758ab15a0ebd58584c54bed783fe6884fd31d482c20d50c8c",
+    "pipeline.py": "b3950eb37b1d78765e86908fb4666f7880cabc949491f47b4ca81d3566220db9",
+    "pointcloud.py": "c5282180b0a6f9b2d8983640617b3992468f987a6b8e9ac6bdf12fdb3eca44ff",
+    "profiling.py": "460b31e83c82a2c2ea8e45a754466ac1b45021232120daf562bda1f5e5ecb03d",
+    "runtime.py": "64779547ca99a8b2d0adcda1adfdd061d8956fb12aa8a668cc992bf699246ae2",
+    "scene_io.py": "28064e135ec28007e0a2df90ed24e59e19e99a77eb7052c8d377ce7bedcf49d7",
+    "segmentation.py": "325db604078a531f4d9958956703d37fa6fd610b6236a6fcfe864d8fd5c4cc11",
+    "types.py": "7db571c86dcb45e6ada933a84ad99f714ba66e0b3ac7fd42ffd70e39dadf9a5a"
+  }
+}

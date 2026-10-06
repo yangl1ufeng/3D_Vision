@@ -1,0 +1,63 @@
+{
+  "plate_thickness_m": 0.0005,
+  "reference_continuous_collision": true,
+  "reference_final_collision": false,
+  "discrete": [
+    {
+      "requested_step_m": 0.1,
+      "poses": 2,
+      "detected": false
+    },
+    {
+      "requested_step_m": 0.02,
+      "poses": 6,
+      "detected": true
+    },
+    {
+      "requested_step_m": 0.005,
+      "poses": 21,
+      "detected": true
+    },
+    {
+      "requested_step_m": 0.001,
+      "poses": 101,
+      "detected": true
+    }
+  ],
+  "continuous": {
+    "state": "collision",
+    "reasons": [
+      "approach_background_collision"
+    ],
+    "pregrasp_pose_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "first_hit_fraction": 0.037499999068677514,
+    "first_hit_source": "background",
+    "final_background_collision": false,
+    "final_target_collision": false
+  }
+}

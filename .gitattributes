@@ -9,3 +9,7 @@
 *.ps1 text eol=crlf
 .gitignore text eol=lf
 .gitattributes text eol=lf
+
+# Preserve archived evidence bytes, including JSON files sealed by SHA256.
+projects/graspgen_feasibility/runs/** -text
+projects/graspgen_feasibility/data/** -text

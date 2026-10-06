@@ -1,0 +1,31 @@
+{
+  "robustness": {
+    "status": "passed",
+    "runs": 159,
+    "preserved_pipeline_failures": 39
+  },
+  "stress": {
+    "status": "passed",
+    "runs": 48,
+    "preserved_pipeline_failures": 12,
+    "observed_obstacle_losses": 6,
+    "input_counts": {
+      "1": [
+        39336,
+        7
+      ],
+      "2": [
+        157342,
+        32
+      ],
+      "4": [
+        629488,
+        131
+      ],
+      "8": [
+        2517731,
+        528
+      ]
+    }
+  }
+}

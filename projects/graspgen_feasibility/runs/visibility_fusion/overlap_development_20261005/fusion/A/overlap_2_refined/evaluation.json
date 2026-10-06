@@ -1,0 +1,22 @@
+{
+  "layout": "A",
+  "case": "overlap_2_refined",
+  "views": 2,
+  "refine": true,
+  "expected_accepted": true,
+  "accepted": true,
+  "passed": true,
+  "reasons": "",
+  "target_coverage_fraction": 0.5396776193428394,
+  "target_surface_error_p95_m": 1.9690647892756097e-08,
+  "target_extent_x_m": 0.11986430837038825,
+  "target_extent_y_m": 0.09991142989348478,
+  "target_extent_z_m": 0.17996517183310598,
+  "max_target_extent_error_m": 0.00013569162961174497,
+  "max_camera_translation_error_m": 6.173710169708057e-09,
+  "max_camera_rotation_error_deg": 6.965044263427791e-07,
+  "observed_points": 25585,
+  "fused_points": 20922,
+  "fused_target_points": 2649,
+  "seconds": 0.07377300000007381
+}

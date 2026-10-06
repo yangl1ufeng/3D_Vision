@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "scene_id": "official_1745619598_467125",
+  "target_id": "blue_bowl",
+  "world_frame": "official_scene_world",
+  "translation_unit": "m",
+  "pose_convention": "T_world_graspgen_gripper maps gripper-local column vectors to world",
+  "segmentation": {
+    "backend": "sam2",
+    "mask_pixels": 10087,
+    "predicted_quality": 0.984375,
+    "box_xyxy": [
+      642.0,
+      373.0,
+      764.0,
+      477.0
+    ],
+    "selection": "highest SAM2 predicted quality",
+    "prompt_source": "input_manifest",
+    "quality_note": "SAM2 predicted mask quality is not grasp success probability"
+  },
+  "pointcloud": {
+    "target_raw_points": 4894,
+    "target_bounded_points": 4894,
+    "target_model_points": 4739,
+    "outliers": 155,
+    "target_sampling_dropped": 0,
+    "background_full_points": 428809,
+    "background_collision_points": 8192,
+    "target_bounds_m": [
+      [
+        -0.17247313261032104,
+        0.6125396490097046,
+        -0.10972696542739868
+      ],
+      [
+        0.05373305082321167,
+        0.8052407503128052,
+        -0.021481573581695557
+      ]
+    ],
+    "outlier_method": "official mean distance to K neighbors using L1 norm, strict < threshold",
+    "collision_sampling": "seeded random subset; full background retained in export",
+    "sampling_seed": 1000
+  },
+  "grasp_generation": {
+    "gripper": "robotiq_2f_140",
+    "diffusion_steps": 10,
+    "model_config": "D:\\3D_Vision\\projects\\graspgen_feasibility\\checkpoints\\graspgen_robotiq_2f_140.yml",
+    "seed": 1000,
+    "candidate_budget": 100,
+    "precision": "float32",
+    "pose_frame": "graspgen_gripper",
+    "output_unit": "m",
+    "note": "Model scores are ranking scores, not measured physical grasp success."
+  },
+  "collision": {
+    "threshold_m": 0.02,
+    "surface_samples": 2000,
+    "batch_size": 4,
+    "surface_seed": 1001,
+    "scene_points": 8192,
+    "scope": "observed geometry, final gripper pose"
+  },
+  "counts": {
+    "raw": 100,
+    "eligible_for_collision": 53,
+    "accepted": 7,
+    "rejected": 93,
+    "exclusion_reasons": {
+      "low_score": 47,
+      "scene_collision": 46
+    }
+  },
+  "accepted_candidate_ids_by_rank": [
+    80,
+    85,
+    64,
+    67,
+    83,
+    68,
+    33
+  ],
+  "inference_wall_with_loading_seconds": 18.38635499999964,
+  "limitations": [
+    "Single view; no multiview fusion, approach trajectory collision, arm reachability, or physical execution.",
+    "Collision uses sampled observed background and gripper surface; unobserved geometry can be missed.",
+    "T_world_graspgen_gripper is not a calibrated robot-base TCP command.",
+    "Scores and accepted counts do not measure physical grasp success."
+  ],
+  "output_directory": "D:\\3D_Vision\\projects\\graspgen_feasibility\\runs\\offline\\stage1_validation",
+  "performance": {
+    "stages": {
+      "official_sample_conversion": {
+        "status": "ok",
+        "seconds": 1.6684544999998252
+      },
+      "input_loading": {
+        "status": "ok",
+        "seconds": 0.10927269999956479
+      },
+      "runtime_initialization": {
+        "status": "ok",
+        "seconds": 1.619607999999971
+      },
+      "segmentation_model_loading": {
+        "allocated_before_mib": 0.0,
+        "status": "ok",
+        "seconds": 5.679714099999728,
+        "peak_allocated_mib": 1000.84814453125,
+        "peak_reserved_mib": 1052.0,
+        "device_peak_used_mib": 2702.50390625
+      },
+      "grasp_model_loading": {
+        "allocated_before_mib": 1000.84814453125,
+        "status": "ok",
+        "seconds": 8.950118800000382,
+        "peak_allocated_mib": 1166.84375,
+        "peak_reserved_mib": 1222.0,
+        "device_peak_used_mib": 2866.18359375
+      },
+      "collision_geometry_loading": {
+        "status": "ok",
+        "seconds": 0.016578300000219315
+      },
+      "segmentation": {
+        "allocated_before_mib": 1166.84375,
+        "status": "ok",
+        "seconds": 0.8143943000004583,
+        "peak_allocated_mib": 1458.96875,
+        "peak_reserved_mib": 1678.0,
+        "device_peak_used_mib": 3342.18359375
+      },
+      "pointcloud": {
+        "allocated_before_mib": 1186.21875,
+        "status": "ok",
+        "seconds": 0.1831424000001789,
+        "peak_allocated_mib": 1308.9072265625,
+        "peak_reserved_mib": 1678.0,
+        "device_peak_used_mib": 3342.18359375
+      },
+      "grasp_generation": {
+        "allocated_before_mib": 1186.21875,
+        "status": "ok",
+        "seconds": 0.7275995999998486,
+        "peak_allocated_mib": 1207.2333984375,
+        "peak_reserved_mib": 1682.0,
+        "device_peak_used_mib": 3348.18359375
+      },
+      "score_filter": {
+        "status": "ok",
+        "seconds": 0.0007301000005099922
+      },
+      "collision_check": {
+        "allocated_before_mib": 1186.21875,
+        "status": "ok",
+        "seconds": 0.119064100000287,
+        "peak_allocated_mib": 1686.86279296875,
+        "peak_reserved_mib": 2182.0,
+        "device_peak_used_mib": 3850.18359375
+      },
+      "provenance_hashing": {
+        "status": "ok",
+        "seconds": 2.258625800000118
+      },
+      "artifact_export": {
+        "status": "ok",
+        "seconds": 1.3519834999997329
+      }
+    },
+    "compute_stage_seconds": 1.8449305000012828,
+    "measured_stage_seconds": 23.499286200000824,
+    "peak_allocated_mib": 1686.86279296875,
+    "peak_reserved_mib": 2182.0,
+    "device_peak_used_mib": 3850.18359375,
+    "memory_note": "CUDA peaks include resident models. NVML is whole-device usage including desktop, sampled every 20ms; unavailable values are null, not zero.",
+    "timing_note": "Stages do not nest. Compute excludes model loading, input conversion/IO, provenance hashing, and export. Wall times are reported separately.",
+    "analysis_wall_seconds": 23.667765600000166,
+    "wall_note": "From CLI start through export; final summary/performance JSON writes and console output excluded."
+  }
+}

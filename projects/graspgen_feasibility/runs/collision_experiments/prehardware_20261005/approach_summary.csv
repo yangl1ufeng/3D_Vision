@@ -1,0 +1,10 @@
+﻿split,margin_m,total,accepted,false_accept,false_accept_among_accepted,reference_collisions,miss_rate_among_collisions,false_reject,reference_clear,retained_reference_clear
+all,0,216,69,3,0.043478260869565216,150,0.02,0,66,66
+all,0.002,216,64,3,0.046875,150,0.02,5,66,61
+all,0.005,216,47,3,0.06382978723404255,150,0.02,22,66,44
+development,0,108,45,0,0.0,63,0.0,0,45,45
+development,0.002,108,40,0,0.0,63,0.0,5,45,40
+development,0.005,108,36,0,0.0,63,0.0,9,45,36
+held_out,0,108,24,3,0.125,87,0.034482758620689655,0,21,21
+held_out,0.002,108,24,3,0.125,87,0.034482758620689655,0,21,21
+held_out,0.005,108,11,3,0.2727272727272727,87,0.034482758620689655,13,21,8
