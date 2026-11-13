@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "scene_id": "gemini_desk_20261112",
+  "geometry_path": "../runs/gemini_multiview/20261112_170625_237128/geometry.json",
+  "pointcloud_path": "../runs/gemini_multiview/20261112_170625_237128/desk_box_cup_measured.ply",
+  "target": "cup",
+  "table_to_robot_translation_m": [0.65, -0.40, 0.0],
+  "drop_xy_robot_m": [0.50, 0.22],
+  "table": {"center_robot_m": [0.55, 0.0, -0.04], "half_extents_m": [0.45, 0.45, 0.04]},
+  "pedestal": {"center_robot_m": [0.0, 0.0, -0.04], "half_extents_m": [0.14, 0.16, 0.04]},
+  "target_physics": {"mass_kg": 0.09, "lateral_friction": 1.2}
+}

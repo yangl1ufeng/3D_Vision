@@ -12,6 +12,14 @@ for name in ['generator', 'discriminator']:
     p.write_text(s)
 p = REPO/'pointnet2_ops/setup.py'
 s = p.read_text().replace('"cxx": ["-O3"]','"cxx": ["/O2"]')
+if 'cpp_extension.SUBPROCESS_DECODE_ARGS' not in s:
+    s = s.replace('from torch.utils.cpp_extension import BuildExtension, CUDAExtension',
+                  'from torch.utils.cpp_extension import BuildExtension, CUDAExtension\n'
+                  '# Decode compiler diagnostics without a Windows console.\n'
+                  'import torch.utils.cpp_extension as cpp_extension\n'
+                  'cpp_extension.SUBPROCESS_DECODE_ARGS = ("utf-8", "replace")')
+s = s.replace('"build_ext": BuildExtension}',
+              '"build_ext": BuildExtension.with_options(use_ninja=False)}')
 if 'library_dirs=' not in s:
     s = s.replace('include_dirs=[osp.join(this_dir, _ext_src_root, "include")],',
                   'include_dirs=[osp.join(this_dir, _ext_src_root, "include")],\n            library_dirs=[osp.join(__import__("os").environ["CUDA_HOME"], "lib")],')

@@ -1,0 +1,9 @@
+{
+  "capture": "../runs/gemini_static/20261113_144008_107123",
+  "table_rois": [[315, 560, 460, 660], [670, 600, 765, 690], [935, 595, 1030, 685]],
+  "objects": {
+    "mug": {"positive": [[688, 423]], "shape": "solid_cylinder_proxy"},
+    "earbuds": {"positive": [[579, 577]], "shape": "box"},
+    "figurine": {"positive": [[865, 517]], "shape": "box"}
+  }
+}
